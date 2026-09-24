@@ -1,0 +1,383 @@
+{
+  "id": "m_school_problem",
+  "version": "1.0.0",
+  "type": "mission",
+  "audience": "school",
+  "prerequisites": [
+    "f1_ai_capabilities",
+    "f3_checking_evidence"
+  ],
+  "estimated_duration_minutes": 5,
+  "order": 2,
+  "review_date": "2026-09-17",
+  "translation_status": {
+    "en": {
+      "reviewed": true,
+      "reviewer": "author"
+    },
+    "hi": {
+      "reviewed": false
+    },
+    "te": {
+      "reviewed": false
+    },
+    "ta": {
+      "reviewed": false
+    },
+    "kn": {
+      "reviewed": false
+    }
+  },
+  "content": {
+    "en": {
+      "title": "Solve It Step by Step! 🧩",
+      "description": "Use AI hints to solve a math problem through reasoning, not just getting the answer.",
+      "outcome": "You can use AI to get HINTS for solving problems instead of just copying answers!",
+      "explanation": "Here's a secret: getting the answer isn't the goal — understanding HOW to solve it is! 🎯\n\nAI can be like a helpful tutor who gives you hints instead of answers. Let's practice with a fun word problem about planning a school event.",
+      "worked_example": {
+        "scenario": "Planning a school science fair budget.",
+        "bad_attempt": "What's 47 × 3 + 125 × 2?",
+        "good_attempt": "Goal: Help me solve this word problem step by step with HINTS, not the answer.\nContext: I'm planning a school science fair. I need to buy supplies.\nConstraints: Give me one hint at a time. Wait for me to try before giving the next hint. Start by helping me identify what information I need.\nOutput: First hint only.",
+        "why_better": "Asks for hints instead of answers, so the student actually learns the method."
+      },
+      "interactive_task": {
+        "instruction": "Solve this problem using AI for HINTS (not answers!):\n\n🧩 Problem: Your school is organizing a science fair. You need:\n• 3 display boards at ₹150 each\n• 2 packs of markers at ₹85 each\n• 5 sheets of chart paper at ₹25 each\n• 1 pack of stickers at ₹60\n\nYour teacher gave you ₹800. Do you have enough money? If not, how much more do you need?\n\nInstead of asking AI for the answer, write an AI instruction that gives you HINTS to solve it yourself!",
+        "starter_text": "My AI instruction for hints:\n\nMy work:\nStep 1: \nStep 2: \nStep 3: \nAnswer: ",
+        "hints": [
+          "First hint: List all the items and their costs. Can you find the cost of each type of item?",
+          "Second hint: For items with multiple quantities, multiply: quantity × price. Try the display boards first: 3 × ₹150 = ?",
+          "Third hint: Add up all the costs. Then compare with ₹800.",
+          "Final hint: If total > ₹800, subtract ₹800 from total to find how much more you need."
+        ],
+        "sample_good_response": "My AI instruction: I'm solving a word problem about a school science fair budget. Don't tell me the answer! Give me hints one at a time. Start by asking me what information I can find in the problem.\n\nMy work:\nStep 1: List items - 3 boards (₹150), 2 markers (₹85), 5 chart paper (₹25), 1 stickers (₹60)\nStep 2: Calculate each - Boards: 3×150=₹450, Markers: 2×85=₹170, Paper: 5×25=₹125, Stickers: ₹60\nStep 3: Total = 450+170+125+60 = ₹805\nAnswer: Total is ₹805, budget is ₹800. I need ₹5 more!",
+        "evaluation_criteria": [
+          "Asks for hints instead of direct answers",
+          "Shows step-by-step work",
+          "Arrives at a reasonable answer"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it better to ask AI for hints instead of answers?",
+          "options": [
+            "You learn the method and can solve similar problems on your own",
+            "AI can't give correct answers",
+            "Hints are faster",
+            "Answers are always wrong"
+          ],
+          "correct_index": 0,
+          "explanation": "When you work through problems with hints, you learn the method. Next time you face a similar problem, you can solve it yourself!"
+        },
+        {
+          "question": "What should you do after solving a problem with AI hints?",
+          "options": [
+            "Check your answer by trying a different method or re-reading the problem",
+            "Move on immediately",
+            "Ask AI to confirm your answer",
+            "Erase your work"
+          ],
+          "correct_index": 0,
+          "explanation": "Double-checking builds confidence and catches mistakes. Try re-reading the problem or using a different calculation method."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "🎉 Fantastic work! You solved it step by step!",
+        "partial": "Good effort! 💪 Show more of your work for each step.",
+        "fail": "Let's try again! 🔄 Start by listing all the items and their prices."
+      },
+      "retry_hint": "Review the worked example and try again.",
+      "recap": "You learned to use AI as a hints-tutor instead of an answer-machine! This way, you actually learn the method and can solve similar problems on your own. 🧠✨",
+      "glossary_terms": [
+        {
+          "term": "word problem",
+          "definition": "A math question written as a real-life story or scenario."
+        },
+        {
+          "term": "step-by-step",
+          "definition": "Solving a problem one small piece at a time, showing your work."
+        }
+      ]
+    },
+    "hi": {
+      "title": "कदम दर कदम हल करो! 🧩",
+      "description": "उत्तर की जगह AI से संकेत लेकर गणित की समस्या हल करो।",
+      "outcome": "You can use AI to get HINTS for solving problems instead of just copying answers!",
+      "explanation": "Here's a secret: getting the answer isn't the goal — understanding HOW to solve it is! 🎯\n\nAI can be like a helpful tutor who gives you hints instead of answers. Let's practice with a fun word problem about planning a school event.",
+      "worked_example": {
+        "scenario": "Planning a school science fair budget.",
+        "bad_attempt": "What's 47 × 3 + 125 × 2?",
+        "good_attempt": "Goal: Help me solve this word problem step by step with HINTS, not the answer.\nContext: I'm planning a school science fair. I need to buy supplies.\nConstraints: Give me one hint at a time. Wait for me to try before giving the next hint. Start by helping me identify what information I need.\nOutput: First hint only.",
+        "why_better": "Asks for hints instead of answers, so the student actually learns the method."
+      },
+      "interactive_task": {
+        "instruction": "Solve this problem using AI for HINTS (not answers!):\n\n🧩 Problem: Your school is organizing a science fair. You need:\n• 3 display boards at ₹150 each\n• 2 packs of markers at ₹85 each\n• 5 sheets of chart paper at ₹25 each\n• 1 pack of stickers at ₹60\n\nYour teacher gave you ₹800. Do you have enough money? If not, how much more do you need?\n\nInstead of asking AI for the answer, write an AI instruction that gives you HINTS to solve it yourself!",
+        "starter_text": "My AI instruction for hints:\n\nMy work:\nStep 1: \nStep 2: \nStep 3: \nAnswer: ",
+        "hints": [
+          "First hint: List all the items and their costs. Can you find the cost of each type of item?",
+          "Second hint: For items with multiple quantities, multiply: quantity × price. Try the display boards first: 3 × ₹150 = ?",
+          "Third hint: Add up all the costs. Then compare with ₹800.",
+          "Final hint: If total > ₹800, subtract ₹800 from total to find how much more you need."
+        ],
+        "sample_good_response": "My AI instruction: I'm solving a word problem about a school science fair budget. Don't tell me the answer! Give me hints one at a time. Start by asking me what information I can find in the problem.\n\nMy work:\nStep 1: List items - 3 boards (₹150), 2 markers (₹85), 5 chart paper (₹25), 1 stickers (₹60)\nStep 2: Calculate each - Boards: 3×150=₹450, Markers: 2×85=₹170, Paper: 5×25=₹125, Stickers: ₹60\nStep 3: Total = 450+170+125+60 = ₹805\nAnswer: Total is ₹805, budget is ₹800. I need ₹5 more!",
+        "evaluation_criteria": [
+          "Asks for hints instead of direct answers",
+          "Shows step-by-step work",
+          "Arrives at a reasonable answer"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it better to ask AI for hints instead of answers?",
+          "options": [
+            "You learn the method and can solve similar problems on your own",
+            "AI can't give correct answers",
+            "Hints are faster",
+            "Answers are always wrong"
+          ],
+          "correct_index": 0,
+          "explanation": "When you work through problems with hints, you learn the method. Next time you face a similar problem, you can solve it yourself!"
+        },
+        {
+          "question": "What should you do after solving a problem with AI hints?",
+          "options": [
+            "Check your answer by trying a different method or re-reading the problem",
+            "Move on immediately",
+            "Ask AI to confirm your answer",
+            "Erase your work"
+          ],
+          "correct_index": 0,
+          "explanation": "Double-checking builds confidence and catches mistakes. Try re-reading the problem or using a different calculation method."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "🎉 Fantastic work! You solved it step by step!",
+        "partial": "Good effort! 💪 Show more of your work for each step.",
+        "fail": "Let's try again! 🔄 Start by listing all the items and their prices."
+      },
+      "retry_hint": "ऊपर दिए गए उदाहरण को देखें और फिर से कोशिश करें।",
+      "recap": "You learned to use AI as a hints-tutor instead of an answer-machine! This way, you actually learn the method and can solve similar problems on your own. 🧠✨",
+      "glossary_terms": [
+        {
+          "term": "word problem",
+          "definition": "A math question written as a real-life story or scenario."
+        },
+        {
+          "term": "step-by-step",
+          "definition": "Solving a problem one small piece at a time, showing your work."
+        }
+      ]
+    },
+    "te": {
+      "title": "అడుగు అడుగున పరిష్కరించు! 🧩",
+      "description": "సమాధానం కాకుండా AI హింట్స్ తో గణిత సమస్య పరిష్కరించండి.",
+      "outcome": "You can use AI to get HINTS for solving problems instead of just copying answers!",
+      "explanation": "Here's a secret: getting the answer isn't the goal — understanding HOW to solve it is! 🎯\n\nAI can be like a helpful tutor who gives you hints instead of answers. Let's practice with a fun word problem about planning a school event.",
+      "worked_example": {
+        "scenario": "Planning a school science fair budget.",
+        "bad_attempt": "What's 47 × 3 + 125 × 2?",
+        "good_attempt": "Goal: Help me solve this word problem step by step with HINTS, not the answer.\nContext: I'm planning a school science fair. I need to buy supplies.\nConstraints: Give me one hint at a time. Wait for me to try before giving the next hint. Start by helping me identify what information I need.\nOutput: First hint only.",
+        "why_better": "Asks for hints instead of answers, so the student actually learns the method."
+      },
+      "interactive_task": {
+        "instruction": "Solve this problem using AI for HINTS (not answers!):\n\n🧩 Problem: Your school is organizing a science fair. You need:\n• 3 display boards at ₹150 each\n• 2 packs of markers at ₹85 each\n• 5 sheets of chart paper at ₹25 each\n• 1 pack of stickers at ₹60\n\nYour teacher gave you ₹800. Do you have enough money? If not, how much more do you need?\n\nInstead of asking AI for the answer, write an AI instruction that gives you HINTS to solve it yourself!",
+        "starter_text": "My AI instruction for hints:\n\nMy work:\nStep 1: \nStep 2: \nStep 3: \nAnswer: ",
+        "hints": [
+          "First hint: List all the items and their costs. Can you find the cost of each type of item?",
+          "Second hint: For items with multiple quantities, multiply: quantity × price. Try the display boards first: 3 × ₹150 = ?",
+          "Third hint: Add up all the costs. Then compare with ₹800.",
+          "Final hint: If total > ₹800, subtract ₹800 from total to find how much more you need."
+        ],
+        "sample_good_response": "My AI instruction: I'm solving a word problem about a school science fair budget. Don't tell me the answer! Give me hints one at a time. Start by asking me what information I can find in the problem.\n\nMy work:\nStep 1: List items - 3 boards (₹150), 2 markers (₹85), 5 chart paper (₹25), 1 stickers (₹60)\nStep 2: Calculate each - Boards: 3×150=₹450, Markers: 2×85=₹170, Paper: 5×25=₹125, Stickers: ₹60\nStep 3: Total = 450+170+125+60 = ₹805\nAnswer: Total is ₹805, budget is ₹800. I need ₹5 more!",
+        "evaluation_criteria": [
+          "Asks for hints instead of direct answers",
+          "Shows step-by-step work",
+          "Arrives at a reasonable answer"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it better to ask AI for hints instead of answers?",
+          "options": [
+            "You learn the method and can solve similar problems on your own",
+            "AI can't give correct answers",
+            "Hints are faster",
+            "Answers are always wrong"
+          ],
+          "correct_index": 0,
+          "explanation": "When you work through problems with hints, you learn the method. Next time you face a similar problem, you can solve it yourself!"
+        },
+        {
+          "question": "What should you do after solving a problem with AI hints?",
+          "options": [
+            "Check your answer by trying a different method or re-reading the problem",
+            "Move on immediately",
+            "Ask AI to confirm your answer",
+            "Erase your work"
+          ],
+          "correct_index": 0,
+          "explanation": "Double-checking builds confidence and catches mistakes. Try re-reading the problem or using a different calculation method."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "🎉 Fantastic work! You solved it step by step!",
+        "partial": "Good effort! 💪 Show more of your work for each step.",
+        "fail": "Let's try again! 🔄 Start by listing all the items and their prices."
+      },
+      "retry_hint": "ఉదాహరణ చూసి మళ్ళీ ప్రయత్నించండి.",
+      "recap": "You learned to use AI as a hints-tutor instead of an answer-machine! This way, you actually learn the method and can solve similar problems on your own. 🧠✨",
+      "glossary_terms": [
+        {
+          "term": "word problem",
+          "definition": "A math question written as a real-life story or scenario."
+        },
+        {
+          "term": "step-by-step",
+          "definition": "Solving a problem one small piece at a time, showing your work."
+        }
+      ]
+    },
+    "ta": {
+      "title": "படிப்படியாக தீர்க்கவும்! 🧩",
+      "description": "பதிலுக்கு பதிலாக AI குறிப்புகளுடன் கணித பிரச்சனையை தீர்க்கவும்.",
+      "outcome": "You can use AI to get HINTS for solving problems instead of just copying answers!",
+      "explanation": "Here's a secret: getting the answer isn't the goal — understanding HOW to solve it is! 🎯\n\nAI can be like a helpful tutor who gives you hints instead of answers. Let's practice with a fun word problem about planning a school event.",
+      "worked_example": {
+        "scenario": "Planning a school science fair budget.",
+        "bad_attempt": "What's 47 × 3 + 125 × 2?",
+        "good_attempt": "Goal: Help me solve this word problem step by step with HINTS, not the answer.\nContext: I'm planning a school science fair. I need to buy supplies.\nConstraints: Give me one hint at a time. Wait for me to try before giving the next hint. Start by helping me identify what information I need.\nOutput: First hint only.",
+        "why_better": "Asks for hints instead of answers, so the student actually learns the method."
+      },
+      "interactive_task": {
+        "instruction": "Solve this problem using AI for HINTS (not answers!):\n\n🧩 Problem: Your school is organizing a science fair. You need:\n• 3 display boards at ₹150 each\n• 2 packs of markers at ₹85 each\n• 5 sheets of chart paper at ₹25 each\n• 1 pack of stickers at ₹60\n\nYour teacher gave you ₹800. Do you have enough money? If not, how much more do you need?\n\nInstead of asking AI for the answer, write an AI instruction that gives you HINTS to solve it yourself!",
+        "starter_text": "My AI instruction for hints:\n\nMy work:\nStep 1: \nStep 2: \nStep 3: \nAnswer: ",
+        "hints": [
+          "First hint: List all the items and their costs. Can you find the cost of each type of item?",
+          "Second hint: For items with multiple quantities, multiply: quantity × price. Try the display boards first: 3 × ₹150 = ?",
+          "Third hint: Add up all the costs. Then compare with ₹800.",
+          "Final hint: If total > ₹800, subtract ₹800 from total to find how much more you need."
+        ],
+        "sample_good_response": "My AI instruction: I'm solving a word problem about a school science fair budget. Don't tell me the answer! Give me hints one at a time. Start by asking me what information I can find in the problem.\n\nMy work:\nStep 1: List items - 3 boards (₹150), 2 markers (₹85), 5 chart paper (₹25), 1 stickers (₹60)\nStep 2: Calculate each - Boards: 3×150=₹450, Markers: 2×85=₹170, Paper: 5×25=₹125, Stickers: ₹60\nStep 3: Total = 450+170+125+60 = ₹805\nAnswer: Total is ₹805, budget is ₹800. I need ₹5 more!",
+        "evaluation_criteria": [
+          "Asks for hints instead of direct answers",
+          "Shows step-by-step work",
+          "Arrives at a reasonable answer"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it better to ask AI for hints instead of answers?",
+          "options": [
+            "You learn the method and can solve similar problems on your own",
+            "AI can't give correct answers",
+            "Hints are faster",
+            "Answers are always wrong"
+          ],
+          "correct_index": 0,
+          "explanation": "When you work through problems with hints, you learn the method. Next time you face a similar problem, you can solve it yourself!"
+        },
+        {
+          "question": "What should you do after solving a problem with AI hints?",
+          "options": [
+            "Check your answer by trying a different method or re-reading the problem",
+            "Move on immediately",
+            "Ask AI to confirm your answer",
+            "Erase your work"
+          ],
+          "correct_index": 0,
+          "explanation": "Double-checking builds confidence and catches mistakes. Try re-reading the problem or using a different calculation method."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "🎉 Fantastic work! You solved it step by step!",
+        "partial": "Good effort! 💪 Show more of your work for each step.",
+        "fail": "Let's try again! 🔄 Start by listing all the items and their prices."
+      },
+      "retry_hint": "உதாரணத்தைப் பார்த்து மீண்டும் முயற்சிக்கவும்.",
+      "recap": "You learned to use AI as a hints-tutor instead of an answer-machine! This way, you actually learn the method and can solve similar problems on your own. 🧠✨",
+      "glossary_terms": [
+        {
+          "term": "word problem",
+          "definition": "A math question written as a real-life story or scenario."
+        },
+        {
+          "term": "step-by-step",
+          "definition": "Solving a problem one small piece at a time, showing your work."
+        }
+      ]
+    },
+    "kn": {
+      "title": "ಹಂತ ಹಂತವಾಗಿ ಪರಿಹರಿಸಿ! 🧩",
+      "description": "ಉತ್ತರ ಬದಲು AI ಸುಳಿವುಗಳೊಂದಿಗೆ ಗಣಿತ ಸಮಸ್ಯೆ ಪರಿಹರಿಸಿ.",
+      "outcome": "You can use AI to get HINTS for solving problems instead of just copying answers!",
+      "explanation": "Here's a secret: getting the answer isn't the goal — understanding HOW to solve it is! 🎯\n\nAI can be like a helpful tutor who gives you hints instead of answers. Let's practice with a fun word problem about planning a school event.",
+      "worked_example": {
+        "scenario": "Planning a school science fair budget.",
+        "bad_attempt": "What's 47 × 3 + 125 × 2?",
+        "good_attempt": "Goal: Help me solve this word problem step by step with HINTS, not the answer.\nContext: I'm planning a school science fair. I need to buy supplies.\nConstraints: Give me one hint at a time. Wait for me to try before giving the next hint. Start by helping me identify what information I need.\nOutput: First hint only.",
+        "why_better": "Asks for hints instead of answers, so the student actually learns the method."
+      },
+      "interactive_task": {
+        "instruction": "Solve this problem using AI for HINTS (not answers!):\n\n🧩 Problem: Your school is organizing a science fair. You need:\n• 3 display boards at ₹150 each\n• 2 packs of markers at ₹85 each\n• 5 sheets of chart paper at ₹25 each\n• 1 pack of stickers at ₹60\n\nYour teacher gave you ₹800. Do you have enough money? If not, how much more do you need?\n\nInstead of asking AI for the answer, write an AI instruction that gives you HINTS to solve it yourself!",
+        "starter_text": "My AI instruction for hints:\n\nMy work:\nStep 1: \nStep 2: \nStep 3: \nAnswer: ",
+        "hints": [
+          "First hint: List all the items and their costs. Can you find the cost of each type of item?",
+          "Second hint: For items with multiple quantities, multiply: quantity × price. Try the display boards first: 3 × ₹150 = ?",
+          "Third hint: Add up all the costs. Then compare with ₹800.",
+          "Final hint: If total > ₹800, subtract ₹800 from total to find how much more you need."
+        ],
+        "sample_good_response": "My AI instruction: I'm solving a word problem about a school science fair budget. Don't tell me the answer! Give me hints one at a time. Start by asking me what information I can find in the problem.\n\nMy work:\nStep 1: List items - 3 boards (₹150), 2 markers (₹85), 5 chart paper (₹25), 1 stickers (₹60)\nStep 2: Calculate each - Boards: 3×150=₹450, Markers: 2×85=₹170, Paper: 5×25=₹125, Stickers: ₹60\nStep 3: Total = 450+170+125+60 = ₹805\nAnswer: Total is ₹805, budget is ₹800. I need ₹5 more!",
+        "evaluation_criteria": [
+          "Asks for hints instead of direct answers",
+          "Shows step-by-step work",
+          "Arrives at a reasonable answer"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it better to ask AI for hints instead of answers?",
+          "options": [
+            "You learn the method and can solve similar problems on your own",
+            "AI can't give correct answers",
+            "Hints are faster",
+            "Answers are always wrong"
+          ],
+          "correct_index": 0,
+          "explanation": "When you work through problems with hints, you learn the method. Next time you face a similar problem, you can solve it yourself!"
+        },
+        {
+          "question": "What should you do after solving a problem with AI hints?",
+          "options": [
+            "Check your answer by trying a different method or re-reading the problem",
+            "Move on immediately",
+            "Ask AI to confirm your answer",
+            "Erase your work"
+          ],
+          "correct_index": 0,
+          "explanation": "Double-checking builds confidence and catches mistakes. Try re-reading the problem or using a different calculation method."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "🎉 Fantastic work! You solved it step by step!",
+        "partial": "Good effort! 💪 Show more of your work for each step.",
+        "fail": "Let's try again! 🔄 Start by listing all the items and their prices."
+      },
+      "retry_hint": "ಉದಾಹರಣೆ ನೋಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+      "recap": "You learned to use AI as a hints-tutor instead of an answer-machine! This way, you actually learn the method and can solve similar problems on your own. 🧠✨",
+      "glossary_terms": [
+        {
+          "term": "word problem",
+          "definition": "A math question written as a real-life story or scenario."
+        },
+        {
+          "term": "step-by-step",
+          "definition": "Solving a problem one small piece at a time, showing your work."
+        }
+      ]
+    }
+  }
+}

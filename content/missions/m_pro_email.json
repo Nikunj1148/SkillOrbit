@@ -1,0 +1,368 @@
+{
+  "id": "m_pro_email",
+  "version": "1.0.0",
+  "type": "mission",
+  "audience": "professional",
+  "prerequisites": [
+    "f1_ai_capabilities",
+    "f2_examples_iteration"
+  ],
+  "estimated_duration_minutes": 5,
+  "order": 1,
+  "review_date": "2026-09-17",
+  "translation_status": {
+    "en": {
+      "reviewed": true,
+      "reviewer": "author"
+    },
+    "hi": {
+      "reviewed": false
+    },
+    "te": {
+      "reviewed": false
+    },
+    "ta": {
+      "reviewed": false
+    },
+    "kn": {
+      "reviewed": false
+    }
+  },
+  "content": {
+    "en": {
+      "title": "Improve a Workplace Email",
+      "description": "Practice improving a poorly written workplace email using AI instruction skills.",
+      "outcome": "You can write a clear, structured AI instruction to improve a professional email.",
+      "explanation": "Good workplace emails are clear, actionable, and respectful of the reader's time. AI can help you rewrite emails, but you need to give it good instructions. Let's practice with a real scenario.\n\nHere's a poorly written email from Arjun at Meridian Solutions about a project deadline change. Your job: write an AI instruction that would produce a much better version.",
+      "worked_example": {
+        "scenario": "Arjun needs to inform his team about a deadline change.",
+        "bad_attempt": "Rewrite this email better.",
+        "good_attempt": "Goal: Rewrite this project update email to be clearer and more professional.\nContext: Arjun at Meridian Solutions is informing the product team that the launch date moved from Oct 15 to Nov 1 due to testing delays. The team has been working hard.\nConstraints: Keep it under 150 words. Be empathetic about the delay. Include clear next steps. Don't blame anyone.\nOutput: Professional email with subject line, greeting, body with 3 key points, and sign-off.",
+        "why_better": "The good instruction gives AI the full context, emotional tone, and specific format requirements."
+      },
+      "interactive_task": {
+        "instruction": "Here's the poorly written email. Write an AI instruction to produce an improved version:\n\n\"Subject: deadline\nHey team, so the launch is not happening on Oct 15 anymore because testing found bugs and stuff. It's now Nov 1 I think. Sorry about that. We need to keep working hard. Let me know if questions.\n— Arjun\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What should the email achieve? Inform about delay, maintain morale, set expectations.",
+          "Who is reading this? What tone is appropriate?",
+          "What specific improvements would make this email better?"
+        ],
+        "sample_good_response": "Goal: Rewrite this project update email to clearly communicate a deadline change while maintaining team morale.\nContext: Arjun (Project Manager, Meridian Solutions) is informing the product team that the launch date has moved from October 15 to November 1 due to issues found during testing.\nConstraints: Professional but warm tone. Under 150 words. Acknowledge the team's hard work. Include 3 clear next steps. Don't blame individuals. Include specific new date.\nOutput format: Professional email with improved subject line, greeting, structured body with bullet points for next steps, and professional sign-off.",
+        "evaluation_criteria": [
+          "Includes a clear goal or objective",
+          "Provides context about the situation",
+          "Specifies tone and format constraints",
+          "Mentions actionable next steps"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "email"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important improvement needed in Arjun's original email?",
+          "options": [
+            "Clear structure, professional tone, and specific details",
+            "Making it longer with more words",
+            "Adding emojis and informal language",
+            "Removing all information about the delay"
+          ],
+          "correct_index": 0,
+          "explanation": "The email needs clearer structure, professional tone, specific dates, and actionable next steps."
+        },
+        {
+          "question": "Why should your AI instruction mention the desired tone?",
+          "options": [
+            "Because tone affects how the team receives the news",
+            "Because AI can't write without tone instructions",
+            "Because longer instructions are always better",
+            "Because tone is the only thing that matters"
+          ],
+          "correct_index": 0,
+          "explanation": "Tone matters especially when delivering difficult news like delays. Empathetic and professional tone helps maintain morale."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction covers all key elements. The resulting email would be clear, professional, and empathetic.",
+        "partial": "Good start! Consider adding more about the desired tone and specific format (like bullet points for next steps).",
+        "fail": "Let's try again. Think about what a good email needs: clear subject, context for the delay, specific new date, and next steps."
+      },
+      "retry_hint": "Review the worked example and try again.",
+      "recap": "You practiced writing AI instructions for real workplace tasks. Key takeaway: AI can help improve emails, but you need to specify the goal, context, tone, and format to get professional results.",
+      "glossary_terms": [
+        {
+          "term": "tone",
+          "definition": "The emotional quality of writing — professional, friendly, empathetic, urgent, etc."
+        }
+      ]
+    },
+    "hi": {
+      "title": "कार्यस्थल ईमेल सुधारें",
+      "description": "AI निर्देश कौशल का उपयोग करके खराब लिखे ईमेल को सुधारने का अभ्यास करें।",
+      "outcome": "You can write a clear, structured AI instruction to improve a professional email.",
+      "explanation": "Good workplace emails are clear, actionable, and respectful of the reader's time. AI can help you rewrite emails, but you need to give it good instructions. Let's practice with a real scenario.\n\nHere's a poorly written email from Arjun at Meridian Solutions about a project deadline change. Your job: write an AI instruction that would produce a much better version.",
+      "worked_example": {
+        "scenario": "Arjun needs to inform his team about a deadline change.",
+        "bad_attempt": "Rewrite this email better.",
+        "good_attempt": "Goal: Rewrite this project update email to be clearer and more professional.\nContext: Arjun at Meridian Solutions is informing the product team that the launch date moved from Oct 15 to Nov 1 due to testing delays. The team has been working hard.\nConstraints: Keep it under 150 words. Be empathetic about the delay. Include clear next steps. Don't blame anyone.\nOutput: Professional email with subject line, greeting, body with 3 key points, and sign-off.",
+        "why_better": "The good instruction gives AI the full context, emotional tone, and specific format requirements."
+      },
+      "interactive_task": {
+        "instruction": "Here's the poorly written email. Write an AI instruction to produce an improved version:\n\n\"Subject: deadline\nHey team, so the launch is not happening on Oct 15 anymore because testing found bugs and stuff. It's now Nov 1 I think. Sorry about that. We need to keep working hard. Let me know if questions.\n— Arjun\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What should the email achieve? Inform about delay, maintain morale, set expectations.",
+          "Who is reading this? What tone is appropriate?",
+          "What specific improvements would make this email better?"
+        ],
+        "sample_good_response": "Goal: Rewrite this project update email to clearly communicate a deadline change while maintaining team morale.\nContext: Arjun (Project Manager, Meridian Solutions) is informing the product team that the launch date has moved from October 15 to November 1 due to issues found during testing.\nConstraints: Professional but warm tone. Under 150 words. Acknowledge the team's hard work. Include 3 clear next steps. Don't blame individuals. Include specific new date.\nOutput format: Professional email with improved subject line, greeting, structured body with bullet points for next steps, and professional sign-off.",
+        "evaluation_criteria": [
+          "Includes a clear goal or objective",
+          "Provides context about the situation",
+          "Specifies tone and format constraints",
+          "Mentions actionable next steps"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "email"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important improvement needed in Arjun's original email?",
+          "options": [
+            "Clear structure, professional tone, and specific details",
+            "Making it longer with more words",
+            "Adding emojis and informal language",
+            "Removing all information about the delay"
+          ],
+          "correct_index": 0,
+          "explanation": "The email needs clearer structure, professional tone, specific dates, and actionable next steps."
+        },
+        {
+          "question": "Why should your AI instruction mention the desired tone?",
+          "options": [
+            "Because tone affects how the team receives the news",
+            "Because AI can't write without tone instructions",
+            "Because longer instructions are always better",
+            "Because tone is the only thing that matters"
+          ],
+          "correct_index": 0,
+          "explanation": "Tone matters especially when delivering difficult news like delays. Empathetic and professional tone helps maintain morale."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction covers all key elements. The resulting email would be clear, professional, and empathetic.",
+        "partial": "Good start! Consider adding more about the desired tone and specific format (like bullet points for next steps).",
+        "fail": "Let's try again. Think about what a good email needs: clear subject, context for the delay, specific new date, and next steps."
+      },
+      "retry_hint": "ऊपर दिए गए उदाहरण को देखें और फिर से कोशिश करें।",
+      "recap": "You practiced writing AI instructions for real workplace tasks. Key takeaway: AI can help improve emails, but you need to specify the goal, context, tone, and format to get professional results.",
+      "glossary_terms": [
+        {
+          "term": "tone",
+          "definition": "The emotional quality of writing — professional, friendly, empathetic, urgent, etc."
+        }
+      ]
+    },
+    "te": {
+      "title": "కార్యాలయ ఇమెయిల్ మెరుగుపరచండి",
+      "description": "AI సూచన నైపుణ్యాలతో పేలవంగా రాసిన ఇమెయిల్‌ను మెరుగుపరచడం.",
+      "outcome": "You can write a clear, structured AI instruction to improve a professional email.",
+      "explanation": "Good workplace emails are clear, actionable, and respectful of the reader's time. AI can help you rewrite emails, but you need to give it good instructions. Let's practice with a real scenario.\n\nHere's a poorly written email from Arjun at Meridian Solutions about a project deadline change. Your job: write an AI instruction that would produce a much better version.",
+      "worked_example": {
+        "scenario": "Arjun needs to inform his team about a deadline change.",
+        "bad_attempt": "Rewrite this email better.",
+        "good_attempt": "Goal: Rewrite this project update email to be clearer and more professional.\nContext: Arjun at Meridian Solutions is informing the product team that the launch date moved from Oct 15 to Nov 1 due to testing delays. The team has been working hard.\nConstraints: Keep it under 150 words. Be empathetic about the delay. Include clear next steps. Don't blame anyone.\nOutput: Professional email with subject line, greeting, body with 3 key points, and sign-off.",
+        "why_better": "The good instruction gives AI the full context, emotional tone, and specific format requirements."
+      },
+      "interactive_task": {
+        "instruction": "Here's the poorly written email. Write an AI instruction to produce an improved version:\n\n\"Subject: deadline\nHey team, so the launch is not happening on Oct 15 anymore because testing found bugs and stuff. It's now Nov 1 I think. Sorry about that. We need to keep working hard. Let me know if questions.\n— Arjun\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What should the email achieve? Inform about delay, maintain morale, set expectations.",
+          "Who is reading this? What tone is appropriate?",
+          "What specific improvements would make this email better?"
+        ],
+        "sample_good_response": "Goal: Rewrite this project update email to clearly communicate a deadline change while maintaining team morale.\nContext: Arjun (Project Manager, Meridian Solutions) is informing the product team that the launch date has moved from October 15 to November 1 due to issues found during testing.\nConstraints: Professional but warm tone. Under 150 words. Acknowledge the team's hard work. Include 3 clear next steps. Don't blame individuals. Include specific new date.\nOutput format: Professional email with improved subject line, greeting, structured body with bullet points for next steps, and professional sign-off.",
+        "evaluation_criteria": [
+          "Includes a clear goal or objective",
+          "Provides context about the situation",
+          "Specifies tone and format constraints",
+          "Mentions actionable next steps"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "email"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important improvement needed in Arjun's original email?",
+          "options": [
+            "Clear structure, professional tone, and specific details",
+            "Making it longer with more words",
+            "Adding emojis and informal language",
+            "Removing all information about the delay"
+          ],
+          "correct_index": 0,
+          "explanation": "The email needs clearer structure, professional tone, specific dates, and actionable next steps."
+        },
+        {
+          "question": "Why should your AI instruction mention the desired tone?",
+          "options": [
+            "Because tone affects how the team receives the news",
+            "Because AI can't write without tone instructions",
+            "Because longer instructions are always better",
+            "Because tone is the only thing that matters"
+          ],
+          "correct_index": 0,
+          "explanation": "Tone matters especially when delivering difficult news like delays. Empathetic and professional tone helps maintain morale."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction covers all key elements. The resulting email would be clear, professional, and empathetic.",
+        "partial": "Good start! Consider adding more about the desired tone and specific format (like bullet points for next steps).",
+        "fail": "Let's try again. Think about what a good email needs: clear subject, context for the delay, specific new date, and next steps."
+      },
+      "retry_hint": "ఉదాహరణ చూసి మళ్ళీ ప్రయత్నించండి.",
+      "recap": "You practiced writing AI instructions for real workplace tasks. Key takeaway: AI can help improve emails, but you need to specify the goal, context, tone, and format to get professional results.",
+      "glossary_terms": [
+        {
+          "term": "tone",
+          "definition": "The emotional quality of writing — professional, friendly, empathetic, urgent, etc."
+        }
+      ]
+    },
+    "ta": {
+      "title": "பணியிட மின்னஞ்சலை மேம்படுத்துங்கள்",
+      "description": "AI வழிமுறை திறன்களைப் பயன்படுத்தி மோசமாக எழுதப்பட்ட மின்னஞ்சலை மேம்படுத்த பயிற்சி.",
+      "outcome": "You can write a clear, structured AI instruction to improve a professional email.",
+      "explanation": "Good workplace emails are clear, actionable, and respectful of the reader's time. AI can help you rewrite emails, but you need to give it good instructions. Let's practice with a real scenario.\n\nHere's a poorly written email from Arjun at Meridian Solutions about a project deadline change. Your job: write an AI instruction that would produce a much better version.",
+      "worked_example": {
+        "scenario": "Arjun needs to inform his team about a deadline change.",
+        "bad_attempt": "Rewrite this email better.",
+        "good_attempt": "Goal: Rewrite this project update email to be clearer and more professional.\nContext: Arjun at Meridian Solutions is informing the product team that the launch date moved from Oct 15 to Nov 1 due to testing delays. The team has been working hard.\nConstraints: Keep it under 150 words. Be empathetic about the delay. Include clear next steps. Don't blame anyone.\nOutput: Professional email with subject line, greeting, body with 3 key points, and sign-off.",
+        "why_better": "The good instruction gives AI the full context, emotional tone, and specific format requirements."
+      },
+      "interactive_task": {
+        "instruction": "Here's the poorly written email. Write an AI instruction to produce an improved version:\n\n\"Subject: deadline\nHey team, so the launch is not happening on Oct 15 anymore because testing found bugs and stuff. It's now Nov 1 I think. Sorry about that. We need to keep working hard. Let me know if questions.\n— Arjun\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What should the email achieve? Inform about delay, maintain morale, set expectations.",
+          "Who is reading this? What tone is appropriate?",
+          "What specific improvements would make this email better?"
+        ],
+        "sample_good_response": "Goal: Rewrite this project update email to clearly communicate a deadline change while maintaining team morale.\nContext: Arjun (Project Manager, Meridian Solutions) is informing the product team that the launch date has moved from October 15 to November 1 due to issues found during testing.\nConstraints: Professional but warm tone. Under 150 words. Acknowledge the team's hard work. Include 3 clear next steps. Don't blame individuals. Include specific new date.\nOutput format: Professional email with improved subject line, greeting, structured body with bullet points for next steps, and professional sign-off.",
+        "evaluation_criteria": [
+          "Includes a clear goal or objective",
+          "Provides context about the situation",
+          "Specifies tone and format constraints",
+          "Mentions actionable next steps"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "email"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important improvement needed in Arjun's original email?",
+          "options": [
+            "Clear structure, professional tone, and specific details",
+            "Making it longer with more words",
+            "Adding emojis and informal language",
+            "Removing all information about the delay"
+          ],
+          "correct_index": 0,
+          "explanation": "The email needs clearer structure, professional tone, specific dates, and actionable next steps."
+        },
+        {
+          "question": "Why should your AI instruction mention the desired tone?",
+          "options": [
+            "Because tone affects how the team receives the news",
+            "Because AI can't write without tone instructions",
+            "Because longer instructions are always better",
+            "Because tone is the only thing that matters"
+          ],
+          "correct_index": 0,
+          "explanation": "Tone matters especially when delivering difficult news like delays. Empathetic and professional tone helps maintain morale."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction covers all key elements. The resulting email would be clear, professional, and empathetic.",
+        "partial": "Good start! Consider adding more about the desired tone and specific format (like bullet points for next steps).",
+        "fail": "Let's try again. Think about what a good email needs: clear subject, context for the delay, specific new date, and next steps."
+      },
+      "retry_hint": "உதாரணத்தைப் பார்த்து மீண்டும் முயற்சிக்கவும்.",
+      "recap": "You practiced writing AI instructions for real workplace tasks. Key takeaway: AI can help improve emails, but you need to specify the goal, context, tone, and format to get professional results.",
+      "glossary_terms": [
+        {
+          "term": "tone",
+          "definition": "The emotional quality of writing — professional, friendly, empathetic, urgent, etc."
+        }
+      ]
+    },
+    "kn": {
+      "title": "ಕಾರ್ಯಸ್ಥಳ ಇಮೇಲ್ ಸುಧಾರಿಸಿ",
+      "description": "AI ಸೂಚನೆ ಕೌಶಲ್ಯ ಬಳಸಿ ಕಳಪೆಯಾಗಿ ಬರೆದ ಇಮೇಲ್ ಸುಧಾರಿಸುವ ಅಭ್ಯಾಸ.",
+      "outcome": "You can write a clear, structured AI instruction to improve a professional email.",
+      "explanation": "Good workplace emails are clear, actionable, and respectful of the reader's time. AI can help you rewrite emails, but you need to give it good instructions. Let's practice with a real scenario.\n\nHere's a poorly written email from Arjun at Meridian Solutions about a project deadline change. Your job: write an AI instruction that would produce a much better version.",
+      "worked_example": {
+        "scenario": "Arjun needs to inform his team about a deadline change.",
+        "bad_attempt": "Rewrite this email better.",
+        "good_attempt": "Goal: Rewrite this project update email to be clearer and more professional.\nContext: Arjun at Meridian Solutions is informing the product team that the launch date moved from Oct 15 to Nov 1 due to testing delays. The team has been working hard.\nConstraints: Keep it under 150 words. Be empathetic about the delay. Include clear next steps. Don't blame anyone.\nOutput: Professional email with subject line, greeting, body with 3 key points, and sign-off.",
+        "why_better": "The good instruction gives AI the full context, emotional tone, and specific format requirements."
+      },
+      "interactive_task": {
+        "instruction": "Here's the poorly written email. Write an AI instruction to produce an improved version:\n\n\"Subject: deadline\nHey team, so the launch is not happening on Oct 15 anymore because testing found bugs and stuff. It's now Nov 1 I think. Sorry about that. We need to keep working hard. Let me know if questions.\n— Arjun\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What should the email achieve? Inform about delay, maintain morale, set expectations.",
+          "Who is reading this? What tone is appropriate?",
+          "What specific improvements would make this email better?"
+        ],
+        "sample_good_response": "Goal: Rewrite this project update email to clearly communicate a deadline change while maintaining team morale.\nContext: Arjun (Project Manager, Meridian Solutions) is informing the product team that the launch date has moved from October 15 to November 1 due to issues found during testing.\nConstraints: Professional but warm tone. Under 150 words. Acknowledge the team's hard work. Include 3 clear next steps. Don't blame individuals. Include specific new date.\nOutput format: Professional email with improved subject line, greeting, structured body with bullet points for next steps, and professional sign-off.",
+        "evaluation_criteria": [
+          "Includes a clear goal or objective",
+          "Provides context about the situation",
+          "Specifies tone and format constraints",
+          "Mentions actionable next steps"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "email"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important improvement needed in Arjun's original email?",
+          "options": [
+            "Clear structure, professional tone, and specific details",
+            "Making it longer with more words",
+            "Adding emojis and informal language",
+            "Removing all information about the delay"
+          ],
+          "correct_index": 0,
+          "explanation": "The email needs clearer structure, professional tone, specific dates, and actionable next steps."
+        },
+        {
+          "question": "Why should your AI instruction mention the desired tone?",
+          "options": [
+            "Because tone affects how the team receives the news",
+            "Because AI can't write without tone instructions",
+            "Because longer instructions are always better",
+            "Because tone is the only thing that matters"
+          ],
+          "correct_index": 0,
+          "explanation": "Tone matters especially when delivering difficult news like delays. Empathetic and professional tone helps maintain morale."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction covers all key elements. The resulting email would be clear, professional, and empathetic.",
+        "partial": "Good start! Consider adding more about the desired tone and specific format (like bullet points for next steps).",
+        "fail": "Let's try again. Think about what a good email needs: clear subject, context for the delay, specific new date, and next steps."
+      },
+      "retry_hint": "ಉದಾಹರಣೆ ನೋಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+      "recap": "You practiced writing AI instructions for real workplace tasks. Key takeaway: AI can help improve emails, but you need to specify the goal, context, tone, and format to get professional results.",
+      "glossary_terms": [
+        {
+          "term": "tone",
+          "definition": "The emotional quality of writing — professional, friendly, empathetic, urgent, etc."
+        }
+      ]
+    }
+  }
+}

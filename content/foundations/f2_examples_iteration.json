@@ -1,0 +1,105 @@
+{
+  "id": "f2_examples_iteration",
+  "version": "1.0.0",
+  "type": "foundation",
+  "audience": "shared",
+  "prerequisites": ["f1_ai_capabilities"],
+  "estimated_duration_minutes": 5,
+  "order": 2,
+  "review_date": "2026-09-17",
+  "translation_status": {"en":{"reviewed":true,"reviewer":"author"},"hi":{"reviewed":false},"te":{"reviewed":false},"ta":{"reviewed":false},"kn":{"reviewed":false}},
+  "content": {
+    "en": {
+      "title": "Giving Examples & Iterating",
+      "description": "Learn how providing examples and refining your instructions through iteration produces much better AI results.",
+      "outcome": "You can improve an AI instruction by adding examples and iterating based on results.",
+      "explanation": "AI works better when you show it what you want, not just tell it. Providing examples — sometimes called 'few-shot prompting' — gives AI a pattern to follow.\n\nIteration means trying, evaluating, and improving. Instead of expecting a perfect result on the first try, plan for 2-3 rounds of refinement:\n1. **First try** — Give a clear instruction\n2. **Evaluate** — What's good? What's missing?\n3. **Refine** — Add examples, adjust constraints, clarify what you meant\n4. **Repeat** — Each round gets closer to what you need",
+      "worked_example": {
+        "scenario": "Anita wants AI to write a thank-you note for a client meeting.",
+        "bad_attempt": "Write a thank-you note.",
+        "good_attempt": "Round 1: Write a professional thank-you email for attending a client meeting.\nResult: Too generic and long.\n\nRound 2: Write a short (3-4 sentences) professional thank-you email for a client named Mr. Sharma who attended our product demo. Mention we'll send the proposal by Friday. Here's an example of the tone I want:\n'Dear Ms. Patel, Thank you for taking the time to discuss the new dashboard features. Your feedback on the reporting module was especially valuable. We'll incorporate your suggestions into the next sprint.'\n\nRound 3: Perfect — make it slightly warmer and add a specific detail about what Mr. Sharma said during the meeting about our pricing model.",
+        "why_better": "Each round improved the result: Round 1 gave context, Round 2 added a tone example and specifics, Round 3 fine-tuned the warmth and personalization. Three attempts, three improvements."
+      },
+      "interactive_task": {
+        "instruction": "Start with this basic instruction and improve it through 3 rounds. Each round, add something new (an example, a constraint, or more detail):\n\nStarting instruction: \"Write a birthday message for a colleague\"",
+        "starter_text": "Round 1: Write a birthday message for a colleague\n\nRound 2 (improved): \n\nRound 3 (improved further): ",
+        "hints": ["In Round 2, specify the tone and mention the colleague's name or role.", "In Round 3, provide an example of the style you want, or mention a specific detail.","Think about: Who is this colleague? How formal should it be? Any inside jokes or shared experiences?"],
+        "sample_good_response": "Round 1: Write a birthday message for a colleague.\n\nRound 2: Write a warm but professional birthday message for my colleague Priya from the design team. 2-3 sentences, friendly but appropriate for a team chat.\n\nRound 3: Write a warm but professional birthday message for Priya from the design team. 2-3 sentences for our team Slack channel. Mention how her recent logo redesign impressed everyone. Tone example: 'Happy birthday, Raj! Your energy in meetings always lifts the whole team. Enjoy your day!'",
+        "evaluation_criteria": ["Shows iterative improvement across rounds", "Includes an example of desired tone or style", "Each round adds meaningful detail"],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {"question": "Why do examples help AI understand what you want?","options":["They show AI the pattern, tone, and style you're looking for","They make the AI work faster","They reduce the cost of using AI","They prevent AI from making errors"],"correct_index":0,"explanation":"Examples give AI a concrete pattern to follow. Instead of guessing what 'professional' or 'friendly' means to you specifically, it can match the style of your example."},
+        {"question": "What should you do if the AI's first result isn't quite right?","options":["Evaluate what's good and what's missing, then refine your instruction","Start over with a completely different approach","Accept the result as-is since AI knows best","Add more words to make the instruction longer"],"correct_index":0,"explanation":"Iteration is key: evaluate the result, identify what to improve, and refine. Each round gets closer to what you need. You don't need to start from scratch — build on what worked."}
+      ],
+      "feedback_templates": {"pass":"Excellent work! Your three rounds show clear improvement. Each iteration added something valuable — that's exactly how to get the best results from AI.","partial":"Good progress! Your iterations show some improvement. Try making each round more specific — add an example, adjust the tone, or include a personal detail.","fail":"Let's try again. The key is making each round better than the last. Round 2 should be more specific than Round 1, and Round 3 should add an example or fine-tuning."},
+      "retry_hint": "Look at the worked example. Notice how each round adds something specific: context, then an example, then fine-tuning. Try the same pattern with the birthday message.",
+      "recap": "Today you learned two powerful techniques: showing examples (few-shot prompting) and iterating through multiple rounds. Don't expect perfection on the first try — plan for 2-3 rounds of refinement. Each round, evaluate what's good, identify what's missing, and add specifics.",
+      "glossary_terms": [{"term":"few-shot prompting","definition":"Giving AI one or more examples of the output you want, so it can follow the pattern."},{"term":"iteration","definition":"The process of trying, evaluating, and improving your instruction across multiple rounds."}]
+    },
+    "hi": {
+      "title": "उदाहरण देना और सुधार करना",
+      "description": "जानें कि उदाहरण देना और अपने निर्देशों को सुधारना AI से बेहतर परिणाम कैसे देता है।",
+      "outcome": "आप उदाहरण जोड़कर और परिणामों के आधार पर सुधार करके AI निर्देश बेहतर बना सकते हैं।",
+      "explanation": "AI बेहतर काम करता है जब आप दिखाते हैं कि आप क्या चाहते हैं। उदाहरण देना AI को अनुसरण करने के लिए एक पैटर्न देता है।\n\nसुधार (Iteration) का मतलब है — कोशिश करो, मूल्यांकन करो, और बेहतर बनाओ:\n1. **पहला प्रयास** — स्पष्ट निर्देश दें\n2. **मूल्यांकन** — क्या अच्छा है? क्या छूट रहा है?\n3. **सुधार** — उदाहरण जोड़ें, सीमाएँ बदलें\n4. **दोहराएँ** — हर बार बेहतर होता जाता है",
+      "worked_example": {"scenario":"अनीता चाहती है कि AI एक ग्राहक मीटिंग के लिए धन्यवाद नोट लिखे।","bad_attempt":"धन्यवाद नोट लिखो।","good_attempt":"राउंड 1: ग्राहक मीटिंग के लिए पेशेवर धन्यवाद ईमेल लिखें।\nराउंड 2: श्री शर्मा के लिए छोटा (3-4 वाक्य) धन्यवाद ईमेल लिखें जो प्रोडक्ट डेमो में आए थे। बताएं कि हम शुक्रवार तक प्रस्ताव भेजेंगे। टोन उदाहरण: 'प्रिय सुश्री पटेल, डैशबोर्ड सुविधाओं पर चर्चा के लिए धन्यवाद।'\nराउंड 3: थोड़ा गर्मजोशी भरा बनाएं और मूल्य निर्धारण मॉडल के बारे में श्री शर्मा की विशिष्ट बात जोड़ें।","why_better":"हर राउंड ने परिणाम बेहतर किया: संदर्भ, फिर उदाहरण, फिर व्यक्तिगत विवरण।"},
+      "interactive_task": {"instruction":"इस बुनियादी निर्देश से शुरू करें और 3 राउंड में सुधार करें:\n\nशुरुआती निर्देश: \"सहकर्मी के लिए जन्मदिन संदेश लिखो\"","starter_text":"राउंड 1: सहकर्मी के लिए जन्मदिन संदेश लिखो\n\nराउंड 2 (सुधारा हुआ): \n\nराउंड 3 (और सुधारा): ","hints":["राउंड 2 में टोन और सहकर्मी का नाम बताएं।","राउंड 3 में शैली का उदाहरण दें।","सोचें: सहकर्मी कौन है? कितना औपचारिक हो?"],"sample_good_response":"राउंड 1: सहकर्मी के लिए जन्मदिन संदेश लिखो।\n\nराउंड 2: डिज़ाइन टीम की प्रिया के लिए गर्मजोशी भरा लेकिन पेशेवर जन्मदिन संदेश लिखो। 2-3 वाक्य, टीम चैट के लिए उपयुक्त।\n\nराउंड 3: प्रिया के लिए गर्मजोशी भरा संदेश, स्लैक चैनल के लिए। उनके हालिया लोगो रीडिज़ाइन का ज़िक्र करो। टोन: 'जन्मदिन मुबारक राज! मीटिंग्स में तुम्हारी ऊर्जा पूरी टीम को प्रेरित करती है।'","evaluation_criteria":["Shows iterative improvement across rounds","Includes an example of desired tone or style","Each round adds meaningful detail"],"produces_artifact":false},
+      "understanding_checks": [
+        {"question":"उदाहरण AI को कैसे समझने में मदद करते हैं?","options":["वे AI को अनुसरण करने के लिए पैटर्न, टोन और शैली दिखाते हैं","वे AI को तेज़ बनाते हैं","वे AI की लागत कम करते हैं","वे AI को गलतियाँ करने से रोकते हैं"],"correct_index":0,"explanation":"उदाहरण AI को एक ठोस पैटर्न देते हैं। यह अनुमान लगाने के बजाय आपके उदाहरण की शैली का अनुसरण कर सकता है।"},
+        {"question":"अगर AI का पहला परिणाम सही नहीं है तो क्या करना चाहिए?","options":["मूल्यांकन करें कि क्या अच्छा है और क्या सुधारना है, फिर निर्देश ठीक करें","पूरी तरह नए तरीके से शुरू करें","परिणाम स्वीकार करें क्योंकि AI सबसे अच्छा जानता है","अधिक शब्द जोड़ें"],"correct_index":0,"explanation":"सुधार (Iteration) महत्वपूर्ण है: मूल्यांकन करें, सुधार करें, और दोहराएँ।"}
+      ],
+      "feedback_templates": {"pass":"उत्कृष्ट! आपके तीन राउंड स्पष्ट सुधार दिखाते हैं।","partial":"अच्छी प्रगति! और विशिष्ट बनाने की कोशिश करें।","fail":"फिर से कोशिश करें। हर राउंड पिछले से बेहतर होना चाहिए।"},
+      "retry_hint": "ऊपर दिए गए उदाहरण को देखें। हर राउंड कुछ विशिष्ट जोड़ता है।",
+      "recap": "आज आपने दो शक्तिशाली तकनीकें सीखीं: उदाहरण देना और सुधार (iteration)। पहले प्रयास में पूर्णता की उम्मीद न करें — 2-3 राउंड की योजना बनाएं।",
+      "glossary_terms": [{"term":"few-shot prompting (फ्यू-शॉट प्रॉम्प्टिंग)","definition":"AI को आउटपुट के एक या अधिक उदाहरण देना ताकि वह पैटर्न का अनुसरण कर सके।"},{"term":"iteration (इटरेशन)","definition":"कई राउंड में कोशिश करने, मूल्यांकन करने और सुधार करने की प्रक्रिया।"}]
+    },
+    "te": {
+      "title": "ఉదాహరణలు ఇవ్వడం & మెరుగుపరచడం",
+      "description": "ఉదాహరణలు అందించడం మరియు పునరావృత్తి ద్వారా మీ సూచనలను మెరుగుపరచడం AI ఫలితాలను ఎలా మెరుగుపరుస్తుందో తెలుసుకోండి.",
+      "outcome": "ఉదాహరణలు జోడించి, ఫలితాల ఆధారంగా మెరుగుపరచడం ద్వారా AI సూచనను బాగు చేయగలరు.",
+      "explanation": "మీరు ఏమి కోరుకుంటున్నారో AI కి చూపించినప్పుడు అది బాగా పని చేస్తుంది. ఉదాహరణలు అనుసరించడానికి ఒక నమూనాను ఇస్తాయి.\n\nపునరావృత్తి అంటే — ప్రయత్నించు, మూల్యాంకనం చేయు, మెరుగుపరచు:\n1. మొదటి ప్రయత్నం — స్పష్టమైన సూచన ఇవ్వండి\n2. మూల్యాంకనం — ఏమి బాగుంది? ఏమి తప్పిపోయింది?\n3. మెరుగుపరచడం — ఉదాహరణలు జోడించండి\n4. పునరావృతం — ప్రతిసారి మెరుగవుతుంది",
+      "worked_example": {"scenario":"అనితా క్లయింట్ మీటింగ్ కోసం ధన్యవాద నోట్ రాయాలనుకుంటోంది.","bad_attempt":"ధన్యవాద నోట్ రాయు.","good_attempt":"రౌండ్ 1: క్లయింట్ మీటింగ్ కోసం వృత్తిపరమైన ధన్యవాద ఇమెయిల్ రాయండి.\nరౌండ్ 2: శ్రీ శర్మ కోసం చిన్న ధన్యవాద ఇమెయిల్ రాయండి, టోన్ ఉదాహరణతో.\nరౌండ్ 3: మరింత వెచ్చగా మరియు నిర్దిష్ట వివరం జోడించండి.","why_better":"ప్రతి రౌండ్ ఫలితాన్ని మెరుగుపరిచింది."},
+      "interactive_task": {"instruction":"ఈ ప్రాథమిక సూచనతో ప్రారంభించి 3 రౌండ్లలో మెరుగుపరచండి:\n\nప్రారంభ సూచన: \"సహోద్యోగికి పుట్టినరోజు శుభాకాంక్షలు రాయు\"","starter_text":"రౌండ్ 1: సహోద్యోగికి పుట్టినరోజు శుభాకాంక్షలు రాయు\n\nరౌండ్ 2 (మెరుగైనది): \n\nరౌండ్ 3 (మరింత మెరుగైనది): ","hints":["రౌండ్ 2లో టోన్ మరియు సహోద్యోగి పేరు చెప్పండి.","రౌండ్ 3లో శైలి ఉదాహరణ ఇవ్వండి."],"sample_good_response":"రౌండ్ 1: పుట్టినరోజు శుభాకాంక్షలు రాయు.\nరౌండ్ 2: డిజైన్ టీమ్ ప్రియా కోసం వెచ్చని కానీ వృత్తిపరమైన శుభాకాంక్షలు రాయండి.\nరౌండ్ 3: ప్రియా యొక్క ఇటీవలి లోగో రీడిజైన్ ప్రస్తావిస్తూ, స్లాక్ చానల్ కోసం.","evaluation_criteria":["Shows iterative improvement across rounds","Includes an example of desired tone or style","Each round adds meaningful detail"],"produces_artifact":false},
+      "understanding_checks": [
+        {"question":"ఉదాహరణలు AI కి ఎలా సహాయపడతాయి?","options":["అవి AI కి అనుసరించడానికి నమూనా, టోన్ మరియు శైలి చూపిస్తాయి","అవి AI ని వేగంగా చేస్తాయి","అవి AI ఖర్చును తగ్గిస్తాయి","అవి AI లోపాలను నిరోధిస్తాయి"],"correct_index":0,"explanation":"ఉదాహరణలు AI కి స్పష్టమైన నమూనా ఇస్తాయి."},
+        {"question":"AI మొదటి ఫలితం సరిగ్గా లేకపోతే ఏమి చేయాలి?","options":["ఏమి బాగుంది, ఏమి తప్పిపోయిందో మూల్యాంకనం చేసి సూచనను మెరుగుపరచండి","పూర్తిగా భిన్నమైన విధానంతో మొదలుపెట్టండి","AI బాగా తెలుసు కాబట్టి ఫలితాన్ని అంగీకరించండి","మరిన్ని పదాలు జోడించండి"],"correct_index":0,"explanation":"పునరావృత్తి ముఖ్యం: మూల్యాంకనం చేయండి, మెరుగుపరచండి, పునరావృతం చేయండి."}
+      ],
+      "feedback_templates": {"pass":"అద్భుతం! మీ మూడు రౌండ్లు స్పష్టమైన మెరుగుదల చూపిస్తాయి.","partial":"మంచి పురోగతి! మరింత నిర్దిష్టంగా చేయడానికి ప్రయత్నించండి.","fail":"మళ్ళీ ప్రయత్నించండి. ప్రతి రౌండ్ మునుపటి కంటే మెరుగ్గా ఉండాలి."},
+      "retry_hint": "ఉదాహరణ చూడండి. ప్రతి రౌండ్ ఎలా నిర్దిష్టమైనది జోడిస్తుందో గమనించండి.",
+      "recap": "ఉదాహరణలు ఇవ్వడం మరియు పునరావృత్తి — రెండు శక్తివంతమైన పద్ధతులు. మొదటి ప్రయత్నంలో పరిపూర్ణతను ఆశించకండి.",
+      "glossary_terms": [{"term":"few-shot prompting (ఫ్యూ-షాట్ ప్రాంప్టింగ్)","definition":"AI కి అవుట్‌పుట్ యొక్క ఒకటి లేదా అంతకంటే ఎక్కువ ఉదాహరణలు ఇవ్వడం."},{"term":"iteration (పునరావృత్తి)","definition":"బహుళ రౌండ్లలో ప్రయత్నించి, మూల్యాంకనం చేసి, మెరుగుపరచడం."}]
+    },
+    "ta": {
+      "title": "உதாரணங்கள் தருதல் & மேம்படுத்தல்",
+      "description": "உதாரணங்கள் அளித்தல் மற்றும் மீண்டும் மீண்டும் மேம்படுத்தல் AI முடிவுகளை எப்படி சிறப்பாக்குகிறது என்று கற்றுக்கொள்ளுங்கள்.",
+      "outcome": "உதாரணங்கள் சேர்த்து, முடிவுகளின் அடிப்படையில் மேம்படுத்தி AI வழிமுறையை மேம்படுத்த முடியும்.",
+      "explanation": "நீங்கள் என்ன விரும்புகிறீர்கள் என்று AI-க்கு காட்டினால் அது நன்றாக வேலை செய்யும். உதாரணங்கள் பின்பற்றுவதற்கு ஒரு மாதிரியை அளிக்கின்றன.\n\nமேம்படுத்தல் என்றால் — முயற்சி, மதிப்பீடு, மேம்படுத்தல்:\n1. முதல் முயற்சி — தெளிவான வழிமுறை\n2. மதிப்பீடு — என்ன நன்றாக உள்ளது? என்ன விடுபட்டது?\n3. மேம்படுத்தல் — உதாரணங்கள் சேர்க்கவும்\n4. மீண்டும் — ஒவ்வொரு முறையும் மேம்படும்",
+      "worked_example": {"scenario":"அனிதா வாடிக்கையாளர் கூட்டத்திற்கு நன்றி குறிப்பு எழுத விரும்புகிறார்.","bad_attempt":"நன்றி குறிப்பு எழுது.","good_attempt":"சுற்று 1: வாடிக்கையாளர் கூட்டத்திற்கு தொழில்முறை நன்றி மின்னஞ்சல்.\nசுற்று 2: திரு. சர்மாவுக்கு குறுகிய நன்றி மின்னஞ்சல், தொனி உதாரணத்துடன்.\nசுற்று 3: இன்னும் அன்பாகவும் குறிப்பிட்ட விவரத்துடனும்.","why_better":"ஒவ்வொரு சுற்றும் முடிவை மேம்படுத்தியது."},
+      "interactive_task": {"instruction":"இந்த அடிப்படை வழிமுறையில் தொடங்கி 3 சுற்றுகளில் மேம்படுத்துங்கள்:\n\nதொடக்க வழிமுறை: \"சக ஊழியருக்கு பிறந்தநாள் செய்தி எழுது\"","starter_text":"சுற்று 1: சக ஊழியருக்கு பிறந்தநாள் செய்தி எழுது\n\nசுற்று 2 (மேம்படுத்தியது): \n\nசுற்று 3 (மேலும் மேம்படுத்தியது): ","hints":["சுற்று 2-ல் தொனி மற்றும் சக ஊழியரின் பெயரை குறிப்பிடுங்கள்.","சுற்று 3-ல் நடை உதாரணம் கொடுங்கள்."],"sample_good_response":"சுற்று 1: பிறந்தநாள் செய்தி எழுது.\nசுற்று 2: வடிவமைப்பு குழுவின் பிரியாவுக்கு அன்பான ஆனால் தொழில்முறை பிறந்தநாள் செய்தி.\nசுற்று 3: பிரியாவின் சமீபத்திய லோகோ மறுவடிவமைப்பை குறிப்பிட்டு, ஸ்லாக் சேனலுக்கு.","evaluation_criteria":["Shows iterative improvement across rounds","Includes an example of desired tone or style","Each round adds meaningful detail"],"produces_artifact":false},
+      "understanding_checks": [
+        {"question":"உதாரணங்கள் AI-க்கு எப்படி உதவுகின்றன?","options":["அவை AI-க்கு பின்பற்ற மாதிரி, தொனி மற்றும் நடை காட்டுகின்றன","அவை AI-ஐ வேகமாக்குகின்றன","அவை AI செலவைக் குறைக்கின்றன","அவை AI பிழைகளைத் தடுக்கின்றன"],"correct_index":0,"explanation":"உதாரணங்கள் AI-க்கு தெளிவான மாதிரி தருகின்றன."},
+        {"question":"AI-ன் முதல் முடிவு சரியாக இல்லையென்றால் என்ன செய்ய வேண்டும்?","options":["என்ன நன்றாக உள்ளது, என்ன விடுபட்டது என்று மதிப்பீடு செய்து வழிமுறையை மேம்படுத்தவும்","முற்றிலும் வேறு அணுகுமுறையில் தொடங்கவும்","AI சிறந்ததை அறியும் என்பதால் முடிவை ஏற்கவும்","மேலும் வார்த்தைகள் சேர்க்கவும்"],"correct_index":0,"explanation":"மேம்படுத்தல் முக்கியம்: மதிப்பீடு செய்து, மேம்படுத்தி, மீண்டும் முயற்சிக்கவும்."}
+      ],
+      "feedback_templates": {"pass":"அருமை! மூன்று சுற்றுகளும் தெளிவான மேம்பாட்டைக் காட்டுகின்றன.","partial":"நல்ல முன்னேற்றம்! இன்னும் குறிப்பிட்டதாக முயற்சிக்கவும்.","fail":"மீண்டும் முயற்சிக்கவும். ஒவ்வொரு சுற்றும் முந்தையதை விட சிறப்பாக இருக்க வேண்டும்."},
+      "retry_hint": "உதாரணத்தைப் பாருங்கள். ஒவ்வொரு சுற்றும் எப்படி குறிப்பிட்ட விஷயம் சேர்க்கிறது என்று கவனியுங்கள்.",
+      "recap": "உதாரணங்கள் தருதல் மற்றும் மேம்படுத்தல் — இரண்டு சக்திவாய்ந்த நுட்பங்கள். முதல் முயற்சியிலேயே சரியான முடிவை எதிர்பார்க்காதீர்கள்.",
+      "glossary_terms": [{"term":"few-shot prompting (ஃப்யூ-ஷாட் ப்ராம்ப்டிங்)","definition":"AI-க்கு வெளியீட்டின் ஒன்று அல்லது அதற்கு மேற்பட்ட உதாரணங்கள் தருவது."},{"term":"iteration (இட்டரேஷன்)","definition":"பல சுற்றுகளில் முயற்சி, மதிப்பீடு, மேம்படுத்தும் செயல்முறை."}]
+    },
+    "kn": {
+      "title": "ಉದಾಹರಣೆಗಳನ್ನು ಕೊಡುವುದು & ಸುಧಾರಿಸುವುದು",
+      "description": "ಉದಾಹರಣೆಗಳನ್ನು ಒದಗಿಸುವುದು ಮತ್ತು ಪುನರಾವರ್ತನೆಯ ಮೂಲಕ ಸೂಚನೆಗಳನ್ನು ಸುಧಾರಿಸುವುದು AI ಫಲಿತಾಂಶಗಳನ್ನು ಹೇಗೆ ಉತ್ತಮಗೊಳಿಸುತ್ತದೆ ಎಂದು ಕಲಿಯಿರಿ.",
+      "outcome": "ಉದಾಹರಣೆಗಳನ್ನು ಸೇರಿಸಿ ಮತ್ತು ಫಲಿತಾಂಶಗಳ ಆಧಾರದ ಮೇಲೆ ಸುಧಾರಿಸಿ AI ಸೂಚನೆಯನ್ನು ಉತ್ತಮಗೊಳಿಸಬಹುದು.",
+      "explanation": "ನೀವು ಏನು ಬಯಸುತ್ತೀರಿ ಎಂದು AI ಗೆ ತೋರಿಸಿದಾಗ ಅದು ಚೆನ್ನಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಉದಾಹರಣೆಗಳು ಅನುಸರಿಸಲು ಮಾದರಿಯನ್ನು ಕೊಡುತ್ತವೆ.\n\nಪುನರಾವರ್ತನೆ ಎಂದರೆ — ಪ್ರಯತ್ನಿಸು, ಮೌಲ್ಯಮಾಪನ ಮಾಡು, ಸುಧಾರಿಸು.",
+      "worked_example": {"scenario":"ಅನಿತಾ ಕ್ಲೈಂಟ್ ಮೀಟಿಂಗ್‌ಗಾಗಿ ಧನ್ಯವಾದ ನೋಟ್ ಬರೆಯಬೇಕು.","bad_attempt":"ಧನ್ಯವಾದ ನೋಟ್ ಬರೆಯಿ.","good_attempt":"ರೌಂಡ್ 1: ಕ್ಲೈಂಟ್ ಮೀಟಿಂಗ್‌ಗಾಗಿ ವೃತ್ತಿಪರ ಧನ್ಯವಾದ ಇಮೇಲ್.\nರೌಂಡ್ 2: ಶ್ರೀ ಶರ್ಮಾ ಅವರಿಗೆ ಚಿಕ್ಕ ಧನ್ಯವಾದ ಇಮೇಲ್, ಟೋನ್ ಉದಾಹರಣೆಯೊಂದಿಗೆ.\nರೌಂಡ್ 3: ಹೆಚ್ಚು ಬೆಚ್ಚಗಿನ ಮತ್ತು ನಿರ್ದಿಷ್ಟ ವಿವರ ಸೇರಿಸಿ.","why_better":"ಪ್ರತಿ ರೌಂಡ್ ಫಲಿತಾಂಶವನ್ನು ಸುಧಾರಿಸಿತು."},
+      "interactive_task": {"instruction":"ಈ ಮೂಲ ಸೂಚನೆಯಿಂದ ಪ್ರಾರಂಭಿಸಿ 3 ರೌಂಡ್‌ಗಳಲ್ಲಿ ಸುಧಾರಿಸಿ:\n\nಆರಂಭಿಕ ಸೂಚನೆ: \"ಸಹೋದ್ಯೋಗಿಗೆ ಹುಟ್ಟುಹಬ್ಬದ ಶುಭಾಶಯ ಬರೆಯಿ\"","starter_text":"ರೌಂಡ್ 1: ಸಹೋದ್ಯೋಗಿಗೆ ಹುಟ್ಟುಹಬ್ಬದ ಶುಭಾಶಯ ಬರೆಯಿ\n\nರೌಂಡ್ 2 (ಸುಧಾರಿಸಿದ): \n\nರೌಂಡ್ 3 (ಮತ್ತಷ್ಟು ಸುಧಾರಿಸಿದ): ","hints":["ರೌಂಡ್ 2 ರಲ್ಲಿ ಟೋನ್ ಮತ್ತು ಸಹೋದ್ಯೋಗಿ ಹೆಸರು ಹೇಳಿ.","ರೌಂಡ್ 3 ರಲ್ಲಿ ಶೈಲಿ ಉದಾಹರಣೆ ಕೊಡಿ."],"sample_good_response":"ರೌಂಡ್ 1: ಹುಟ್ಟುಹಬ್ಬದ ಶುಭಾಶಯ ಬರೆಯಿ.\nರೌಂಡ್ 2: ಡಿಸೈನ್ ಟೀಮ್ ಪ್ರಿಯಾಗೆ ಬೆಚ್ಚಗಿನ ಆದರೆ ವೃತ್ತಿಪರ ಶುಭಾಶಯ.\nರೌಂಡ್ 3: ಪ್ರಿಯಾಳ ಇತ್ತೀಚಿನ ಲೋಗೋ ಮರುವಿನ್ಯಾಸ ಉಲ್ಲೇಖಿಸಿ, ಸ್ಲಾಕ್ ಚಾನೆಲ್‌ಗಾಗಿ.","evaluation_criteria":["Shows iterative improvement across rounds","Includes an example of desired tone or style","Each round adds meaningful detail"],"produces_artifact":false},
+      "understanding_checks": [
+        {"question":"ಉದಾಹರಣೆಗಳು AI ಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತವೆ?","options":["ಅವು AI ಗೆ ಅನುಸರಿಸಲು ಮಾದರಿ, ಟೋನ್ ಮತ್ತು ಶೈಲಿ ತೋರಿಸುತ್ತವೆ","ಅವು AI ಅನ್ನು ವೇಗವಾಗಿಸುತ್ತವೆ","ಅವು AI ವೆಚ್ಚ ಕಡಿಮೆ ಮಾಡುತ್ತವೆ","ಅವು AI ದೋಷಗಳನ್ನು ತಡೆಯುತ್ತವೆ"],"correct_index":0,"explanation":"ಉದಾಹರಣೆಗಳು AI ಗೆ ಸ್ಪಷ್ಟ ಮಾದರಿ ಕೊಡುತ್ತವೆ."},
+        {"question":"AI ಮೊದಲ ಫಲಿತಾಂಶ ಸರಿಯಾಗಿಲ್ಲದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?","options":["ಏನು ಒಳ್ಳೆಯದು, ಏನು ತಪ್ಪಿದೆ ಎಂದು ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ ಸೂಚನೆ ಸುಧಾರಿಸಿ","ಸಂಪೂರ್ಣ ಬೇರೆ ವಿಧಾನದಿಂದ ಆರಂಭಿಸಿ","AI ಉತ್ತಮವಾಗಿ ತಿಳಿದಿರುವುದರಿಂದ ಫಲಿತಾಂಶ ಸ್ವೀಕರಿಸಿ","ಹೆಚ್ಚಿನ ಪದಗಳನ್ನು ಸೇರಿಸಿ"],"correct_index":0,"explanation":"ಪುನರಾವರ್ತನೆ ಮುಖ್ಯ: ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ, ಸುಧಾರಿಸಿ, ಪುನರಾವರ್ತಿಸಿ."}
+      ],
+      "feedback_templates": {"pass":"ಅದ್ಭುತ! ಮೂರು ರೌಂಡ್‌ಗಳು ಸ್ಪಷ್ಟ ಸುಧಾರಣೆ ತೋರಿಸುತ್ತವೆ.","partial":"ಒಳ್ಳೆಯ ಪ್ರಗತಿ! ಹೆಚ್ಚು ನಿರ್ದಿಷ್ಟವಾಗಿ ಮಾಡಿ.","fail":"ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. ಪ್ರತಿ ರೌಂಡ್ ಹಿಂದಿನದಕ್ಕಿಂತ ಉತ್ತಮವಾಗಿರಬೇಕು."},
+      "retry_hint": "ಉದಾಹರಣೆ ನೋಡಿ. ಪ್ರತಿ ರೌಂಡ್ ಹೇಗೆ ನಿರ್ದಿಷ್ಟ ವಿಷಯ ಸೇರಿಸುತ್ತದೆ ಗಮನಿಸಿ.",
+      "recap": "ಉದಾಹರಣೆಗಳು ಮತ್ತು ಪುನರಾವರ್ತನೆ — ಎರಡು ಶಕ್ತಿಶಾಲಿ ತಂತ್ರಗಳು. ಮೊದಲ ಪ್ರಯತ್ನದಲ್ಲೇ ಪರಿಪೂರ್ಣತೆ ನಿರೀಕ್ಷಿಸಬೇಡಿ.",
+      "glossary_terms": [{"term":"few-shot prompting (ಫ್ಯೂ-ಶಾಟ್ ಪ್ರಾಂಪ್ಟಿಂಗ್)","definition":"AI ಗೆ ಔಟ್‌ಪುಟ್‌ನ ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಉದಾಹರಣೆಗಳನ್ನು ಕೊಡುವುದು."},{"term":"iteration (ಪುನರಾವರ್ತನೆ)","definition":"ಹಲವು ರೌಂಡ್‌ಗಳಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ, ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ, ಸುಧಾರಿಸುವ ಪ್ರಕ್ರಿಯೆ."}]
+    }
+  }
+}

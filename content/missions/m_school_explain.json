@@ -1,0 +1,378 @@
+{
+  "id": "m_school_explain",
+  "version": "1.0.0",
+  "type": "mission",
+  "audience": "school",
+  "prerequisites": [
+    "f1_ai_capabilities",
+    "f2_examples_iteration"
+  ],
+  "estimated_duration_minutes": 5,
+  "order": 1,
+  "review_date": "2026-09-17",
+  "translation_status": {
+    "en": {
+      "reviewed": true,
+      "reviewer": "author"
+    },
+    "hi": {
+      "reviewed": false
+    },
+    "te": {
+      "reviewed": false
+    },
+    "ta": {
+      "reviewed": false
+    },
+    "kn": {
+      "reviewed": false
+    }
+  },
+  "content": {
+    "en": {
+      "title": "Explain It Like I Know It! 🌟",
+      "description": "Ask AI to explain a science concept using an everyday example you understand.",
+      "outcome": "You can ask AI to explain tough concepts using familiar examples, then check if the analogy makes sense!",
+      "explanation": "Sometimes science topics feel hard because they use big words. But most concepts connect to things you already know! AI can help create analogies — comparisons to everyday things. Let's try with photosynthesis! 🌱\n\n**Your job:** Ask AI to explain photosynthesis using a cooking analogy, then check if the comparison actually makes sense.",
+      "worked_example": {
+        "scenario": "Understanding photosynthesis through cooking.",
+        "bad_attempt": "Explain photosynthesis.",
+        "good_attempt": "Goal: Explain photosynthesis to a 12-year-old using a cooking analogy.\nContext: The student knows about cooking — ingredients, recipes, energy (heat).\nConstraints: Use simple words. Compare each part: sunlight = stove heat, CO2 + water = ingredients, glucose = the food made. Keep it under 100 words.\nOutput: A short paragraph using the cooking analogy, then a simple comparison table.",
+        "why_better": "Maps each science concept to a familiar cooking concept the student already understands."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to explain photosynthesis using something you find fun or familiar (cooking, gaming, building, sports — your choice!).\n\nRemember: A good analogy maps the PARTS of the concept to the PARTS of your familiar example.",
+        "starter_text": "I'll use [your choice] as my analogy:\n\nGoal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Pick something you know well — cooking, building with blocks, a video game, sports.",
+          "Think about: What are the 'ingredients'? What provides 'energy'? What's the 'product'?",
+          "Ask for a comparison table: Science Part ↔ Your Example Part."
+        ],
+        "sample_good_response": "I'll use cooking as my analogy:\n\nGoal: Explain photosynthesis using a cooking analogy that a 12-year-old can understand.\nContext: I know about cooking — you need ingredients, heat from a stove, and you get food at the end.\nConstraints: Simple words only. Map each part: sunlight → stove heat, water + CO2 → ingredients, glucose → the meal, oxygen → steam/smell. Under 80 words.\nOutput: A fun paragraph explaining photosynthesis like a recipe, followed by a comparison table.",
+        "evaluation_criteria": [
+          "Includes a clear analogy mapping",
+          "Uses simple, age-appropriate language",
+          "Maps specific science parts to familiar parts"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why do analogies help us understand hard concepts?",
+          "options": [
+            "They connect new ideas to things we already know",
+            "They make everything shorter",
+            "They replace the need to learn science",
+            "They only work for young students"
+          ],
+          "correct_index": 0,
+          "explanation": "Analogies work by connecting something new (photosynthesis) to something familiar (cooking). Your brain can use what it already knows as a bridge!"
+        },
+        {
+          "question": "What makes a BAD analogy?",
+          "options": [
+            "When the parts don't actually match up correctly",
+            "When it uses everyday examples",
+            "When it's too simple",
+            "When a teacher uses it"
+          ],
+          "correct_index": 0,
+          "explanation": "A bad analogy has parts that don't correspond correctly. For example, saying 'photosynthesis is like eating' misses the key idea that the plant is MAKING food, not consuming it."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Amazing! 🌟 Your analogy maps the parts beautifully!",
+        "partial": "Good start! 💪 Try making each part of the analogy match a specific part of photosynthesis.",
+        "fail": "Let's try again! 🔄 Pick something you know really well, and try to match: energy source, ingredients, and product."
+      },
+      "retry_hint": "Review the worked example and try again.",
+      "recap": "You learned to use analogies to understand science! The trick: map each part of the hard concept to a part of your familiar example. Always check if the comparison actually makes sense.",
+      "glossary_terms": [
+        {
+          "term": "analogy",
+          "definition": "A comparison between two things to help explain an idea — like saying 'the heart is like a pump.'"
+        },
+        {
+          "term": "photosynthesis",
+          "definition": "The process plants use to make food from sunlight, water, and carbon dioxide."
+        }
+      ]
+    },
+    "hi": {
+      "title": "जैसा मैं जानता हूँ, वैसे समझाओ! 🌟",
+      "description": "AI से कहो कि विज्ञान की कठिन बात को जानी-पहचानी चीज़ से समझाए।",
+      "outcome": "You can ask AI to explain tough concepts using familiar examples, then check if the analogy makes sense!",
+      "explanation": "Sometimes science topics feel hard because they use big words. But most concepts connect to things you already know! AI can help create analogies — comparisons to everyday things. Let's try with photosynthesis! 🌱\n\n**Your job:** Ask AI to explain photosynthesis using a cooking analogy, then check if the comparison actually makes sense.",
+      "worked_example": {
+        "scenario": "Understanding photosynthesis through cooking.",
+        "bad_attempt": "Explain photosynthesis.",
+        "good_attempt": "Goal: Explain photosynthesis to a 12-year-old using a cooking analogy.\nContext: The student knows about cooking — ingredients, recipes, energy (heat).\nConstraints: Use simple words. Compare each part: sunlight = stove heat, CO2 + water = ingredients, glucose = the food made. Keep it under 100 words.\nOutput: A short paragraph using the cooking analogy, then a simple comparison table.",
+        "why_better": "Maps each science concept to a familiar cooking concept the student already understands."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to explain photosynthesis using something you find fun or familiar (cooking, gaming, building, sports — your choice!).\n\nRemember: A good analogy maps the PARTS of the concept to the PARTS of your familiar example.",
+        "starter_text": "I'll use [your choice] as my analogy:\n\nGoal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Pick something you know well — cooking, building with blocks, a video game, sports.",
+          "Think about: What are the 'ingredients'? What provides 'energy'? What's the 'product'?",
+          "Ask for a comparison table: Science Part ↔ Your Example Part."
+        ],
+        "sample_good_response": "I'll use cooking as my analogy:\n\nGoal: Explain photosynthesis using a cooking analogy that a 12-year-old can understand.\nContext: I know about cooking — you need ingredients, heat from a stove, and you get food at the end.\nConstraints: Simple words only. Map each part: sunlight → stove heat, water + CO2 → ingredients, glucose → the meal, oxygen → steam/smell. Under 80 words.\nOutput: A fun paragraph explaining photosynthesis like a recipe, followed by a comparison table.",
+        "evaluation_criteria": [
+          "Includes a clear analogy mapping",
+          "Uses simple, age-appropriate language",
+          "Maps specific science parts to familiar parts"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why do analogies help us understand hard concepts?",
+          "options": [
+            "They connect new ideas to things we already know",
+            "They make everything shorter",
+            "They replace the need to learn science",
+            "They only work for young students"
+          ],
+          "correct_index": 0,
+          "explanation": "Analogies work by connecting something new (photosynthesis) to something familiar (cooking). Your brain can use what it already knows as a bridge!"
+        },
+        {
+          "question": "What makes a BAD analogy?",
+          "options": [
+            "When the parts don't actually match up correctly",
+            "When it uses everyday examples",
+            "When it's too simple",
+            "When a teacher uses it"
+          ],
+          "correct_index": 0,
+          "explanation": "A bad analogy has parts that don't correspond correctly. For example, saying 'photosynthesis is like eating' misses the key idea that the plant is MAKING food, not consuming it."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Amazing! 🌟 Your analogy maps the parts beautifully!",
+        "partial": "Good start! 💪 Try making each part of the analogy match a specific part of photosynthesis.",
+        "fail": "Let's try again! 🔄 Pick something you know really well, and try to match: energy source, ingredients, and product."
+      },
+      "retry_hint": "ऊपर दिए गए उदाहरण को देखें और फिर से कोशिश करें।",
+      "recap": "You learned to use analogies to understand science! The trick: map each part of the hard concept to a part of your familiar example. Always check if the comparison actually makes sense.",
+      "glossary_terms": [
+        {
+          "term": "analogy",
+          "definition": "A comparison between two things to help explain an idea — like saying 'the heart is like a pump.'"
+        },
+        {
+          "term": "photosynthesis",
+          "definition": "The process plants use to make food from sunlight, water, and carbon dioxide."
+        }
+      ]
+    },
+    "te": {
+      "title": "నాకు తెలిసినట్లు వివరించు! 🌟",
+      "description": "AI ని అడిగి సైన్స్ కాన్సెప్ట్ ను తెలిసిన ఉదాహరణతో వివరించమనండి.",
+      "outcome": "You can ask AI to explain tough concepts using familiar examples, then check if the analogy makes sense!",
+      "explanation": "Sometimes science topics feel hard because they use big words. But most concepts connect to things you already know! AI can help create analogies — comparisons to everyday things. Let's try with photosynthesis! 🌱\n\n**Your job:** Ask AI to explain photosynthesis using a cooking analogy, then check if the comparison actually makes sense.",
+      "worked_example": {
+        "scenario": "Understanding photosynthesis through cooking.",
+        "bad_attempt": "Explain photosynthesis.",
+        "good_attempt": "Goal: Explain photosynthesis to a 12-year-old using a cooking analogy.\nContext: The student knows about cooking — ingredients, recipes, energy (heat).\nConstraints: Use simple words. Compare each part: sunlight = stove heat, CO2 + water = ingredients, glucose = the food made. Keep it under 100 words.\nOutput: A short paragraph using the cooking analogy, then a simple comparison table.",
+        "why_better": "Maps each science concept to a familiar cooking concept the student already understands."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to explain photosynthesis using something you find fun or familiar (cooking, gaming, building, sports — your choice!).\n\nRemember: A good analogy maps the PARTS of the concept to the PARTS of your familiar example.",
+        "starter_text": "I'll use [your choice] as my analogy:\n\nGoal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Pick something you know well — cooking, building with blocks, a video game, sports.",
+          "Think about: What are the 'ingredients'? What provides 'energy'? What's the 'product'?",
+          "Ask for a comparison table: Science Part ↔ Your Example Part."
+        ],
+        "sample_good_response": "I'll use cooking as my analogy:\n\nGoal: Explain photosynthesis using a cooking analogy that a 12-year-old can understand.\nContext: I know about cooking — you need ingredients, heat from a stove, and you get food at the end.\nConstraints: Simple words only. Map each part: sunlight → stove heat, water + CO2 → ingredients, glucose → the meal, oxygen → steam/smell. Under 80 words.\nOutput: A fun paragraph explaining photosynthesis like a recipe, followed by a comparison table.",
+        "evaluation_criteria": [
+          "Includes a clear analogy mapping",
+          "Uses simple, age-appropriate language",
+          "Maps specific science parts to familiar parts"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why do analogies help us understand hard concepts?",
+          "options": [
+            "They connect new ideas to things we already know",
+            "They make everything shorter",
+            "They replace the need to learn science",
+            "They only work for young students"
+          ],
+          "correct_index": 0,
+          "explanation": "Analogies work by connecting something new (photosynthesis) to something familiar (cooking). Your brain can use what it already knows as a bridge!"
+        },
+        {
+          "question": "What makes a BAD analogy?",
+          "options": [
+            "When the parts don't actually match up correctly",
+            "When it uses everyday examples",
+            "When it's too simple",
+            "When a teacher uses it"
+          ],
+          "correct_index": 0,
+          "explanation": "A bad analogy has parts that don't correspond correctly. For example, saying 'photosynthesis is like eating' misses the key idea that the plant is MAKING food, not consuming it."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Amazing! 🌟 Your analogy maps the parts beautifully!",
+        "partial": "Good start! 💪 Try making each part of the analogy match a specific part of photosynthesis.",
+        "fail": "Let's try again! 🔄 Pick something you know really well, and try to match: energy source, ingredients, and product."
+      },
+      "retry_hint": "ఉదాహరణ చూసి మళ్ళీ ప్రయత్నించండి.",
+      "recap": "You learned to use analogies to understand science! The trick: map each part of the hard concept to a part of your familiar example. Always check if the comparison actually makes sense.",
+      "glossary_terms": [
+        {
+          "term": "analogy",
+          "definition": "A comparison between two things to help explain an idea — like saying 'the heart is like a pump.'"
+        },
+        {
+          "term": "photosynthesis",
+          "definition": "The process plants use to make food from sunlight, water, and carbon dioxide."
+        }
+      ]
+    },
+    "ta": {
+      "title": "எனக்கு தெரிந்ததுபோல் விளக்கு! 🌟",
+      "description": "AI-யிடம் அறிவியல் கருத்தை அறிமுகமான உதாரணத்தால் விளக்கச் சொல்லுங்கள்.",
+      "outcome": "You can ask AI to explain tough concepts using familiar examples, then check if the analogy makes sense!",
+      "explanation": "Sometimes science topics feel hard because they use big words. But most concepts connect to things you already know! AI can help create analogies — comparisons to everyday things. Let's try with photosynthesis! 🌱\n\n**Your job:** Ask AI to explain photosynthesis using a cooking analogy, then check if the comparison actually makes sense.",
+      "worked_example": {
+        "scenario": "Understanding photosynthesis through cooking.",
+        "bad_attempt": "Explain photosynthesis.",
+        "good_attempt": "Goal: Explain photosynthesis to a 12-year-old using a cooking analogy.\nContext: The student knows about cooking — ingredients, recipes, energy (heat).\nConstraints: Use simple words. Compare each part: sunlight = stove heat, CO2 + water = ingredients, glucose = the food made. Keep it under 100 words.\nOutput: A short paragraph using the cooking analogy, then a simple comparison table.",
+        "why_better": "Maps each science concept to a familiar cooking concept the student already understands."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to explain photosynthesis using something you find fun or familiar (cooking, gaming, building, sports — your choice!).\n\nRemember: A good analogy maps the PARTS of the concept to the PARTS of your familiar example.",
+        "starter_text": "I'll use [your choice] as my analogy:\n\nGoal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Pick something you know well — cooking, building with blocks, a video game, sports.",
+          "Think about: What are the 'ingredients'? What provides 'energy'? What's the 'product'?",
+          "Ask for a comparison table: Science Part ↔ Your Example Part."
+        ],
+        "sample_good_response": "I'll use cooking as my analogy:\n\nGoal: Explain photosynthesis using a cooking analogy that a 12-year-old can understand.\nContext: I know about cooking — you need ingredients, heat from a stove, and you get food at the end.\nConstraints: Simple words only. Map each part: sunlight → stove heat, water + CO2 → ingredients, glucose → the meal, oxygen → steam/smell. Under 80 words.\nOutput: A fun paragraph explaining photosynthesis like a recipe, followed by a comparison table.",
+        "evaluation_criteria": [
+          "Includes a clear analogy mapping",
+          "Uses simple, age-appropriate language",
+          "Maps specific science parts to familiar parts"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why do analogies help us understand hard concepts?",
+          "options": [
+            "They connect new ideas to things we already know",
+            "They make everything shorter",
+            "They replace the need to learn science",
+            "They only work for young students"
+          ],
+          "correct_index": 0,
+          "explanation": "Analogies work by connecting something new (photosynthesis) to something familiar (cooking). Your brain can use what it already knows as a bridge!"
+        },
+        {
+          "question": "What makes a BAD analogy?",
+          "options": [
+            "When the parts don't actually match up correctly",
+            "When it uses everyday examples",
+            "When it's too simple",
+            "When a teacher uses it"
+          ],
+          "correct_index": 0,
+          "explanation": "A bad analogy has parts that don't correspond correctly. For example, saying 'photosynthesis is like eating' misses the key idea that the plant is MAKING food, not consuming it."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Amazing! 🌟 Your analogy maps the parts beautifully!",
+        "partial": "Good start! 💪 Try making each part of the analogy match a specific part of photosynthesis.",
+        "fail": "Let's try again! 🔄 Pick something you know really well, and try to match: energy source, ingredients, and product."
+      },
+      "retry_hint": "உதாரணத்தைப் பார்த்து மீண்டும் முயற்சிக்கவும்.",
+      "recap": "You learned to use analogies to understand science! The trick: map each part of the hard concept to a part of your familiar example. Always check if the comparison actually makes sense.",
+      "glossary_terms": [
+        {
+          "term": "analogy",
+          "definition": "A comparison between two things to help explain an idea — like saying 'the heart is like a pump.'"
+        },
+        {
+          "term": "photosynthesis",
+          "definition": "The process plants use to make food from sunlight, water, and carbon dioxide."
+        }
+      ]
+    },
+    "kn": {
+      "title": "ನನಗೆ ಗೊತ್ತಿರುವ ಹಾಗೆ ವಿವರಿಸು! 🌟",
+      "description": "AI ಗೆ ವಿಜ್ಞಾನ ಪರಿಕಲ್ಪನೆಯನ್ನು ಪರಿಚಿತ ಉದಾಹರಣೆಯಿಂದ ವಿವರಿಸಲು ಹೇಳಿ.",
+      "outcome": "You can ask AI to explain tough concepts using familiar examples, then check if the analogy makes sense!",
+      "explanation": "Sometimes science topics feel hard because they use big words. But most concepts connect to things you already know! AI can help create analogies — comparisons to everyday things. Let's try with photosynthesis! 🌱\n\n**Your job:** Ask AI to explain photosynthesis using a cooking analogy, then check if the comparison actually makes sense.",
+      "worked_example": {
+        "scenario": "Understanding photosynthesis through cooking.",
+        "bad_attempt": "Explain photosynthesis.",
+        "good_attempt": "Goal: Explain photosynthesis to a 12-year-old using a cooking analogy.\nContext: The student knows about cooking — ingredients, recipes, energy (heat).\nConstraints: Use simple words. Compare each part: sunlight = stove heat, CO2 + water = ingredients, glucose = the food made. Keep it under 100 words.\nOutput: A short paragraph using the cooking analogy, then a simple comparison table.",
+        "why_better": "Maps each science concept to a familiar cooking concept the student already understands."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to explain photosynthesis using something you find fun or familiar (cooking, gaming, building, sports — your choice!).\n\nRemember: A good analogy maps the PARTS of the concept to the PARTS of your familiar example.",
+        "starter_text": "I'll use [your choice] as my analogy:\n\nGoal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Pick something you know well — cooking, building with blocks, a video game, sports.",
+          "Think about: What are the 'ingredients'? What provides 'energy'? What's the 'product'?",
+          "Ask for a comparison table: Science Part ↔ Your Example Part."
+        ],
+        "sample_good_response": "I'll use cooking as my analogy:\n\nGoal: Explain photosynthesis using a cooking analogy that a 12-year-old can understand.\nContext: I know about cooking — you need ingredients, heat from a stove, and you get food at the end.\nConstraints: Simple words only. Map each part: sunlight → stove heat, water + CO2 → ingredients, glucose → the meal, oxygen → steam/smell. Under 80 words.\nOutput: A fun paragraph explaining photosynthesis like a recipe, followed by a comparison table.",
+        "evaluation_criteria": [
+          "Includes a clear analogy mapping",
+          "Uses simple, age-appropriate language",
+          "Maps specific science parts to familiar parts"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Why do analogies help us understand hard concepts?",
+          "options": [
+            "They connect new ideas to things we already know",
+            "They make everything shorter",
+            "They replace the need to learn science",
+            "They only work for young students"
+          ],
+          "correct_index": 0,
+          "explanation": "Analogies work by connecting something new (photosynthesis) to something familiar (cooking). Your brain can use what it already knows as a bridge!"
+        },
+        {
+          "question": "What makes a BAD analogy?",
+          "options": [
+            "When the parts don't actually match up correctly",
+            "When it uses everyday examples",
+            "When it's too simple",
+            "When a teacher uses it"
+          ],
+          "correct_index": 0,
+          "explanation": "A bad analogy has parts that don't correspond correctly. For example, saying 'photosynthesis is like eating' misses the key idea that the plant is MAKING food, not consuming it."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Amazing! 🌟 Your analogy maps the parts beautifully!",
+        "partial": "Good start! 💪 Try making each part of the analogy match a specific part of photosynthesis.",
+        "fail": "Let's try again! 🔄 Pick something you know really well, and try to match: energy source, ingredients, and product."
+      },
+      "retry_hint": "ಉದಾಹರಣೆ ನೋಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+      "recap": "You learned to use analogies to understand science! The trick: map each part of the hard concept to a part of your familiar example. Always check if the comparison actually makes sense.",
+      "glossary_terms": [
+        {
+          "term": "analogy",
+          "definition": "A comparison between two things to help explain an idea — like saying 'the heart is like a pump.'"
+        },
+        {
+          "term": "photosynthesis",
+          "definition": "The process plants use to make food from sunlight, water, and carbon dioxide."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "id": "f3_checking_evidence",
+  "version": "1.0.0",
+  "type": "foundation",
+  "audience": "shared",
+  "prerequisites": [
+    "f1_ai_capabilities"
+  ],
+  "estimated_duration_minutes": 5,
+  "order": 3,
+  "review_date": "2026-09-17",
+  "translation_status": {
+    "en": {
+      "reviewed": true,
+      "reviewer": "author"
+    },
+    "hi": {
+      "reviewed": false
+    },
+    "te": {
+      "reviewed": false
+    },
+    "ta": {
+      "reviewed": false
+    },
+    "kn": {
+      "reviewed": false
+    }
+  },
+  "content": {
+    "en": {
+      "title": "Checking Answers & Spotting Claims",
+      "description": "Learn to check AI answers against evidence, spot unsupported claims, and handle uncertainty.",
+      "outcome": "You can identify which AI-generated claims need verification and handle uncertain answers responsibly.",
+      "explanation": "AI can sound very confident even when it's wrong. It may mix accurate facts with invented details, cite sources that don't exist, or present opinions as facts. This is sometimes called 'hallucination.'\n\nTo protect yourself:\n1. **Check specific claims** — Look for numbers, names, dates, and statistics. These are most likely to be wrong.\n2. **Ask 'What's the source?'** — If AI can't point to a real source, treat the claim as unverified.\n3. **Watch for hedging** — 'It is believed that...' and 'Some experts say...' are warning signs.\n4. **Handle uncertainty honestly** — It's better to say 'I'm not sure' than to repeat an unverified claim.",
+      "worked_example": {
+        "scenario": "AI generates a paragraph about a fictional fruit called 'Zenberries'.",
+        "bad_attempt": "Zenberries contain 40% more Vitamin C than oranges, are native to the Himalayan foothills, and were first documented by botanist Dr. Sarah Chen in 1987. Recent studies show they reduce inflammation by 60%.",
+        "good_attempt": "Let me check each claim:\n• '40% more Vitamin C than oranges' — Specific statistic. Source? No source provided. UNVERIFIED.\n• 'Native to Himalayan foothills' — Geographic claim. Could check botanical databases. NEEDS VERIFICATION.\n• 'Dr. Sarah Chen in 1987' — Specific person and date. Search finds no such publication. LIKELY FABRICATED.\n• 'Reduce inflammation by 60%' — Health claim with precise percentage. No study cited. UNSUPPORTED.",
+        "why_better": "The good attempt examines each claim individually, categorizes the type of claim, and honestly labels what can and can't be verified."
+      },
+      "interactive_task": {
+        "instruction": "Read this AI-generated paragraph about the fictional company Neovista Technologies. Identify which claims are supported, which need verification, and which are likely fabricated:\n\n\"Neovista Technologies, founded in 2019 in Bangalore, has grown to 500 employees. Their flagship product NeoSync uses machine learning to predict inventory needs with 94.7% accuracy. CEO Priya Menon was named one of Forbes India's '30 Under 30' in 2022. The company reported revenue of ₹120 crore in FY2025 and plans to expand into Southeast Asian markets by Q3 2026.\"",
+        "starter_text": "Claim 1 (Founded in 2019, Bangalore): \nClaim 2 (500 employees): \nClaim 3 (94.7% accuracy): \nClaim 4 (Forbes 30 Under 30): \nClaim 5 (₹120 crore revenue): \nClaim 6 (Southeast Asia expansion): ",
+        "hints": [
+          "Look for precise numbers — those are often fabricated by AI.",
+          "Check if named people and awards can be verified.",
+          "Consider which claims could be true vs which are suspiciously specific."
+        ],
+        "sample_good_response": "Claim 1 (Founded 2019, Bangalore): Can be checked via company registration. NEEDS VERIFICATION.\nClaim 2 (500 employees): Specific number without source. UNVERIFIED.\nClaim 3 (94.7% accuracy): Very precise percentage, no study cited. LIKELY FABRICATED.\nClaim 4 (Forbes 30 Under 30): Checkable claim — search Forbes list. NEEDS VERIFICATION.\nClaim 5 (₹120 crore revenue): Financial claim, would need official filings. UNVERIFIED.\nClaim 6 (SE Asia Q3 2026): Future plan, harder to verify. TREAT AS UNCONFIRMED.",
+        "evaluation_criteria": [
+          "Identifies claims that need verification",
+          "Recognizes suspiciously precise statistics",
+          "Distinguishes between verifiable and unverifiable claims"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "What makes a claim 'unsupported'?",
+          "options": [
+            "It has no evidence or source to back it up",
+            "It uses big words",
+            "It was written by AI",
+            "It sounds unusual"
+          ],
+          "correct_index": 0,
+          "explanation": "An unsupported claim is one that has no evidence, source, or verification backing it up. Just because something sounds plausible doesn't mean it's true."
+        },
+        {
+          "question": "What should you do when AI says 'I'm not sure' about something?",
+          "options": [
+            "Appreciate the honesty and verify the information yourself",
+            "Ask again until it gives a confident answer",
+            "Ignore the response entirely",
+            "Assume it's definitely wrong"
+          ],
+          "correct_index": 0,
+          "explanation": "When AI expresses uncertainty, that's actually helpful! It means you should verify the information through reliable sources rather than pushing for false confidence."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent analysis! You correctly identified which claims need verification and recognized the warning signs of fabricated information.",
+        "partial": "Good effort! You identified some issues. Look more carefully at specific numbers and named people — these are common areas where AI fabricates details.",
+        "fail": "Let's try again. Focus on each claim individually and ask: 'Could I verify this?' Precise percentages and specific names are often AI inventions."
+      },
+      "retry_hint": "Go through each claim one by one. Ask yourself: Does this have a source? Is the number suspiciously precise? Could I check this in a real database or website?",
+      "recap": "AI can mix real facts with invented details. Always check specific claims, especially precise numbers, named people, and statistics. Ask for sources, and treat unverified claims as unconfirmed. It's better to honestly say 'not verified' than to spread misinformation.",
+      "glossary_terms": [
+        {
+          "term": "hallucination",
+          "definition": "When AI generates false information that sounds convincing and states it as fact."
+        },
+        {
+          "term": "unsupported claim",
+          "definition": "A statement without evidence or a verifiable source to back it up."
+        }
+      ]
+    },
+    "hi": {
+      "title": "उत्तर जाँचना और दावे पहचानना",
+      "description": "AI उत्तरों को साक्ष्य से जाँचना, अप्रमाणित दावे पहचानना और अनिश्चितता को संभालना सीखें।",
+      "outcome": "आप पहचान सकते हैं कि किन AI-जनित दावों को सत्यापन की आवश्यकता है।",
+      "explanation": "AI बहुत आत्मविश्वास से गलत बातें भी कह सकता है। यह सटीक तथ्यों को बनावटी विवरणों के साथ मिला सकता है।\n\n1. **विशिष्ट दावे जाँचें** — संख्याएँ, नाम, तिथियाँ सबसे ज्यादा गलत हो सकती हैं।\n2. **स्रोत पूछें** — अगर AI स्रोत नहीं बता सकता, दावे को असत्यापित मानें।\n3. **अनिश्चितता ईमानदारी से संभालें** — 'मुझे पक्का नहीं पता' कहना बेहतर है।",
+      "worked_example": {
+        "scenario": "AI 'ज़ेनबेरी' नामक काल्पनिक फल के बारे में एक पैराग्राफ बनाता है।",
+        "bad_attempt": "ज़ेनबेरी में संतरे से 40% अधिक विटामिन C होता है। हालिया अध्ययनों से पता चलता है कि वे सूजन 60% कम करती हैं।",
+        "good_attempt": "हर दावे की जाँच:\n• '40% अधिक विटामिन C' — विशिष्ट आँकड़ा, कोई स्रोत नहीं। असत्यापित।\n• 'हिमालय की तलहटी' — भौगोलिक दावा। सत्यापन आवश्यक।\n• 'डॉ. सारा चेन 1987' — विशिष्ट व्यक्ति और तिथि। कोई प्रकाशन नहीं मिला। संभवतः बनावटी।",
+        "why_better": "अच्छा प्रयास प्रत्येक दावे की व्यक्तिगत रूप से जाँच करता है।"
+      },
+      "interactive_task": {
+        "instruction": "इस AI-जनित पैराग्राफ को पढ़ें और पहचानें कौन से दावे समर्थित हैं, किन्हें सत्यापन चाहिए:\n\n\"नियोविस्टा टेक्नोलॉजीज, 2019 में बैंगलोर में स्थापित, 500 कर्मचारियों तक बढ़ी है। उनका फ्लैगशिप प्रोडक्ट NeoSync 94.7% सटीकता से इन्वेंट्री की भविष्यवाणी करता है।\"",
+        "starter_text": "दावा 1 (2019 में स्थापित): \nदावा 2 (500 कर्मचारी): \nदावा 3 (94.7% सटीकता): ",
+        "hints": [
+          "सटीक संख्याओं पर ध्यान दें।",
+          "नामित लोगों और पुरस्कारों की जाँच करें।"
+        ],
+        "sample_good_response": "दावा 1: कंपनी पंजीकरण से जाँचा जा सकता है। सत्यापन आवश्यक।\nदावा 2: बिना स्रोत के विशिष्ट संख्या। असत्यापित।\nदावा 3: बहुत सटीक प्रतिशत, कोई अध्ययन उद्धृत नहीं। संभवतः बनावटी।",
+        "evaluation_criteria": [
+          "Identifies claims that need verification",
+          "Recognizes suspiciously precise statistics",
+          "Distinguishes between verifiable and unverifiable claims"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "कोई दावा 'अप्रमाणित' क्या बनाता है?",
+          "options": [
+            "इसके पीछे कोई साक्ष्य या स्रोत नहीं है",
+            "इसमें बड़े शब्द हैं",
+            "यह AI ने लिखा है",
+            "यह असामान्य लगता है"
+          ],
+          "correct_index": 0,
+          "explanation": "अप्रमाणित दावे में कोई साक्ष्य या स्रोत नहीं होता।"
+        },
+        {
+          "question": "जब AI कहे 'मुझे पक्का नहीं पता' तो क्या करना चाहिए?",
+          "options": [
+            "ईमानदारी की सराहना करें और जानकारी स्वयं सत्यापित करें",
+            "फिर से पूछें जब तक आत्मविश्वास से न बोले",
+            "प्रतिक्रिया पूरी तरह अनदेखी करें",
+            "मानें कि यह निश्चित रूप से गलत है"
+          ],
+          "correct_index": 0,
+          "explanation": "जब AI अनिश्चितता व्यक्त करता है, तो विश्वसनीय स्रोतों से सत्यापित करें।"
+        }
+      ],
+      "feedback_templates": {
+        "pass": "उत्कृष्ट विश्लेषण! आपने सही पहचाना।",
+        "partial": "अच्छा प्रयास! विशिष्ट संख्याओं और नामों पर और ध्यान दें।",
+        "fail": "फिर से कोशिश करें। हर दावे को अलग-अलग जाँचें।"
+      },
+      "retry_hint": "हर दावे को एक-एक करके देखें। पूछें: क्या इसका स्रोत है? क्या संख्या संदेहजनक रूप से सटीक है?",
+      "recap": "AI सच्ची और बनावटी जानकारी मिला सकता है। हमेशा विशिष्ट दावों की जाँच करें।",
+      "glossary_terms": [
+        {
+          "term": "hallucination (हैलुसिनेशन)",
+          "definition": "जब AI विश्वसनीय लगने वाली गलत जानकारी उत्पन्न करता है।"
+        },
+        {
+          "term": "unsupported claim (अप्रमाणित दावा)",
+          "definition": "बिना साक्ष्य या स्रोत वाला कथन।"
+        }
+      ]
+    },
+    "te": {
+      "title": "సమాధానాలు తనిఖీ చేయడం & వాదనలు గుర్తించడం",
+      "description": "AI సమాధానాలను ఆధారాలతో తనిఖీ చేయడం, అసమర్థిత వాదనలను గుర్తించడం నేర్చుకోండి.",
+      "outcome": "ఏ AI-ఉత్పత్తి వాదనలకు ధృవీకరణ అవసరమో గుర్తించగలరు.",
+      "explanation": "AI చాలా ఆత్మవిశ్వాసంగా తప్పుగా కూడా చెప్పగలదు.\n\n1. నిర్దిష్ట వాదనలను తనిఖీ చేయండి\n2. మూలం అడగండి\n3. అనిశ్చితతను నిజాయితీగా నిర్వహించండి",
+      "worked_example": {
+        "scenario": "AI 'జెన్‌బెర్రీలు' అనే కల్పిత పండు గురించి పేరా రాస్తుంది.",
+        "bad_attempt": "జెన్‌బెర్రీలలో నారింజల కంటే 40% ఎక్కువ విటమిన్ C ఉంది.",
+        "good_attempt": "ప్రతి వాదనను తనిఖీ చేద్దాం:\n• '40% ఎక్కువ విటమిన్ C' — నిర్దిష్ట గణాంకం, మూలం లేదు. అధృవీకృతం.",
+        "why_better": "ప్రతి వాదనను విడిగా పరిశీలించి, నిజాయితీగా లేబుల్ చేస్తుంది."
+      },
+      "interactive_task": {
+        "instruction": "నియోవిస్టా టెక్నాలజీస్ గురించి AI పేరా చదివి వాదనలను గుర్తించండి.",
+        "starter_text": "వాదన 1: \nవాదన 2: \nవాదన 3: ",
+        "hints": [
+          "ఖచ్చితమైన సంఖ్యలపై దృష్టి పెట్టండి."
+        ],
+        "sample_good_response": "వాదన 1: కంపెనీ రిజిస్ట్రేషన్ తనిఖీ. ధృవీకరణ అవసరం.\nవాదన 2: మూలం లేని సంఖ్య. అధృవీకృతం.\nవాదన 3: చాలా ఖచ్చితమైన శాతం. బహుశా కల్పితం.",
+        "evaluation_criteria": [
+          "Identifies claims that need verification",
+          "Recognizes suspiciously precise statistics"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "ఒక వాదనను 'అసమర్థితం' అని ఏది చేస్తుంది?",
+          "options": [
+            "దానికి ఆధారం లేదా మూలం లేదు",
+            "అది పెద్ద పదాలు వాడుతుంది",
+            "AI రాసింది",
+            "అసాధారణంగా అనిపిస్తుంది"
+          ],
+          "correct_index": 0,
+          "explanation": "అసమర్థిత వాదనకు ఆధారం లేదు."
+        },
+        {
+          "question": "AI 'నాకు ఖచ్చితంగా తెలియదు' అంటే ఏమి చేయాలి?",
+          "options": [
+            "నిజాయితీని అభినందించి సమాచారాన్ని మీరే ధృవీకరించండి",
+            "ఆత్మవిశ్వాసంగా చెప్పేవరకు మళ్ళీ అడగండి",
+            "ప్రతిస్పందనను పూర్తిగా విస్మరించండి",
+            "ఖచ్చితంగా తప్పు అని భావించండి"
+          ],
+          "correct_index": 0,
+          "explanation": "AI అనిశ్చితత వ్యక్తం చేసినప్పుడు, విశ్వసనీయ మూలాల నుండి ధృవీకరించండి."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "అద్భుత విశ్లేషణ!",
+        "partial": "మంచి ప్రయత్నం! నిర్దిష్ట సంఖ్యలపై మరింత దృష్టి పెట్టండి.",
+        "fail": "మళ్ళీ ప్రయత్నించండి. ప్రతి వాదనను విడిగా పరిశీలించండి."
+      },
+      "retry_hint": "ప్రతి వాదనను ఒక్కొక్కటిగా చూడండి.",
+      "recap": "AI నిజమైన మరియు కల్పిత సమాచారాన్ని కలపగలదు. నిర్దిష్ట వాదనలను ఎల్లప్పుడూ తనిఖీ చేయండి.",
+      "glossary_terms": [
+        {
+          "term": "hallucination (హాల్యూసినేషన్)",
+          "definition": "AI విశ్వసనీయంగా అనిపించే తప్పుడు సమాచారం ఉత్పత్తి చేయడం."
+        },
+        {
+          "term": "unsupported claim (అసమర్థిత వాదన)",
+          "definition": "ఆధారం లేని వాదన."
+        }
+      ]
+    },
+    "ta": {
+      "title": "பதில்களை சரிபார்த்தல் & கூற்றுகளை கண்டறிதல்",
+      "description": "AI பதில்களை ஆதாரங்களுடன் சரிபார்ப்பது, ஆதரிக்கப்படாத கூற்றுகளை கண்டறிவது கற்றுக்கொள்ளுங்கள்.",
+      "outcome": "எந்த AI உருவாக்கிய கூற்றுகளுக்கு சரிபார்ப்பு தேவை என்பதை அடையாளம் காணலாம்.",
+      "explanation": "AI மிகவும் நம்பிக்கையாக தவறான தகவல்களையும் கூறலாம்.\n\n1. குறிப்பிட்ட கூற்றுகளை சரிபார்க்கவும்\n2. ஆதாரம் கேளுங்கள்\n3. நிச்சயமின்மையை நேர்மையாக கையாளுங்கள்",
+      "worked_example": {
+        "scenario": "AI 'ஜென்பெர்ரி' என்ற கற்பனை பழம் பற்றி பத்தி எழுதுகிறது.",
+        "bad_attempt": "ஜென்பெர்ரிகளில் ஆரஞ்சுகளை விட 40% அதிக வைட்டமின் C உள்ளது.",
+        "good_attempt": "ஒவ்வொரு கூற்றையும் சரிபார்ப்போம்:\n• '40% அதிக வைட்டமின் C' — குறிப்பிட்ட புள்ளிவிவரம், ஆதாரம் இல்லை. சரிபார்க்கப்படவில்லை.",
+        "why_better": "ஒவ்வொரு கூற்றையும் தனித்தனியாக ஆராய்கிறது."
+      },
+      "interactive_task": {
+        "instruction": "நியோவிஸ்டா டெக்னாலஜிஸ் பற்றிய AI பத்தியை படித்து கூற்றுகளை அடையாளம் காணுங்கள்.",
+        "starter_text": "கூற்று 1: \nகூற்று 2: \nகூற்று 3: ",
+        "hints": [
+          "துல்லியமான எண்களில் கவனம் செலுத்துங்கள்."
+        ],
+        "sample_good_response": "கூற்று 1: நிறுவன பதிவிலிருந்து சரிபார்க்கலாம். சரிபார்ப்பு தேவை.\nகூற்று 2: ஆதாரம் இல்லாத எண். சரிபார்க்கப்படவில்லை.\nகூற்று 3: மிகத் துல்லியமான சதவீதம். கற்பனையாக இருக்கலாம்.",
+        "evaluation_criteria": [
+          "Identifies claims that need verification",
+          "Recognizes suspiciously precise statistics"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "ஒரு கூற்றை 'ஆதரிக்கப்படாதது' என்று எது ஆக்குகிறது?",
+          "options": [
+            "அதற்கு ஆதாரம் அல்லது மூலம் இல்லை",
+            "அது பெரிய வார்த்தைகளைப் பயன்படுத்துகிறது",
+            "AI எழுதியது",
+            "அசாதாரணமாகத் தெரிகிறது"
+          ],
+          "correct_index": 0,
+          "explanation": "ஆதரிக்கப்படாத கூற்றுக்கு ஆதாரம் இல்லை."
+        },
+        {
+          "question": "AI 'எனக்கு உறுதியாகத் தெரியவில்லை' என்றால் என்ன செய்ய வேண்டும்?",
+          "options": [
+            "நேர்மையை பாராட்டி தகவலை நீங்களே சரிபார்க்கவும்",
+            "நம்பிக்கையாக சொல்லும் வரை மீண்டும் கேளுங்கள்",
+            "பதிலை முழுமையாக புறக்கணியுங்கள்",
+            "நிச்சயமாக தவறு என்று கருதுங்கள்"
+          ],
+          "correct_index": 0,
+          "explanation": "AI நிச்சயமின்மை வெளிப்படுத்தும்போது, நம்பகமான ஆதாரங்களிலிருந்து சரிபார்க்கவும்."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "அருமையான பகுப்பாய்வு!",
+        "partial": "நல்ல முயற்சி! எண்களில் மேலும் கவனம் செலுத்துங்கள்.",
+        "fail": "மீண்டும் முயற்சிக்கவும்."
+      },
+      "retry_hint": "ஒவ்வொரு கூற்றையும் ஒவ்வொன்றாக பாருங்கள்.",
+      "recap": "AI உண்மையான மற்றும் கற்பனை தகவல்களை கலக்கலாம். குறிப்பிட்ட கூற்றுகளை எப்போதும் சரிபார்க்கவும்.",
+      "glossary_terms": [
+        {
+          "term": "hallucination (ஹாலூசினேஷன்)",
+          "definition": "AI நம்பகமாகத் தோன்றும் தவறான தகவலை உருவாக்குவது."
+        },
+        {
+          "term": "unsupported claim (ஆதரிக்கப்படாத கூற்று)",
+          "definition": "ஆதாரம் இல்லாத கூற்று."
+        }
+      ]
+    },
+    "kn": {
+      "title": "ಉತ್ತರಗಳನ್ನು ಪರಿಶೀಲಿಸುವುದು & ಹೇಳಿಕೆಗಳನ್ನು ಗುರುತಿಸುವುದು",
+      "description": "AI ಉತ್ತರಗಳನ್ನು ಸಾಕ್ಷ್ಯದೊಂದಿಗೆ ಪರಿಶೀಲಿಸುವುದು, ಬೆಂಬಲವಿಲ್ಲದ ಹೇಳಿಕೆಗಳನ್ನು ಗುರುತಿಸುವುದು ಕಲಿಯಿರಿ.",
+      "outcome": "ಯಾವ AI-ಉತ್ಪಾದಿತ ಹೇಳಿಕೆಗಳಿಗೆ ಪರಿಶೀಲನೆ ಬೇಕು ಎಂದು ಗುರುತಿಸಬಹುದು.",
+      "explanation": "AI ತಪ್ಪಾಗಿರುವಾಗಲೂ ಆತ್ಮವಿಶ್ವಾಸದಿಂದ ಹೇಳಬಹುದು.\n\n1. ನಿರ್ದಿಷ್ಟ ಹೇಳಿಕೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ\n2. ಮೂಲ ಕೇಳಿ\n3. ಅನಿಶ್ಚಿತತೆಯನ್ನು ಪ್ರಾಮಾಣಿಕವಾಗಿ ನಿರ್ವಹಿಸಿ",
+      "worked_example": {
+        "scenario": "AI 'ಜೆನ್‌ಬೆರಿಗಳು' ಎಂಬ ಕಾಲ್ಪನಿಕ ಹಣ್ಣಿನ ಬಗ್ಗೆ ಪ್ಯಾರಾ ಬರೆಯುತ್ತದೆ.",
+        "bad_attempt": "ಜೆನ್‌ಬೆರಿಗಳಲ್ಲಿ ಕಿತ್ತಳೆಗಿಂತ 40% ಹೆಚ್ಚು ವಿಟಮಿನ್ C ಇದೆ.",
+        "good_attempt": "ಪ್ರತಿ ಹೇಳಿಕೆ ಪರಿಶೀಲಿಸೋಣ:\n• '40% ಹೆಚ್ಚು ವಿಟಮಿನ್ C' — ನಿರ್ದಿಷ್ಟ ಸಂಖ್ಯೆ, ಮೂಲ ಇಲ್ಲ. ಅಪರಿಶೀಲಿತ.",
+        "why_better": "ಪ್ರತಿ ಹೇಳಿಕೆ ಪ್ರತ್ಯೇಕವಾಗಿ ಪರಿಶೀಲಿಸುತ್ತದೆ."
+      },
+      "interactive_task": {
+        "instruction": "ನಿಯೋವಿಸ್ಟಾ ಟೆಕ್ನಾಲಜೀಸ್ ಬಗ್ಗೆ AI ಪ್ಯಾರಾ ಓದಿ ಹೇಳಿಕೆಗಳನ್ನು ಗುರುತಿಸಿ.",
+        "starter_text": "ಹೇಳಿಕೆ 1: \nಹೇಳಿಕೆ 2: \nಹೇಳಿಕೆ 3: ",
+        "hints": [
+          "ನಿಖರ ಸಂಖ್ಯೆಗಳ ಮೇಲೆ ಗಮನ."
+        ],
+        "sample_good_response": "ಹೇಳಿಕೆ 1: ಕಂಪನಿ ನೋಂದಣಿಯಿಂದ ಪರಿಶೀಲಿಸಬಹುದು. ಪರಿಶೀಲನೆ ಬೇಕು.\nಹೇಳಿಕೆ 2: ಮೂಲವಿಲ್ಲದ ಸಂಖ್ಯೆ. ಅಪರಿಶೀಲಿತ.\nಹೇಳಿಕೆ 3: ಅತಿ ನಿಖರ ಶೇಕಡಾ. ಬಹುಶಃ ಕಾಲ್ಪನಿಕ.",
+        "evaluation_criteria": [
+          "Identifies claims that need verification",
+          "Recognizes suspiciously precise statistics"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "ಹೇಳಿಕೆಯನ್ನು 'ಬೆಂಬಲವಿಲ್ಲದ' ಎಂದು ಏನು ಮಾಡುತ್ತದೆ?",
+          "options": [
+            "ಅದಕ್ಕೆ ಸಾಕ್ಷ್ಯ ಅಥವಾ ಮೂಲ ಇಲ್ಲ",
+            "ದೊಡ್ಡ ಪದಗಳನ್ನು ಬಳಸುತ್ತದೆ",
+            "AI ಬರೆದಿದೆ",
+            "ಅಸಾಮಾನ್ಯವಾಗಿ ಕಾಣುತ್ತದೆ"
+          ],
+          "correct_index": 0,
+          "explanation": "ಬೆಂಬಲವಿಲ್ಲದ ಹೇಳಿಕೆಗೆ ಸಾಕ್ಷ್ಯ ಇಲ್ಲ."
+        },
+        {
+          "question": "AI 'ನನಗೆ ಖಚಿತವಾಗಿ ಗೊತ್ತಿಲ್ಲ' ಎಂದಾಗ ಏನು ಮಾಡಬೇಕು?",
+          "options": [
+            "ಪ್ರಾಮಾಣಿಕತೆ ಮೆಚ್ಚಿ ಮಾಹಿತಿ ನೀವೇ ಪರಿಶೀಲಿಸಿ",
+            "ಆತ್ಮವಿಶ್ವಾಸದಿಂದ ಹೇಳುವವರೆಗೆ ಮತ್ತೆ ಕೇಳಿ",
+            "ಪ್ರತಿಕ್ರಿಯೆ ಸಂಪೂರ್ಣ ನಿರ್ಲಕ್ಷಿಸಿ",
+            "ಖಂಡಿತ ತಪ್ಪು ಎಂದು ಭಾವಿಸಿ"
+          ],
+          "correct_index": 0,
+          "explanation": "AI ಅನಿಶ್ಚಿತತೆ ವ್ಯಕ್ತಪಡಿಸಿದಾಗ, ವಿಶ್ವಾಸಾರ್ಹ ಮೂಲಗಳಿಂದ ಪರಿಶೀಲಿಸಿ."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "ಅದ್ಭುತ ವಿಶ್ಲೇಷಣೆ!",
+        "partial": "ಒಳ್ಳೆಯ ಪ್ರಯತ್ನ! ಸಂಖ್ಯೆಗಳ ಮೇಲೆ ಹೆಚ್ಚು ಗಮನ.",
+        "fail": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+      },
+      "retry_hint": "ಪ್ರತಿ ಹೇಳಿಕೆ ಒಂದೊಂದಾಗಿ ನೋಡಿ.",
+      "recap": "AI ನಿಜ ಮತ್ತು ಕಾಲ್ಪನಿಕ ಮಾಹಿತಿ ಮಿಶ್ರ ಮಾಡಬಹುದು. ನಿರ್ದಿಷ್ಟ ಹೇಳಿಕೆಗಳನ್ನು ಯಾವಾಗಲೂ ಪರಿಶೀಲಿಸಿ.",
+      "glossary_terms": [
+        {
+          "term": "hallucination (ಹ್ಯಾಲುಸಿನೇಶನ್)",
+          "definition": "AI ವಿಶ್ವಾಸಾರ್ಹವಾಗಿ ಕಾಣುವ ತಪ್ಪು ಮಾಹಿತಿ ಉತ್ಪಾದಿಸುವುದು."
+        },
+        {
+          "term": "unsupported claim (ಬೆಂಬಲವಿಲ್ಲದ ಹೇಳಿಕೆ)",
+          "definition": "ಸಾಕ್ಷ್ಯವಿಲ್ಲದ ಹೇಳಿಕೆ."
+        }
+      ]
+    }
+  }
+}

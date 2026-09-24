@@ -1,0 +1,368 @@
+{
+  "id": "m_pro_meeting",
+  "version": "1.0.0",
+  "type": "mission",
+  "audience": "professional",
+  "prerequisites": [
+    "f1_ai_capabilities",
+    "f3_checking_evidence"
+  ],
+  "estimated_duration_minutes": 5,
+  "order": 2,
+  "review_date": "2026-09-17",
+  "translation_status": {
+    "en": {
+      "reviewed": true,
+      "reviewer": "author"
+    },
+    "hi": {
+      "reviewed": false
+    },
+    "te": {
+      "reviewed": false
+    },
+    "ta": {
+      "reviewed": false
+    },
+    "kn": {
+      "reviewed": false
+    }
+  },
+  "content": {
+    "en": {
+      "title": "Meeting Notes → Action List",
+      "description": "Turn raw meeting notes into a structured, verified action list using AI.",
+      "outcome": "You can create a structured action list from meeting notes while verifying the accuracy of AI-generated output.",
+      "explanation": "Meetings often produce messy notes. AI can help organize them into clear action items. But you need to verify the output — AI might misattribute actions or invent details that weren't discussed.",
+      "worked_example": {
+        "scenario": "CloudBridge Inc product team standup notes.",
+        "bad_attempt": "Turn these notes into actions.",
+        "good_attempt": "Goal: Extract action items from these meeting notes.\nContext: Product team standup at CloudBridge Inc, 5 attendees.\nConstraints: List each action with: owner, deadline, priority. Only include items explicitly discussed. Flag any unclear assignments.\nOutput: Numbered action list sorted by priority.",
+        "why_better": "Specifies format, requires attribution, and asks AI to flag uncertainties."
+      },
+      "interactive_task": {
+        "instruction": "Here are raw meeting notes from CloudBridge Inc's product standup:\n\n\"Sep 15 standup - Vikram, Sneha, Ravi, Meera, Deepak\n- Login bug still open, Ravi looking into it, should be done by Wed\n- Sneha's designs for dashboard v2 ready, Vikram to review by Thurs\n- Deepak mentioned cloud costs going up, need to investigate\n- Meera said onboarding flow tests passed, ready for staging\n- Someone suggested adding dark mode, no decision made\n- Next sprint planning Friday 2pm\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Identify who owns each action.",
+          "Note deadlines explicitly mentioned.",
+          "Flag items without clear owners."
+        ],
+        "sample_good_response": "Goal: Extract clear action items from these standup notes.\nContext: CloudBridge Inc product team standup, Sep 15. 5 attendees: Vikram, Sneha, Ravi, Meera, Deepak.\nConstraints: Only include explicitly discussed items. Each action must have owner, deadline (if mentioned), and priority. Flag items without clear assignments or decisions.\nOutput: Numbered list with columns: Action | Owner | Deadline | Priority | Notes.",
+        "evaluation_criteria": [
+          "Includes a clear goal",
+          "Specifies format with owner and deadline",
+          "Mentions verifying accuracy",
+          "Asks to flag unclear items"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "action_list"
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it important to verify AI-generated action items?",
+          "options": [
+            "AI might misattribute actions or invent details not in the notes",
+            "AI always generates perfect action items",
+            "Verification is only needed for long meetings",
+            "It makes the list look more professional"
+          ],
+          "correct_index": 0,
+          "explanation": "AI can misattribute who said what, mix up deadlines, or add details not in the original notes."
+        },
+        {
+          "question": "What should you do with items that have no clear owner?",
+          "options": [
+            "Flag them as needing assignment rather than guessing",
+            "Assign them to yourself",
+            "Remove them from the list",
+            "Assign them to the most senior person"
+          ],
+          "correct_index": 0,
+          "explanation": "Flagging unclear items for follow-up is more honest than guessing assignments."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Great work! Your instruction would produce a clear, verified action list.",
+        "partial": "Good attempt. Consider adding requirements to flag uncertain items.",
+        "fail": "Try again. Focus on structure: owner, deadline, priority for each action."
+      },
+      "retry_hint": "Review the worked example and try again.",
+      "recap": "You practiced turning messy notes into structured actions. Always verify AI output against the original notes.",
+      "glossary_terms": [
+        {
+          "term": "action item",
+          "definition": "A specific task assigned to someone with a deadline."
+        }
+      ]
+    },
+    "hi": {
+      "title": "मीटिंग नोट्स → कार्य सूची",
+      "description": "AI का उपयोग करके बैठक के नोट्स को कार्य सूची में बदलने का अभ्यास।",
+      "outcome": "You can create a structured action list from meeting notes while verifying the accuracy of AI-generated output.",
+      "explanation": "Meetings often produce messy notes. AI can help organize them into clear action items. But you need to verify the output — AI might misattribute actions or invent details that weren't discussed.",
+      "worked_example": {
+        "scenario": "CloudBridge Inc product team standup notes.",
+        "bad_attempt": "Turn these notes into actions.",
+        "good_attempt": "Goal: Extract action items from these meeting notes.\nContext: Product team standup at CloudBridge Inc, 5 attendees.\nConstraints: List each action with: owner, deadline, priority. Only include items explicitly discussed. Flag any unclear assignments.\nOutput: Numbered action list sorted by priority.",
+        "why_better": "Specifies format, requires attribution, and asks AI to flag uncertainties."
+      },
+      "interactive_task": {
+        "instruction": "Here are raw meeting notes from CloudBridge Inc's product standup:\n\n\"Sep 15 standup - Vikram, Sneha, Ravi, Meera, Deepak\n- Login bug still open, Ravi looking into it, should be done by Wed\n- Sneha's designs for dashboard v2 ready, Vikram to review by Thurs\n- Deepak mentioned cloud costs going up, need to investigate\n- Meera said onboarding flow tests passed, ready for staging\n- Someone suggested adding dark mode, no decision made\n- Next sprint planning Friday 2pm\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Identify who owns each action.",
+          "Note deadlines explicitly mentioned.",
+          "Flag items without clear owners."
+        ],
+        "sample_good_response": "Goal: Extract clear action items from these standup notes.\nContext: CloudBridge Inc product team standup, Sep 15. 5 attendees: Vikram, Sneha, Ravi, Meera, Deepak.\nConstraints: Only include explicitly discussed items. Each action must have owner, deadline (if mentioned), and priority. Flag items without clear assignments or decisions.\nOutput: Numbered list with columns: Action | Owner | Deadline | Priority | Notes.",
+        "evaluation_criteria": [
+          "Includes a clear goal",
+          "Specifies format with owner and deadline",
+          "Mentions verifying accuracy",
+          "Asks to flag unclear items"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "action_list"
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it important to verify AI-generated action items?",
+          "options": [
+            "AI might misattribute actions or invent details not in the notes",
+            "AI always generates perfect action items",
+            "Verification is only needed for long meetings",
+            "It makes the list look more professional"
+          ],
+          "correct_index": 0,
+          "explanation": "AI can misattribute who said what, mix up deadlines, or add details not in the original notes."
+        },
+        {
+          "question": "What should you do with items that have no clear owner?",
+          "options": [
+            "Flag them as needing assignment rather than guessing",
+            "Assign them to yourself",
+            "Remove them from the list",
+            "Assign them to the most senior person"
+          ],
+          "correct_index": 0,
+          "explanation": "Flagging unclear items for follow-up is more honest than guessing assignments."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Great work! Your instruction would produce a clear, verified action list.",
+        "partial": "Good attempt. Consider adding requirements to flag uncertain items.",
+        "fail": "Try again. Focus on structure: owner, deadline, priority for each action."
+      },
+      "retry_hint": "ऊपर दिए गए उदाहरण को देखें और फिर से कोशिश करें।",
+      "recap": "You practiced turning messy notes into structured actions. Always verify AI output against the original notes.",
+      "glossary_terms": [
+        {
+          "term": "action item",
+          "definition": "A specific task assigned to someone with a deadline."
+        }
+      ]
+    },
+    "te": {
+      "title": "మీటింగ్ నోట్స్ → కార్యాచరణ జాబితా",
+      "description": "AI ఉపయోగించి మీటింగ్ నోట్స్ నుండి కార్యాచరణ జాబితా.",
+      "outcome": "You can create a structured action list from meeting notes while verifying the accuracy of AI-generated output.",
+      "explanation": "Meetings often produce messy notes. AI can help organize them into clear action items. But you need to verify the output — AI might misattribute actions or invent details that weren't discussed.",
+      "worked_example": {
+        "scenario": "CloudBridge Inc product team standup notes.",
+        "bad_attempt": "Turn these notes into actions.",
+        "good_attempt": "Goal: Extract action items from these meeting notes.\nContext: Product team standup at CloudBridge Inc, 5 attendees.\nConstraints: List each action with: owner, deadline, priority. Only include items explicitly discussed. Flag any unclear assignments.\nOutput: Numbered action list sorted by priority.",
+        "why_better": "Specifies format, requires attribution, and asks AI to flag uncertainties."
+      },
+      "interactive_task": {
+        "instruction": "Here are raw meeting notes from CloudBridge Inc's product standup:\n\n\"Sep 15 standup - Vikram, Sneha, Ravi, Meera, Deepak\n- Login bug still open, Ravi looking into it, should be done by Wed\n- Sneha's designs for dashboard v2 ready, Vikram to review by Thurs\n- Deepak mentioned cloud costs going up, need to investigate\n- Meera said onboarding flow tests passed, ready for staging\n- Someone suggested adding dark mode, no decision made\n- Next sprint planning Friday 2pm\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Identify who owns each action.",
+          "Note deadlines explicitly mentioned.",
+          "Flag items without clear owners."
+        ],
+        "sample_good_response": "Goal: Extract clear action items from these standup notes.\nContext: CloudBridge Inc product team standup, Sep 15. 5 attendees: Vikram, Sneha, Ravi, Meera, Deepak.\nConstraints: Only include explicitly discussed items. Each action must have owner, deadline (if mentioned), and priority. Flag items without clear assignments or decisions.\nOutput: Numbered list with columns: Action | Owner | Deadline | Priority | Notes.",
+        "evaluation_criteria": [
+          "Includes a clear goal",
+          "Specifies format with owner and deadline",
+          "Mentions verifying accuracy",
+          "Asks to flag unclear items"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "action_list"
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it important to verify AI-generated action items?",
+          "options": [
+            "AI might misattribute actions or invent details not in the notes",
+            "AI always generates perfect action items",
+            "Verification is only needed for long meetings",
+            "It makes the list look more professional"
+          ],
+          "correct_index": 0,
+          "explanation": "AI can misattribute who said what, mix up deadlines, or add details not in the original notes."
+        },
+        {
+          "question": "What should you do with items that have no clear owner?",
+          "options": [
+            "Flag them as needing assignment rather than guessing",
+            "Assign them to yourself",
+            "Remove them from the list",
+            "Assign them to the most senior person"
+          ],
+          "correct_index": 0,
+          "explanation": "Flagging unclear items for follow-up is more honest than guessing assignments."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Great work! Your instruction would produce a clear, verified action list.",
+        "partial": "Good attempt. Consider adding requirements to flag uncertain items.",
+        "fail": "Try again. Focus on structure: owner, deadline, priority for each action."
+      },
+      "retry_hint": "ఉదాహరణ చూసి మళ్ళీ ప్రయత్నించండి.",
+      "recap": "You practiced turning messy notes into structured actions. Always verify AI output against the original notes.",
+      "glossary_terms": [
+        {
+          "term": "action item",
+          "definition": "A specific task assigned to someone with a deadline."
+        }
+      ]
+    },
+    "ta": {
+      "title": "கூட்ட குறிப்புகள் → செயல் பட்டியல்",
+      "description": "AI பயன்படுத்தி கூட்ட குறிப்புகளை செயல் பட்டியலாக மாற்றுங்கள்.",
+      "outcome": "You can create a structured action list from meeting notes while verifying the accuracy of AI-generated output.",
+      "explanation": "Meetings often produce messy notes. AI can help organize them into clear action items. But you need to verify the output — AI might misattribute actions or invent details that weren't discussed.",
+      "worked_example": {
+        "scenario": "CloudBridge Inc product team standup notes.",
+        "bad_attempt": "Turn these notes into actions.",
+        "good_attempt": "Goal: Extract action items from these meeting notes.\nContext: Product team standup at CloudBridge Inc, 5 attendees.\nConstraints: List each action with: owner, deadline, priority. Only include items explicitly discussed. Flag any unclear assignments.\nOutput: Numbered action list sorted by priority.",
+        "why_better": "Specifies format, requires attribution, and asks AI to flag uncertainties."
+      },
+      "interactive_task": {
+        "instruction": "Here are raw meeting notes from CloudBridge Inc's product standup:\n\n\"Sep 15 standup - Vikram, Sneha, Ravi, Meera, Deepak\n- Login bug still open, Ravi looking into it, should be done by Wed\n- Sneha's designs for dashboard v2 ready, Vikram to review by Thurs\n- Deepak mentioned cloud costs going up, need to investigate\n- Meera said onboarding flow tests passed, ready for staging\n- Someone suggested adding dark mode, no decision made\n- Next sprint planning Friday 2pm\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Identify who owns each action.",
+          "Note deadlines explicitly mentioned.",
+          "Flag items without clear owners."
+        ],
+        "sample_good_response": "Goal: Extract clear action items from these standup notes.\nContext: CloudBridge Inc product team standup, Sep 15. 5 attendees: Vikram, Sneha, Ravi, Meera, Deepak.\nConstraints: Only include explicitly discussed items. Each action must have owner, deadline (if mentioned), and priority. Flag items without clear assignments or decisions.\nOutput: Numbered list with columns: Action | Owner | Deadline | Priority | Notes.",
+        "evaluation_criteria": [
+          "Includes a clear goal",
+          "Specifies format with owner and deadline",
+          "Mentions verifying accuracy",
+          "Asks to flag unclear items"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "action_list"
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it important to verify AI-generated action items?",
+          "options": [
+            "AI might misattribute actions or invent details not in the notes",
+            "AI always generates perfect action items",
+            "Verification is only needed for long meetings",
+            "It makes the list look more professional"
+          ],
+          "correct_index": 0,
+          "explanation": "AI can misattribute who said what, mix up deadlines, or add details not in the original notes."
+        },
+        {
+          "question": "What should you do with items that have no clear owner?",
+          "options": [
+            "Flag them as needing assignment rather than guessing",
+            "Assign them to yourself",
+            "Remove them from the list",
+            "Assign them to the most senior person"
+          ],
+          "correct_index": 0,
+          "explanation": "Flagging unclear items for follow-up is more honest than guessing assignments."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Great work! Your instruction would produce a clear, verified action list.",
+        "partial": "Good attempt. Consider adding requirements to flag uncertain items.",
+        "fail": "Try again. Focus on structure: owner, deadline, priority for each action."
+      },
+      "retry_hint": "உதாரணத்தைப் பார்த்து மீண்டும் முயற்சிக்கவும்.",
+      "recap": "You practiced turning messy notes into structured actions. Always verify AI output against the original notes.",
+      "glossary_terms": [
+        {
+          "term": "action item",
+          "definition": "A specific task assigned to someone with a deadline."
+        }
+      ]
+    },
+    "kn": {
+      "title": "ಮೀಟಿಂಗ್ ನೋಟ್ಸ್ → ಕ್ರಿಯಾ ಪಟ್ಟಿ",
+      "description": "AI ಬಳಸಿ ಮೀಟಿಂಗ್ ನೋಟ್ಸ್ ನಿಂದ ಕ್ರಿಯಾ ಪಟ್ಟಿ.",
+      "outcome": "You can create a structured action list from meeting notes while verifying the accuracy of AI-generated output.",
+      "explanation": "Meetings often produce messy notes. AI can help organize them into clear action items. But you need to verify the output — AI might misattribute actions or invent details that weren't discussed.",
+      "worked_example": {
+        "scenario": "CloudBridge Inc product team standup notes.",
+        "bad_attempt": "Turn these notes into actions.",
+        "good_attempt": "Goal: Extract action items from these meeting notes.\nContext: Product team standup at CloudBridge Inc, 5 attendees.\nConstraints: List each action with: owner, deadline, priority. Only include items explicitly discussed. Flag any unclear assignments.\nOutput: Numbered action list sorted by priority.",
+        "why_better": "Specifies format, requires attribution, and asks AI to flag uncertainties."
+      },
+      "interactive_task": {
+        "instruction": "Here are raw meeting notes from CloudBridge Inc's product standup:\n\n\"Sep 15 standup - Vikram, Sneha, Ravi, Meera, Deepak\n- Login bug still open, Ravi looking into it, should be done by Wed\n- Sneha's designs for dashboard v2 ready, Vikram to review by Thurs\n- Deepak mentioned cloud costs going up, need to investigate\n- Meera said onboarding flow tests passed, ready for staging\n- Someone suggested adding dark mode, no decision made\n- Next sprint planning Friday 2pm\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Identify who owns each action.",
+          "Note deadlines explicitly mentioned.",
+          "Flag items without clear owners."
+        ],
+        "sample_good_response": "Goal: Extract clear action items from these standup notes.\nContext: CloudBridge Inc product team standup, Sep 15. 5 attendees: Vikram, Sneha, Ravi, Meera, Deepak.\nConstraints: Only include explicitly discussed items. Each action must have owner, deadline (if mentioned), and priority. Flag items without clear assignments or decisions.\nOutput: Numbered list with columns: Action | Owner | Deadline | Priority | Notes.",
+        "evaluation_criteria": [
+          "Includes a clear goal",
+          "Specifies format with owner and deadline",
+          "Mentions verifying accuracy",
+          "Asks to flag unclear items"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "action_list"
+      },
+      "understanding_checks": [
+        {
+          "question": "Why is it important to verify AI-generated action items?",
+          "options": [
+            "AI might misattribute actions or invent details not in the notes",
+            "AI always generates perfect action items",
+            "Verification is only needed for long meetings",
+            "It makes the list look more professional"
+          ],
+          "correct_index": 0,
+          "explanation": "AI can misattribute who said what, mix up deadlines, or add details not in the original notes."
+        },
+        {
+          "question": "What should you do with items that have no clear owner?",
+          "options": [
+            "Flag them as needing assignment rather than guessing",
+            "Assign them to yourself",
+            "Remove them from the list",
+            "Assign them to the most senior person"
+          ],
+          "correct_index": 0,
+          "explanation": "Flagging unclear items for follow-up is more honest than guessing assignments."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Great work! Your instruction would produce a clear, verified action list.",
+        "partial": "Good attempt. Consider adding requirements to flag uncertain items.",
+        "fail": "Try again. Focus on structure: owner, deadline, priority for each action."
+      },
+      "retry_hint": "ಉದಾಹರಣೆ ನೋಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+      "recap": "You practiced turning messy notes into structured actions. Always verify AI output against the original notes.",
+      "glossary_terms": [
+        {
+          "term": "action item",
+          "definition": "A specific task assigned to someone with a deadline."
+        }
+      ]
+    }
+  }
+}

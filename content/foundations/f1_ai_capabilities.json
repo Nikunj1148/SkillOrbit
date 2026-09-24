@@ -1,0 +1,288 @@
+{
+  "id": "f1_ai_capabilities",
+  "version": "1.0.0",
+  "type": "foundation",
+  "audience": "shared",
+  "prerequisites": [],
+  "estimated_duration_minutes": 5,
+  "order": 1,
+  "review_date": "2026-09-17",
+  "translation_status": {
+    "en": {"reviewed": true, "reviewer": "author"},
+    "hi": {"reviewed": false},
+    "te": {"reviewed": false},
+    "ta": {"reviewed": false},
+    "kn": {"reviewed": false}
+  },
+  "content": {
+    "en": {
+      "title": "What AI Can and Cannot Do",
+      "description": "Learn what AI tools are good at, where they fail, and how to write clear instructions with goal, context, constraints, and output format.",
+      "outcome": "You can write a structured AI instruction with four key parts: goal, context, constraints, and output format.",
+      "explanation": "AI tools are powerful assistants, but they have limits. They can summarize, draft, translate, and organize information well. But they cannot verify facts on their own, understand your specific situation without context, or guarantee correct answers. The key to getting good results is giving clear, structured instructions. Think of it like giving directions to a helpful but literal friend — the more specific you are, the better the result.\n\nEvery good AI instruction has four parts:\n1. **Goal** — What do you want to achieve?\n2. **Context** — What background does AI need?\n3. **Constraints** — What should it avoid or include?\n4. **Output format** — How should the result look?",
+      "worked_example": {
+        "scenario": "Riya needs to summarize a quarterly sales report for her manager.",
+        "bad_attempt": "Summarize this report.",
+        "good_attempt": "Goal: Summarize the key findings from the Q2 2026 sales report.\nContext: This is for my manager who needs a 2-minute overview before a board meeting. The report covers sales across North, South, and West regions.\nConstraints: Focus on trends and surprises. Don't include raw numbers — use percentages. Keep it under 150 words.\nOutput format: A short paragraph followed by 3 bullet points of key takeaways.",
+        "why_better": "The good version tells AI exactly what to do (summarize key findings), who it's for (manager, board meeting), what to focus on (trends, percentages), and how to format the result (paragraph + bullets). The vague version leaves AI guessing about length, audience, and focus."
+      },
+      "interactive_task": {
+        "instruction": "Rewrite this vague AI instruction using the four-part structure (Goal, Context, Constraints, Output format):\n\nOriginal: \"Help me with my presentation\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Start with what the presentation is about — pick any topic you like.",
+          "Add who the audience is and how long the presentation should be.",
+          "Mention what to include or avoid (e.g., no jargon, use examples).",
+          "Specify the format — bullet points? slide titles? a script?"
+        ],
+        "sample_good_response": "Goal: Create an outline for a 10-minute presentation about our team's project progress.\nContext: The audience is senior management who are familiar with the project but want updates on milestones, blockers, and next steps. The project is a mobile app redesign.\nConstraints: Use simple language, no technical jargon. Include 3 specific milestones. Mention one risk honestly.\nOutput format: A list of 6-8 slide titles, each with 2-3 bullet points of what to cover.",
+        "evaluation_criteria": [
+          "Includes a clear goal or objective",
+          "Provides context or background information",
+          "Specifies constraints or boundaries",
+          "Defines the desired output format"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "Which of these is something AI CANNOT reliably do on its own?",
+          "options": [
+            "Verify whether a fact is true by checking real-world sources",
+            "Summarize a long document into key points",
+            "Translate text from English to Hindi",
+            "Rewrite a paragraph in a more formal tone"
+          ],
+          "correct_index": 0,
+          "explanation": "AI generates text based on patterns, but it cannot independently verify facts against real-world sources. It may produce plausible-sounding but incorrect information. Always verify important claims yourself."
+        },
+        {
+          "question": "What are the four parts of a well-structured AI instruction?",
+          "options": [
+            "Goal, Context, Constraints, Output format",
+            "Question, Answer, Review, Submit",
+            "Input, Process, Output, Feedback",
+            "Title, Body, Conclusion, References"
+          ],
+          "correct_index": 0,
+          "explanation": "A well-structured instruction includes: Goal (what you want), Context (background info), Constraints (limits and rules), and Output format (how the result should look). This helps AI understand exactly what you need."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction has all four parts: a clear goal, helpful context, specific constraints, and a defined output format. This kind of structured instruction will consistently get you better results from AI tools.",
+        "partial": "Good start! You've included some key parts. Check which ones are missing: Goal? Context? Constraints? Output format? Adding the missing parts will make your instruction much more effective.",
+        "fail": "Let's try again. A good AI instruction needs four parts. Start by clearly stating what you want (Goal), then add background information (Context), set boundaries (Constraints), and describe the desired format (Output format). Look at the worked example for inspiration."
+      },
+      "retry_hint": "Look at the worked example above. Notice how each part (Goal, Context, Constraints, Output format) gives AI different and important information. Try filling in each section with details about your chosen presentation topic.",
+      "recap": "Today you learned that AI is a powerful tool with limits — it can draft and organize but can't verify facts. The key to good results is structured instructions with four parts: Goal (what), Context (background), Constraints (rules), and Output format (how). Practice this structure every time you use an AI tool, and you'll see consistently better results.",
+      "glossary_terms": [
+        {"term": "prompt", "definition": "An instruction or question you give to an AI tool to get a response."},
+        {"term": "context", "definition": "Background information that helps AI understand your situation."},
+        {"term": "constraints", "definition": "Rules or limits you set for the AI's response (e.g., word count, tone, what to avoid)."},
+        {"term": "output format", "definition": "The structure you want the AI's answer in (e.g., bullet points, paragraph, table)."}
+      ]
+    },
+    "hi": {
+      "title": "AI क्या कर सकता है और क्या नहीं",
+      "description": "जानें कि AI उपकरण किसमें अच्छे हैं, कहाँ विफल होते हैं, और लक्ष्य, संदर्भ, सीमाएँ और आउटपुट प्रारूप के साथ स्पष्ट निर्देश कैसे लिखें।",
+      "outcome": "आप चार प्रमुख भागों के साथ एक संरचित AI निर्देश लिख सकते हैं: लक्ष्य, संदर्भ, सीमाएँ और आउटपुट प्रारूप।",
+      "explanation": "AI उपकरण शक्तिशाली सहायक हैं, लेकिन उनकी सीमाएँ हैं। वे सारांश बना सकते हैं, ड्राफ्ट लिख सकते हैं, अनुवाद कर सकते हैं और जानकारी को व्यवस्थित कर सकते हैं। लेकिन वे अपने आप तथ्यों की जाँच नहीं कर सकते, बिना संदर्भ के आपकी स्थिति नहीं समझ सकते, या सही उत्तर की गारंटी नहीं दे सकते।\n\nहर अच्छे AI निर्देश में चार भाग होते हैं:\n1. **लक्ष्य (Goal)** — आप क्या हासिल करना चाहते हैं?\n2. **संदर्भ (Context)** — AI को क्या पृष्ठभूमि चाहिए?\n3. **सीमाएँ (Constraints)** — क्या शामिल करना या टालना है?\n4. **आउटपुट प्रारूप (Output format)** — परिणाम कैसा दिखना चाहिए?",
+      "worked_example": {
+        "scenario": "रिया को अपने मैनेजर के लिए तिमाही बिक्री रिपोर्ट का सारांश बनाना है।",
+        "bad_attempt": "इस रिपोर्ट का सारांश बनाओ।",
+        "good_attempt": "लक्ष्य: Q2 2026 बिक्री रिपोर्ट के प्रमुख निष्कर्षों का सारांश बनाएँ।\nसंदर्भ: यह मेरे मैनेजर के लिए है जिन्हें बोर्ड मीटिंग से पहले 2 मिनट का अवलोकन चाहिए। रिपोर्ट उत्तर, दक्षिण और पश्चिम क्षेत्रों की बिक्री कवर करती है।\nसीमाएँ: रुझानों और आश्चर्यों पर ध्यान दें। कच्चे नंबर न शामिल करें — प्रतिशत का उपयोग करें। 150 शब्दों के भीतर रखें।\nआउटपुट प्रारूप: एक छोटा पैराग्राफ जिसके बाद 3 प्रमुख बिंदु।",
+        "why_better": "अच्छा संस्करण AI को बताता है कि क्या करना है, किसके लिए है, किस पर ध्यान देना है, और परिणाम कैसे प्रारूपित करना है।"
+      },
+      "interactive_task": {
+        "instruction": "इस अस्पष्ट AI निर्देश को चार-भाग संरचना (लक्ष्य, संदर्भ, सीमाएँ, आउटपुट प्रारूप) का उपयोग करके फिर से लिखें:\n\nमूल: \"मेरी प्रस्तुति में मदद करो\"",
+        "starter_text": "लक्ष्य: \nसंदर्भ: \nसीमाएँ: \nआउटपुट प्रारूप: ",
+        "hints": [
+          "प्रस्तुति किस विषय पर है, यह बताकर शुरू करें।",
+          "दर्शक कौन हैं और प्रस्तुति कितनी लंबी होनी चाहिए, यह जोड़ें।",
+          "क्या शामिल करना है या क्या टालना है, यह बताएँ।",
+          "प्रारूप बताएँ — बुलेट पॉइंट? स्लाइड शीर्षक? स्क्रिप्ट?"
+        ],
+        "sample_good_response": "लक्ष्य: हमारी टीम की परियोजना प्रगति पर 10 मिनट की प्रस्तुति की रूपरेखा बनाएँ।\nसंदर्भ: दर्शक वरिष्ठ प्रबंधन हैं जो परियोजना से परिचित हैं लेकिन मील के पत्थर, बाधाओं और अगले कदमों पर अपडेट चाहते हैं।\nसीमाएँ: सरल भाषा का उपयोग करें, तकनीकी शब्दजाल नहीं। 3 विशिष्ट उपलब्धियाँ शामिल करें।\nआउटपुट प्रारूप: 6-8 स्लाइड शीर्षकों की सूची, प्रत्येक के साथ 2-3 बुलेट पॉइंट।",
+        "evaluation_criteria": [
+          "Includes a clear goal or objective",
+          "Provides context or background information",
+          "Specifies constraints or boundaries",
+          "Defines the desired output format"
+        ],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "इनमें से कौन सा काम AI अपने आप विश्वसनीय रूप से नहीं कर सकता?",
+          "options": [
+            "वास्तविक स्रोतों से जाँच करके किसी तथ्य को सत्यापित करना",
+            "एक लंबे दस्तावेज़ को मुख्य बिंदुओं में सारांशित करना",
+            "अंग्रेज़ी से हिन्दी में पाठ का अनुवाद करना",
+            "एक पैराग्राफ को अधिक औपचारिक स्वर में फिर से लिखना"
+          ],
+          "correct_index": 0,
+          "explanation": "AI पैटर्न के आधार पर पाठ उत्पन्न करता है, लेकिन वह स्वतंत्र रूप से तथ्यों को वास्तविक स्रोतों से सत्यापित नहीं कर सकता। महत्वपूर्ण दावों की हमेशा स्वयं जाँच करें।"
+        },
+        {
+          "question": "एक अच्छे AI निर्देश के चार भाग कौन से हैं?",
+          "options": [
+            "लक्ष्य, संदर्भ, सीमाएँ, आउटपुट प्रारूप",
+            "प्रश्न, उत्तर, समीक्षा, सबमिट",
+            "इनपुट, प्रक्रिया, आउटपुट, फीडबैक",
+            "शीर्षक, मुख्य भाग, निष्कर्ष, संदर्भ"
+          ],
+          "correct_index": 0,
+          "explanation": "एक अच्छे निर्देश में शामिल हैं: लक्ष्य (आप क्या चाहते हैं), संदर्भ (पृष्ठभूमि), सीमाएँ (नियम) और आउटपुट प्रारूप (परिणाम कैसा दिखे)।"
+        }
+      ],
+      "feedback_templates": {
+        "pass": "उत्कृष्ट! आपके निर्देश में सभी चार भाग हैं। इस तरह का संरचित निर्देश AI से लगातार बेहतर परिणाम देगा।",
+        "partial": "अच्छी शुरुआत! आपने कुछ प्रमुख भाग शामिल किए हैं। जाँचें कौन से छूट रहे हैं: लक्ष्य? संदर्भ? सीमाएँ? आउटपुट प्रारूप?",
+        "fail": "फिर से कोशिश करें। लक्ष्य, संदर्भ, सीमाएँ और आउटपुट प्रारूप — इन चारों भागों को शामिल करें। ऊपर दिए गए उदाहरण को देखें।"
+      },
+      "retry_hint": "ऊपर दिए गए उदाहरण को देखें। ध्यान दें कि प्रत्येक भाग AI को अलग और महत्वपूर्ण जानकारी कैसे देता है।",
+      "recap": "आज आपने सीखा कि AI एक शक्तिशाली उपकरण है लेकिन उसकी सीमाएँ हैं। अच्छे परिणामों की कुंजी है संरचित निर्देश: लक्ष्य, संदर्भ, सीमाएँ और आउटपुट प्रारूप।",
+      "glossary_terms": [
+        {"term": "prompt (प्रॉम्प्ट)", "definition": "AI उपकरण को दिया गया निर्देश या प्रश्न।"},
+        {"term": "context (संदर्भ)", "definition": "पृष्ठभूमि जानकारी जो AI को आपकी स्थिति समझने में मदद करती है।"},
+        {"term": "constraints (सीमाएँ)", "definition": "AI की प्रतिक्रिया के लिए नियम या सीमाएँ।"},
+        {"term": "output format (आउटपुट प्रारूप)", "definition": "वह संरचना जिसमें आप AI का उत्तर चाहते हैं।"}
+      ]
+    },
+    "te": {
+      "title": "AI ఏమి చేయగలదు, ఏమి చేయలేదు",
+      "description": "AI సాధనాలు దేనిలో మంచివి, ఎక్కడ విఫలమవుతాయి, మరియు లక్ష్యం, సందర్భం, పరిమితులు మరియు అవుట్‌పుట్ ఫార్మాట్‌తో స్పష్టమైన సూచనలను ఎలా వ్రాయాలో తెలుసుకోండి.",
+      "outcome": "మీరు నాలుగు ప్రధాన భాగాలతో నిర్మాణాత్మక AI సూచనను వ్రాయగలరు: లక్ష్యం, సందర్భం, పరిమితులు మరియు అవుట్‌పుట్ ఫార్మాట్.",
+      "explanation": "AI సాధనాలు శక్తివంతమైన సహాయకులు, కానీ వాటికి పరిమితులు ఉన్నాయి. అవి సారాంశం చేయగలవు, డ్రాఫ్ట్ రాయగలవు, అనువదించగలవు మరియు సమాచారాన్ని నిర్వహించగలవు. కానీ అవి వాస్తవాలను స్వయంగా ధృవీకరించలేవు.\n\nప్రతి మంచి AI సూచనలో నాలుగు భాగాలు ఉంటాయి:\n1. **లక్ష్యం (Goal)** — మీరు ఏమి సాధించాలనుకుంటున్నారు?\n2. **సందర్భం (Context)** — AIకి ఏ నేపథ్యం అవసరం?\n3. **పరిమితులు (Constraints)** — ఏమి చేర్చాలి లేదా నివారించాలి?\n4. **అవుట్‌పుట్ ఫార్మాట్ (Output format)** — ఫలితం ఎలా కనిపించాలి?",
+      "worked_example": {
+        "scenario": "రియా తన మేనేజర్ కోసం త్రైమాసిక అమ్మకాల నివేదికను సంక్షిప్తంగా చెప్పాలి.",
+        "bad_attempt": "ఈ నివేదికను సంక్షిప్తంగా చెప్పు.",
+        "good_attempt": "లక్ష్యం: Q2 2026 అమ్మకాల నివేదిక యొక్క ప్రధాన అంశాలను సంక్షిప్తంగా చెప్పండి.\nసందర్భం: ఇది నా మేనేజర్ కోసం, బోర్డ్ మీటింగ్ ముందు 2 నిమిషాల అవలోకనం కావాలి.\nపరిమితులు: ధోరణులు మరియు ఆశ్చర్యాలపై దృష్టి పెట్టండి. శాతాలు ఉపయోగించండి. 150 పదాలలో ఉంచండి.\nఅవుట్‌పుట్ ఫార్మాట్: ఒక చిన్న పేరా తర్వాత 3 ముఖ్య అంశాలు.",
+        "why_better": "మంచి వెర్షన్ AIకి ఏమి చేయాలో, ఎవరి కోసమో, దేనిపై దృష్టి పెట్టాలో, ఫలితాన్ని ఎలా ఫార్మాట్ చేయాలో చెబుతుంది."
+      },
+      "interactive_task": {
+        "instruction": "ఈ అస్పష్టమైన AI సూచనను నాలుగు-భాగాల నిర్మాణంతో తిరిగి వ్రాయండి:\n\nమూలం: \"నా ప్రెజెంటేషన్‌లో సహాయం చేయి\"",
+        "starter_text": "లక్ష్యం: \nసందర్భం: \nపరిమితులు: \nఅవుట్‌పుట్ ఫార్మాట్: ",
+        "hints": ["ప్రెజెంటేషన్ ఏ అంశం గురించి అనేది చెప్పండి.", "ప్రేక్షకులు ఎవరు, ఎంత సేపు ఉండాలి అనేది జోడించండి.", "ఏమి చేర్చాలి లేదా నివారించాలి అనేది చెప్పండి.", "ఫార్మాట్ పేర్కొనండి."],
+        "sample_good_response": "లక్ష్యం: మా టీమ్ ప్రాజెక్ట్ పురోగతిపై 10 నిమిషాల ప్రెజెంటేషన్ అవుట్‌లైన్ రూపొందించండి.\nసందర్భం: ప్రేక్షకులు సీనియర్ మేనేజ్‌మెంట్.\nపరిమితులు: సరళ భాష, సాంకేతిక పదజాలం వద్దు.\nఅవుట్‌పుట్ ఫార్మాట్: 6-8 స్లైడ్ శీర్షికల జాబితా.",
+        "evaluation_criteria": ["Includes a clear goal or objective", "Provides context or background information", "Specifies constraints or boundaries", "Defines the desired output format"],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "AI స్వయంగా విశ్వసనీయంగా చేయలేని పని ఏది?",
+          "options": ["వాస్తవ మూలాల నుండి తనిఖీ చేసి ఒక వాస్తవాన్ని ధృవీకరించడం", "పొడవైన పత్రాన్ని ముఖ్య అంశాలలో సంక్షిప్తీకరించడం", "ఆంగ్లం నుండి తెలుగులోకి అనువదించడం", "ఒక పేరాను మరింత అధికారిక స్వరంలో తిరిగి వ్రాయడం"],
+          "correct_index": 0,
+          "explanation": "AI నమూనాల ఆధారంగా వచనాన్ని ఉత్పత్తి చేస్తుంది, కానీ వాస్తవ మూలాల నుండి వాస్తవాలను స్వతంత్రంగా ధృవీకరించలేదు."
+        },
+        {
+          "question": "మంచి AI సూచన యొక్క నాలుగు భాగాలు ఏమిటి?",
+          "options": ["లక్ష్యం, సందర్భం, పరిమితులు, అవుట్‌పుట్ ఫార్మాట్", "ప్రశ్న, సమాధానం, సమీక్ష, సబ్మిట్", "ఇన్‌పుట్, ప్రక్రియ, అవుట్‌పుట్, ఫీడ్‌బ్యాక్", "శీర్షిక, బాడీ, ముగింపు, రిఫరెన్సులు"],
+          "correct_index": 0,
+          "explanation": "మంచి సూచనలో ఉంటాయి: లక్ష్యం, సందర్భం, పరిమితులు మరియు అవుట్‌పుట్ ఫార్మాట్."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "అద్భుతం! మీ సూచనలో అన్ని నాలుగు భాగాలు ఉన్నాయి.",
+        "partial": "మంచి ప్రారంభం! కొన్ని భాగాలు ఉన్నాయి. ఏవి లేవో తనిఖీ చేయండి.",
+        "fail": "మళ్ళీ ప్రయత్నించండి. నాలుగు భాగాలను చేర్చండి. ఉదాహరణ చూడండి."
+      },
+      "retry_hint": "ఉదాహరణ చూడండి. ప్రతి భాగం AIకి ఎలా భిన్నమైన సమాచారం ఇస్తుందో గమనించండి.",
+      "recap": "AI శక్తివంతమైన సాధనం కానీ పరిమితులు ఉన్నాయి. మంచి ఫలితాల కీ: లక్ష్యం, సందర్భం, పరిమితులు, అవుట్‌పుట్ ఫార్మాట్.",
+      "glossary_terms": [
+        {"term": "prompt (ప్రాంప్ట్)", "definition": "AI సాధనానికి ఇచ్చే సూచన లేదా ప్రశ్న."},
+        {"term": "context (సందర్భం)", "definition": "మీ పరిస్థితిని అర్థం చేసుకోవడానికి AIకి సహాయపడే నేపథ్య సమాచారం."}
+      ]
+    },
+    "ta": {
+      "title": "AI என்ன செய்ய முடியும், என்ன செய்ய முடியாது",
+      "description": "AI கருவிகள் எதில் சிறந்தவை, எங்கே தோல்வியடையும், குறிக்கோள், சூழல், கட்டுப்பாடுகள் மற்றும் வெளியீட்டு வடிவத்துடன் தெளிவான வழிமுறைகளை எழுதுவது எப்படி என்று தெரிந்துகொள்ளுங்கள்.",
+      "outcome": "நான்கு முக்கிய பகுதிகளுடன் ஒரு கட்டமைக்கப்பட்ட AI வழிமுறையை எழுத முடியும்: குறிக்கோள், சூழல், கட்டுப்பாடுகள், வெளியீட்டு வடிவம்.",
+      "explanation": "AI கருவிகள் சக்தி வாய்ந்த உதவியாளர்கள், ஆனால் வரம்புகள் உண்டு. அவை சுருக்கம் செய்யவும், வரைவு எழுதவும், மொழிபெயர்க்கவும் முடியும். ஆனால் உண்மைகளை சுயமாக சரிபார்க்க இயலாது.\n\nநல்ல AI வழிமுறையின் நான்கு பகுதிகள்:\n1. **குறிக்கோள் (Goal)** — என்ன அடைய வேண்டும்?\n2. **சூழல் (Context)** — என்ன பின்னணி தேவை?\n3. **கட்டுப்பாடுகள் (Constraints)** — என்ன சேர்க்க வேண்டும் அல்லது தவிர்க்க வேண்டும்?\n4. **வெளியீட்டு வடிவம் (Output format)** — முடிவு எப்படி இருக்க வேண்டும்?",
+      "worked_example": {
+        "scenario": "ரியா தனது மேலாளருக்கு காலாண்டு விற்பனை அறிக்கையை சுருக்கமாக சொல்ல வேண்டும்.",
+        "bad_attempt": "இந்த அறிக்கையை சுருக்கமாக சொல்.",
+        "good_attempt": "குறிக்கோள்: Q2 2026 விற்பனை அறிக்கையின் முக்கிய கண்டுபிடிப்புகளை சுருக்கமாக சொல்லுங்கள்.\nசூழல்: இது என் மேலாளருக்கு, போர்டு கூட்டத்திற்கு முன் 2 நிமிட கண்ணோட்டம் தேவை.\nகட்டுப்பாடுகள்: போக்குகள் மற்றும் ஆச்சரியங்களில் கவனம் செலுத்துங்கள். சதவீதங்களைப் பயன்படுத்துங்கள்.\nவெளியீட்டு வடிவம்: ஒரு சிறிய பத்தி, பின்னர் 3 முக்கிய புள்ளிகள்.",
+        "why_better": "நல்ல பதிப்பு AIக்கு என்ன செய்ய வேண்டும், யாருக்காக, எதில் கவனம் செலுத்த வேண்டும் என்று சொல்கிறது."
+      },
+      "interactive_task": {
+        "instruction": "இந்த தெளிவற்ற AI வழிமுறையை நான்கு-பகுதி கட்டமைப்பில் மீண்டும் எழுதுங்கள்:\n\nஅசல்: \"என் விளக்கக்காட்சியில் உதவி செய்\"",
+        "starter_text": "குறிக்கோள்: \nசூழல்: \nகட்டுப்பாடுகள்: \nவெளியீட்டு வடிவம்: ",
+        "hints": ["விளக்கக்காட்சி எந்த தலைப்பில் என்று சொல்லுங்கள்.", "பார்வையாளர்கள் யார், எவ்வளவு நேரம் என்று சேர்க்கவும்.", "என்ன சேர்க்க வேண்டும் அல்லது தவிர்க்க வேண்டும் என்று குறிப்பிடவும்.", "வடிவத்தைக் குறிப்பிடவும்."],
+        "sample_good_response": "குறிக்கோள்: எங்கள் குழு திட்ட முன்னேற்றம் குறித்த 10 நிமிட விளக்கக்காட்சி அவுட்லைன் உருவாக்கவும்.\nசூழல்: பார்வையாளர்கள் மூத்த நிர்வாகம்.\nகட்டுப்பாடுகள்: எளிய மொழி, தொழில்நுட்ப சொற்கள் வேண்டாம்.\nவெளியீட்டு வடிவம்: 6-8 ஸ்லைடு தலைப்புகள்.",
+        "evaluation_criteria": ["Includes a clear goal or objective", "Provides context or background information", "Specifies constraints or boundaries", "Defines the desired output format"],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "AI சுயமாக நம்பகமாக செய்ய முடியாத விஷயம் எது?",
+          "options": ["உண்மையான ஆதாரங்களிலிருந்து சரிபார்த்து ஒரு உண்மையை உறுதிப்படுத்துவது", "நீண்ட ஆவணத்தை முக்கிய புள்ளிகளாக சுருக்குவது", "ஆங்கிலத்திலிருந்து தமிழுக்கு மொழிபெயர்ப்பது", "ஒரு பத்தியை மேலும் முறையான தொனியில் மீண்டும் எழுதுவது"],
+          "correct_index": 0,
+          "explanation": "AI வடிவங்களின் அடிப்படையில் உரையை உருவாக்குகிறது, ஆனால் உண்மையான ஆதாரங்களிலிருந்து உண்மைகளை சுயமாக சரிபார்க்க முடியாது."
+        },
+        {
+          "question": "நல்ல AI வழிமுறையின் நான்கு பகுதிகள் என்ன?",
+          "options": ["குறிக்கோள், சூழல், கட்டுப்பாடுகள், வெளியீட்டு வடிவம்", "கேள்வி, பதில், மதிப்பாய்வு, சமர்ப்பி", "உள்ளீடு, செயல்முறை, வெளியீடு, கருத்து", "தலைப்பு, உடல், முடிவு, குறிப்புகள்"],
+          "correct_index": 0,
+          "explanation": "நல்ல வழிமுறையில் குறிக்கோள், சூழல், கட்டுப்பாடுகள் மற்றும் வெளியீட்டு வடிவம் ஆகியவை அடங்கும்."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "அருமை! உங்கள் வழிமுறையில் நான்கு பகுதிகளும் உள்ளன.",
+        "partial": "நல்ல தொடக்கம்! சில பகுதிகள் உள்ளன. எவை இல்லை என்று சரிபார்க்கவும்.",
+        "fail": "மீண்டும் முயற்சிக்கவும். நான்கு பகுதிகளையும் சேர்க்கவும். உதாரணத்தைப் பாருங்கள்."
+      },
+      "retry_hint": "உதாரணத்தைப் பாருங்கள். ஒவ்வொரு பகுதியும் AIக்கு எப்படி வேறுபட்ட தகவல்களை அளிக்கிறது என்று கவனியுங்கள்.",
+      "recap": "AI சக்தி வாய்ந்த கருவி ஆனால் வரம்புகள் உண்டு. நல்ல முடிவுகளின் திறவுகோல்: குறிக்கோள், சூழல், கட்டுப்பாடுகள், வெளியீட்டு வடிவம்.",
+      "glossary_terms": [
+        {"term": "prompt (ப்ராம்ப்ட்)", "definition": "AI கருவிக்கு கொடுக்கும் வழிமுறை அல்லது கேள்வி."},
+        {"term": "context (சூழல்)", "definition": "உங்கள் நிலைமையைப் புரிந்துகொள்ள AIக்கு உதவும் பின்னணித் தகவல்."}
+      ]
+    },
+    "kn": {
+      "title": "AI ಏನು ಮಾಡಬಹುದು, ಏನು ಮಾಡಲಾಗುವುದಿಲ್ಲ",
+      "description": "AI ಸಾಧನಗಳು ಯಾವುದರಲ್ಲಿ ಉತ್ತಮವಾಗಿವೆ, ಎಲ್ಲಿ ವಿಫಲವಾಗುತ್ತವೆ, ಮತ್ತು ಗುರಿ, ಸಂದರ್ಭ, ಮಿತಿಗಳು ಮತ್ತು ಔಟ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್‌ನೊಂದಿಗೆ ಸ್ಪಷ್ಟ ಸೂಚನೆಗಳನ್ನು ಬರೆಯುವುದು ಹೇಗೆ ಎಂದು ಕಲಿಯಿರಿ.",
+      "outcome": "ನಾಲ್ಕು ಪ್ರಮುಖ ಭಾಗಗಳೊಂದಿಗೆ ರಚನಾತ್ಮಕ AI ಸೂಚನೆಯನ್ನು ಬರೆಯಬಹುದು: ಗುರಿ, ಸಂದರ್ಭ, ಮಿತಿಗಳು, ಔಟ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್.",
+      "explanation": "AI ಸಾಧನಗಳು ಶಕ್ತಿಶಾಲಿ ಸಹಾಯಕರು, ಆದರೆ ಮಿತಿಗಳಿವೆ. ಅವು ಸಾರಾಂಶ, ಕರಡು, ಅನುವಾದ ಮಾಡಬಹುದು. ಆದರೆ ಸತ್ಯಗಳನ್ನು ಸ್ವಯಂ ಪರಿಶೀಲಿಸಲಾಗುವುದಿಲ್ಲ.\n\nಪ್ರತಿ ಒಳ್ಳೆಯ AI ಸೂಚನೆಯಲ್ಲಿ ನಾಲ್ಕು ಭಾಗಗಳಿವೆ:\n1. **ಗುರಿ (Goal)** — ಏನು ಸಾಧಿಸಬೇಕು?\n2. **ಸಂದರ್ಭ (Context)** — ಯಾವ ಹಿನ್ನೆಲೆ ಬೇಕು?\n3. **ಮಿತಿಗಳು (Constraints)** — ಏನು ಸೇರಿಸಬೇಕು ಅಥವಾ ತಪ್ಪಿಸಬೇಕು?\n4. **ಔಟ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್ (Output format)** — ಫಲಿತಾಂಶ ಹೇಗೆ ಕಾಣಬೇಕು?",
+      "worked_example": {
+        "scenario": "ರಿಯಾ ತನ್ನ ಮ್ಯಾನೇಜರ್‌ಗಾಗಿ ತ್ರೈಮಾಸಿಕ ಮಾರಾಟ ವರದಿಯನ್ನು ಸಂಕ್ಷಿಪ್ತಗೊಳಿಸಬೇಕು.",
+        "bad_attempt": "ಈ ವರದಿಯನ್ನು ಸಂಕ್ಷಿಪ್ತಗೊಳಿಸು.",
+        "good_attempt": "ಗುರಿ: Q2 2026 ಮಾರಾಟ ವರದಿಯ ಪ್ರಮುಖ ಅಂಶಗಳನ್ನು ಸಂಕ್ಷಿಪ್ತಗೊಳಿಸಿ.\nಸಂದರ್ಭ: ಇದು ನನ್ನ ಮ್ಯಾನೇಜರ್‌ಗಾಗಿ, ಬೋರ್ಡ್ ಮೀಟಿಂಗ್ ಮೊದಲು 2 ನಿಮಿಷದ ಅವಲೋಕನ ಬೇಕು.\nಮಿತಿಗಳು: ಪ್ರವೃತ್ತಿಗಳ ಮೇಲೆ ಗಮನ. ಶೇಕಡಾ ಬಳಸಿ. 150 ಪದಗಳಲ್ಲಿ ಇಡಿ.\nಔಟ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್: ಒಂದು ಸಣ್ಣ ಪ್ಯಾರಾ ನಂತರ 3 ಪ್ರಮುಖ ಅಂಶಗಳು.",
+        "why_better": "ಒಳ್ಳೆಯ ಆವೃತ್ತಿ AIಗೆ ಏನು ಮಾಡಬೇಕು, ಯಾರಿಗಾಗಿ, ಯಾವುದರ ಮೇಲೆ ಗಮನ, ಫಲಿತಾಂಶ ಹೇಗೆ ಫಾರ್ಮ್ಯಾಟ್ ಮಾಡಬೇಕು ಎಂದು ಹೇಳುತ್ತದೆ."
+      },
+      "interactive_task": {
+        "instruction": "ಈ ಅಸ್ಪಷ್ಟ AI ಸೂಚನೆಯನ್ನು ನಾಲ್ಕು-ಭಾಗ ರಚನೆಯೊಂದಿಗೆ ಮತ್ತೆ ಬರೆಯಿರಿ:\n\nಮೂಲ: \"ನನ್ನ ಪ್ರಸ್ತುತಿಯಲ್ಲಿ ಸಹಾಯ ಮಾಡು\"",
+        "starter_text": "ಗುರಿ: \nಸಂದರ್ಭ: \nಮಿತಿಗಳು: \nಔಟ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್: ",
+        "hints": ["ಪ್ರಸ್ತುತಿ ಯಾವ ವಿಷಯದ ಬಗ್ಗೆ ಎಂದು ಹೇಳಿ.", "ಪ್ರೇಕ್ಷಕರು ಯಾರು, ಎಷ್ಟು ಸಮಯ ಎಂದು ಸೇರಿಸಿ.", "ಏನು ಸೇರಿಸಬೇಕು ಅಥವಾ ತಪ್ಪಿಸಬೇಕು ಎಂದು ಹೇಳಿ.", "ಫಾರ್ಮ್ಯಾಟ್ ಸೂಚಿಸಿ."],
+        "sample_good_response": "ಗುರಿ: ನಮ್ಮ ತಂಡದ ಯೋಜನಾ ಪ್ರಗತಿ ಕುರಿತು 10 ನಿಮಿಷದ ಪ್ರಸ್ತುತಿ ಔಟ್‌ಲೈನ್ ರಚಿಸಿ.\nಸಂದರ್ಭ: ಪ್ರೇಕ್ಷಕರು ಹಿರಿಯ ನಿರ್ವಹಣೆ.\nಮಿತಿಗಳು: ಸರಳ ಭಾಷೆ, ತಾಂತ್ರಿಕ ಪದಗಳು ಬೇಡ.\nಔಟ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್: 6-8 ಸ್ಲೈಡ್ ಶೀರ್ಷಿಕೆಗಳ ಪಟ್ಟಿ.",
+        "evaluation_criteria": ["Includes a clear goal or objective", "Provides context or background information", "Specifies constraints or boundaries", "Defines the desired output format"],
+        "produces_artifact": false
+      },
+      "understanding_checks": [
+        {
+          "question": "AI ಸ್ವಯಂ ವಿಶ್ವಾಸಾರ್ಹವಾಗಿ ಮಾಡಲಾಗದ ಕೆಲಸ ಯಾವುದು?",
+          "options": ["ನೈಜ ಮೂಲಗಳಿಂದ ಪರಿಶೀಲಿಸಿ ಸತ್ಯವನ್ನು ದೃಢೀಕರಿಸುವುದು", "ದೀರ್ಘ ದಾಖಲೆಯನ್ನು ಪ್ರಮುಖ ಅಂಶಗಳಲ್ಲಿ ಸಂಕ್ಷಿಪ್ತಗೊಳಿಸುವುದು", "ಇಂಗ್ಲಿಷ್‌ನಿಂದ ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸುವುದು", "ಪ್ಯಾರಾವನ್ನು ಔಪಚಾರಿಕ ಧ್ವನಿಯಲ್ಲಿ ಮತ್ತೆ ಬರೆಯುವುದು"],
+          "correct_index": 0,
+          "explanation": "AI ಮಾದರಿಗಳ ಆಧಾರದ ಮೇಲೆ ಪಠ್ಯವನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ, ಆದರೆ ನೈಜ ಮೂಲಗಳಿಂದ ಸತ್ಯಗಳನ್ನು ಸ್ವತಂತ್ರವಾಗಿ ಪರಿಶೀಲಿಸಲಾಗುವುದಿಲ್ಲ."
+        },
+        {
+          "question": "ಒಳ್ಳೆಯ AI ಸೂಚನೆಯ ನಾಲ್ಕು ಭಾಗಗಳು ಯಾವುವು?",
+          "options": ["ಗುರಿ, ಸಂದರ್ಭ, ಮಿತಿಗಳು, ಔಟ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್", "ಪ್ರಶ್ನೆ, ಉತ್ತರ, ಪರಿಶೀಲನೆ, ಸಲ್ಲಿಸು", "ಇನ್‌ಪುಟ್, ಪ್ರಕ್ರಿಯೆ, ಔಟ್‌ಪುಟ್, ಪ್ರತಿಕ್ರಿಯೆ", "ಶೀರ್ಷಿಕೆ, ದೇಹ, ತೀರ್ಮಾನ, ಉಲ್ಲೇಖಗಳು"],
+          "correct_index": 0,
+          "explanation": "ಒಳ್ಳೆಯ ಸೂಚನೆಯಲ್ಲಿ ಗುರಿ, ಸಂದರ್ಭ, ಮಿತಿಗಳು ಮತ್ತು ಔಟ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್ ಇರುತ್ತವೆ."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "ಅದ್ಭುತ! ನಿಮ್ಮ ಸೂಚನೆಯಲ್ಲಿ ನಾಲ್ಕು ಭಾಗಗಳೂ ಇವೆ.",
+        "partial": "ಒಳ್ಳೆಯ ಆರಂಭ! ಕೆಲವು ಭಾಗಗಳಿವೆ. ಯಾವುವು ಇಲ್ಲ ಎಂದು ಪರಿಶೀಲಿಸಿ.",
+        "fail": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. ನಾಲ್ಕು ಭಾಗಗಳನ್ನೂ ಸೇರಿಸಿ. ಉದಾಹರಣೆ ನೋಡಿ."
+      },
+      "retry_hint": "ಉದಾಹರಣೆ ನೋಡಿ. ಪ್ರತಿ ಭಾಗ AIಗೆ ಹೇಗೆ ವಿಭಿನ್ನ ಮಾಹಿತಿ ನೀಡುತ್ತದೆ ಎಂದು ಗಮನಿಸಿ.",
+      "recap": "AI ಶಕ್ತಿಶಾಲಿ ಸಾಧನ ಆದರೆ ಮಿತಿಗಳಿವೆ. ಒಳ್ಳೆಯ ಫಲಿತಾಂಶಗಳ ಕೀಲಿ: ಗುರಿ, ಸಂದರ್ಭ, ಮಿತಿಗಳು, ಔಟ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್.",
+      "glossary_terms": [
+        {"term": "prompt (ಪ್ರಾಂಪ್ಟ್)", "definition": "AI ಸಾಧನಕ್ಕೆ ನೀಡುವ ಸೂಚನೆ ಅಥವಾ ಪ್ರಶ್ನೆ."},
+        {"term": "context (ಸಂದರ್ಭ)", "definition": "ನಿಮ್ಮ ಪರಿಸ್ಥಿತಿಯನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು AIಗೆ ಸಹಾಯ ಮಾಡುವ ಹಿನ್ನೆಲೆ ಮಾಹಿತಿ."}
+      ]
+    }
+  }
+}

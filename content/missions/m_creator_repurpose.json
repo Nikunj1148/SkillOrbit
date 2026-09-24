@@ -1,0 +1,388 @@
+{
+  "id": "m_creator_repurpose",
+  "version": "1.0.0",
+  "type": "mission",
+  "audience": "creator",
+  "prerequisites": [
+    "f3_checking_evidence",
+    "f2_examples_iteration"
+  ],
+  "estimated_duration_minutes": 5,
+  "order": 2,
+  "review_date": "2026-09-17",
+  "translation_status": {
+    "en": {
+      "reviewed": true,
+      "reviewer": "author"
+    },
+    "hi": {
+      "reviewed": false
+    },
+    "te": {
+      "reviewed": false
+    },
+    "ta": {
+      "reviewed": false
+    },
+    "kn": {
+      "reviewed": false
+    }
+  },
+  "content": {
+    "en": {
+      "title": "Repurpose Without Inventing",
+      "description": "Repurpose a source article into a social media post while maintaining factual accuracy.",
+      "outcome": "You can repurpose content using AI while ensuring no claims are invented or exaggerated.",
+      "explanation": "Repurposing means adapting content for a different format/platform. The key rule: don't invent claims that aren't in the source. AI might add 'interesting' details that weren't in the original.",
+      "worked_example": {
+        "scenario": "Repurposing a WorkWise Magazine blog post about remote work.",
+        "bad_attempt": "Turn this article into a social post.",
+        "good_attempt": "Goal: Repurpose this blog post into a LinkedIn post.\nContext: Source is WorkWise Magazine article on remote work productivity.\nConstraints: Only include claims from the source. Don't add statistics not in the original. Keep the tone informative. Under 200 words.\nOutput: LinkedIn post with hook, 3 key points from the article, and a question to drive engagement.",
+        "why_better": "Explicitly prevents AI from inventing claims beyond the source."
+      },
+      "interactive_task": {
+        "instruction": "Repurpose this article excerpt into a social media post:\n\n\"WorkWise Magazine: Remote Work in 2026\nA survey of 500 Indian companies found that 62% now offer hybrid work options, up from 45% in 2024. Employees report better work-life balance but some managers struggle with team coordination. Key challenges include time zone differences and maintaining company culture.\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What specific numbers and facts are in the source?",
+          "What should AI NOT add?",
+          "What format works for social media?"
+        ],
+        "sample_good_response": "Goal: Create a concise social media post from this WorkWise Magazine article.\nContext: Target platform: LinkedIn. Audience: professionals interested in remote work.\nConstraints: Only use facts stated in the source article (62%, 500 companies, hybrid work growth). Do NOT invent additional statistics. Acknowledge both positives and challenges. Under 150 words.\nOutput: Post with engaging opening question, 3 bullet points from the article, source attribution, and a discussion question.",
+        "evaluation_criteria": [
+          "Specifies to only use facts from the source",
+          "Prevents inventing new statistics",
+          "Includes source attribution",
+          "Defines output format"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "post"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the biggest risk when repurposing content with AI?",
+          "options": [
+            "AI might add claims not in the original source",
+            "The post might be too short",
+            "AI can't write social media posts",
+            "The post won't get enough likes"
+          ],
+          "correct_index": 0,
+          "explanation": "AI may 'enhance' content by adding plausible-sounding statistics or claims that weren't in the source."
+        },
+        {
+          "question": "Why should you attribute the source in your repurposed post?",
+          "options": [
+            "It's honest and builds credibility with your audience",
+            "It makes the post longer",
+            "AI requires attribution to work",
+            "Sources make posts go viral"
+          ],
+          "correct_index": 0,
+          "explanation": "Attribution is both ethical and builds trust with your audience."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Well done! Your instruction ensures factual accuracy while creating engaging content.",
+        "partial": "Good effort. Make sure to explicitly state that AI should not invent statistics.",
+        "fail": "Try again. The key constraint is: only use facts from the source article."
+      },
+      "retry_hint": "Review the worked example and try again.",
+      "recap": "You practiced repurposing with integrity. Always constrain AI to facts in your source and attribute properly.",
+      "glossary_terms": [
+        {
+          "term": "repurposing",
+          "definition": "Adapting existing content for a different format, platform, or audience."
+        },
+        {
+          "term": "attribution",
+          "definition": "Crediting the original source of information."
+        }
+      ]
+    },
+    "hi": {
+      "title": "बिना बनावट के रीपर्पज करें",
+      "description": "तथ्यात्मक सटीकता बनाए रखते हुए स्रोत लेख को सोशल मीडिया पोस्ट में बदलें।",
+      "outcome": "You can repurpose content using AI while ensuring no claims are invented or exaggerated.",
+      "explanation": "Repurposing means adapting content for a different format/platform. The key rule: don't invent claims that aren't in the source. AI might add 'interesting' details that weren't in the original.",
+      "worked_example": {
+        "scenario": "Repurposing a WorkWise Magazine blog post about remote work.",
+        "bad_attempt": "Turn this article into a social post.",
+        "good_attempt": "Goal: Repurpose this blog post into a LinkedIn post.\nContext: Source is WorkWise Magazine article on remote work productivity.\nConstraints: Only include claims from the source. Don't add statistics not in the original. Keep the tone informative. Under 200 words.\nOutput: LinkedIn post with hook, 3 key points from the article, and a question to drive engagement.",
+        "why_better": "Explicitly prevents AI from inventing claims beyond the source."
+      },
+      "interactive_task": {
+        "instruction": "Repurpose this article excerpt into a social media post:\n\n\"WorkWise Magazine: Remote Work in 2026\nA survey of 500 Indian companies found that 62% now offer hybrid work options, up from 45% in 2024. Employees report better work-life balance but some managers struggle with team coordination. Key challenges include time zone differences and maintaining company culture.\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What specific numbers and facts are in the source?",
+          "What should AI NOT add?",
+          "What format works for social media?"
+        ],
+        "sample_good_response": "Goal: Create a concise social media post from this WorkWise Magazine article.\nContext: Target platform: LinkedIn. Audience: professionals interested in remote work.\nConstraints: Only use facts stated in the source article (62%, 500 companies, hybrid work growth). Do NOT invent additional statistics. Acknowledge both positives and challenges. Under 150 words.\nOutput: Post with engaging opening question, 3 bullet points from the article, source attribution, and a discussion question.",
+        "evaluation_criteria": [
+          "Specifies to only use facts from the source",
+          "Prevents inventing new statistics",
+          "Includes source attribution",
+          "Defines output format"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "post"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the biggest risk when repurposing content with AI?",
+          "options": [
+            "AI might add claims not in the original source",
+            "The post might be too short",
+            "AI can't write social media posts",
+            "The post won't get enough likes"
+          ],
+          "correct_index": 0,
+          "explanation": "AI may 'enhance' content by adding plausible-sounding statistics or claims that weren't in the source."
+        },
+        {
+          "question": "Why should you attribute the source in your repurposed post?",
+          "options": [
+            "It's honest and builds credibility with your audience",
+            "It makes the post longer",
+            "AI requires attribution to work",
+            "Sources make posts go viral"
+          ],
+          "correct_index": 0,
+          "explanation": "Attribution is both ethical and builds trust with your audience."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Well done! Your instruction ensures factual accuracy while creating engaging content.",
+        "partial": "Good effort. Make sure to explicitly state that AI should not invent statistics.",
+        "fail": "Try again. The key constraint is: only use facts from the source article."
+      },
+      "retry_hint": "ऊपर दिए गए उदाहरण को देखें और फिर से कोशिश करें।",
+      "recap": "You practiced repurposing with integrity. Always constrain AI to facts in your source and attribute properly.",
+      "glossary_terms": [
+        {
+          "term": "repurposing",
+          "definition": "Adapting existing content for a different format, platform, or audience."
+        },
+        {
+          "term": "attribution",
+          "definition": "Crediting the original source of information."
+        }
+      ]
+    },
+    "te": {
+      "title": "ఆవిష్కరించకుండా రీపర్పజ్ చేయండి",
+      "description": "వాస్తవ ఖచ్చితత్వం నిర్వహిస్తూ మూల కథనాన్ని సోషల్ మీడియా పోస్ట్‌గా మార్చండి.",
+      "outcome": "You can repurpose content using AI while ensuring no claims are invented or exaggerated.",
+      "explanation": "Repurposing means adapting content for a different format/platform. The key rule: don't invent claims that aren't in the source. AI might add 'interesting' details that weren't in the original.",
+      "worked_example": {
+        "scenario": "Repurposing a WorkWise Magazine blog post about remote work.",
+        "bad_attempt": "Turn this article into a social post.",
+        "good_attempt": "Goal: Repurpose this blog post into a LinkedIn post.\nContext: Source is WorkWise Magazine article on remote work productivity.\nConstraints: Only include claims from the source. Don't add statistics not in the original. Keep the tone informative. Under 200 words.\nOutput: LinkedIn post with hook, 3 key points from the article, and a question to drive engagement.",
+        "why_better": "Explicitly prevents AI from inventing claims beyond the source."
+      },
+      "interactive_task": {
+        "instruction": "Repurpose this article excerpt into a social media post:\n\n\"WorkWise Magazine: Remote Work in 2026\nA survey of 500 Indian companies found that 62% now offer hybrid work options, up from 45% in 2024. Employees report better work-life balance but some managers struggle with team coordination. Key challenges include time zone differences and maintaining company culture.\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What specific numbers and facts are in the source?",
+          "What should AI NOT add?",
+          "What format works for social media?"
+        ],
+        "sample_good_response": "Goal: Create a concise social media post from this WorkWise Magazine article.\nContext: Target platform: LinkedIn. Audience: professionals interested in remote work.\nConstraints: Only use facts stated in the source article (62%, 500 companies, hybrid work growth). Do NOT invent additional statistics. Acknowledge both positives and challenges. Under 150 words.\nOutput: Post with engaging opening question, 3 bullet points from the article, source attribution, and a discussion question.",
+        "evaluation_criteria": [
+          "Specifies to only use facts from the source",
+          "Prevents inventing new statistics",
+          "Includes source attribution",
+          "Defines output format"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "post"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the biggest risk when repurposing content with AI?",
+          "options": [
+            "AI might add claims not in the original source",
+            "The post might be too short",
+            "AI can't write social media posts",
+            "The post won't get enough likes"
+          ],
+          "correct_index": 0,
+          "explanation": "AI may 'enhance' content by adding plausible-sounding statistics or claims that weren't in the source."
+        },
+        {
+          "question": "Why should you attribute the source in your repurposed post?",
+          "options": [
+            "It's honest and builds credibility with your audience",
+            "It makes the post longer",
+            "AI requires attribution to work",
+            "Sources make posts go viral"
+          ],
+          "correct_index": 0,
+          "explanation": "Attribution is both ethical and builds trust with your audience."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Well done! Your instruction ensures factual accuracy while creating engaging content.",
+        "partial": "Good effort. Make sure to explicitly state that AI should not invent statistics.",
+        "fail": "Try again. The key constraint is: only use facts from the source article."
+      },
+      "retry_hint": "ఉదాహరణ చూసి మళ్ళీ ప్రయత్నించండి.",
+      "recap": "You practiced repurposing with integrity. Always constrain AI to facts in your source and attribute properly.",
+      "glossary_terms": [
+        {
+          "term": "repurposing",
+          "definition": "Adapting existing content for a different format, platform, or audience."
+        },
+        {
+          "term": "attribution",
+          "definition": "Crediting the original source of information."
+        }
+      ]
+    },
+    "ta": {
+      "title": "கற்பனை செய்யாமல் மறுபயன்படுத்துங்கள்",
+      "description": "உண்மைத்தன்மையை பராமரிக்கும் போது மூல கட்டுரையை சமூக ஊடக இடுகையாக மாற்றுங்கள்.",
+      "outcome": "You can repurpose content using AI while ensuring no claims are invented or exaggerated.",
+      "explanation": "Repurposing means adapting content for a different format/platform. The key rule: don't invent claims that aren't in the source. AI might add 'interesting' details that weren't in the original.",
+      "worked_example": {
+        "scenario": "Repurposing a WorkWise Magazine blog post about remote work.",
+        "bad_attempt": "Turn this article into a social post.",
+        "good_attempt": "Goal: Repurpose this blog post into a LinkedIn post.\nContext: Source is WorkWise Magazine article on remote work productivity.\nConstraints: Only include claims from the source. Don't add statistics not in the original. Keep the tone informative. Under 200 words.\nOutput: LinkedIn post with hook, 3 key points from the article, and a question to drive engagement.",
+        "why_better": "Explicitly prevents AI from inventing claims beyond the source."
+      },
+      "interactive_task": {
+        "instruction": "Repurpose this article excerpt into a social media post:\n\n\"WorkWise Magazine: Remote Work in 2026\nA survey of 500 Indian companies found that 62% now offer hybrid work options, up from 45% in 2024. Employees report better work-life balance but some managers struggle with team coordination. Key challenges include time zone differences and maintaining company culture.\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What specific numbers and facts are in the source?",
+          "What should AI NOT add?",
+          "What format works for social media?"
+        ],
+        "sample_good_response": "Goal: Create a concise social media post from this WorkWise Magazine article.\nContext: Target platform: LinkedIn. Audience: professionals interested in remote work.\nConstraints: Only use facts stated in the source article (62%, 500 companies, hybrid work growth). Do NOT invent additional statistics. Acknowledge both positives and challenges. Under 150 words.\nOutput: Post with engaging opening question, 3 bullet points from the article, source attribution, and a discussion question.",
+        "evaluation_criteria": [
+          "Specifies to only use facts from the source",
+          "Prevents inventing new statistics",
+          "Includes source attribution",
+          "Defines output format"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "post"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the biggest risk when repurposing content with AI?",
+          "options": [
+            "AI might add claims not in the original source",
+            "The post might be too short",
+            "AI can't write social media posts",
+            "The post won't get enough likes"
+          ],
+          "correct_index": 0,
+          "explanation": "AI may 'enhance' content by adding plausible-sounding statistics or claims that weren't in the source."
+        },
+        {
+          "question": "Why should you attribute the source in your repurposed post?",
+          "options": [
+            "It's honest and builds credibility with your audience",
+            "It makes the post longer",
+            "AI requires attribution to work",
+            "Sources make posts go viral"
+          ],
+          "correct_index": 0,
+          "explanation": "Attribution is both ethical and builds trust with your audience."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Well done! Your instruction ensures factual accuracy while creating engaging content.",
+        "partial": "Good effort. Make sure to explicitly state that AI should not invent statistics.",
+        "fail": "Try again. The key constraint is: only use facts from the source article."
+      },
+      "retry_hint": "உதாரணத்தைப் பார்த்து மீண்டும் முயற்சிக்கவும்.",
+      "recap": "You practiced repurposing with integrity. Always constrain AI to facts in your source and attribute properly.",
+      "glossary_terms": [
+        {
+          "term": "repurposing",
+          "definition": "Adapting existing content for a different format, platform, or audience."
+        },
+        {
+          "term": "attribution",
+          "definition": "Crediting the original source of information."
+        }
+      ]
+    },
+    "kn": {
+      "title": "ಕಲ್ಪಿಸದೆ ರೀಪರ್ಪಸ್ ಮಾಡಿ",
+      "description": "ವಾಸ್ತವಿಕ ನಿಖರತೆ ಕಾಪಾಡುತ್ತಾ ಮೂಲ ಲೇಖನವನ್ನು ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಪೋಸ್ಟ್ ಆಗಿ ಮಾರ್ಪಡಿಸಿ.",
+      "outcome": "You can repurpose content using AI while ensuring no claims are invented or exaggerated.",
+      "explanation": "Repurposing means adapting content for a different format/platform. The key rule: don't invent claims that aren't in the source. AI might add 'interesting' details that weren't in the original.",
+      "worked_example": {
+        "scenario": "Repurposing a WorkWise Magazine blog post about remote work.",
+        "bad_attempt": "Turn this article into a social post.",
+        "good_attempt": "Goal: Repurpose this blog post into a LinkedIn post.\nContext: Source is WorkWise Magazine article on remote work productivity.\nConstraints: Only include claims from the source. Don't add statistics not in the original. Keep the tone informative. Under 200 words.\nOutput: LinkedIn post with hook, 3 key points from the article, and a question to drive engagement.",
+        "why_better": "Explicitly prevents AI from inventing claims beyond the source."
+      },
+      "interactive_task": {
+        "instruction": "Repurpose this article excerpt into a social media post:\n\n\"WorkWise Magazine: Remote Work in 2026\nA survey of 500 Indian companies found that 62% now offer hybrid work options, up from 45% in 2024. Employees report better work-life balance but some managers struggle with team coordination. Key challenges include time zone differences and maintaining company culture.\"",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "What specific numbers and facts are in the source?",
+          "What should AI NOT add?",
+          "What format works for social media?"
+        ],
+        "sample_good_response": "Goal: Create a concise social media post from this WorkWise Magazine article.\nContext: Target platform: LinkedIn. Audience: professionals interested in remote work.\nConstraints: Only use facts stated in the source article (62%, 500 companies, hybrid work growth). Do NOT invent additional statistics. Acknowledge both positives and challenges. Under 150 words.\nOutput: Post with engaging opening question, 3 bullet points from the article, source attribution, and a discussion question.",
+        "evaluation_criteria": [
+          "Specifies to only use facts from the source",
+          "Prevents inventing new statistics",
+          "Includes source attribution",
+          "Defines output format"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "post"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the biggest risk when repurposing content with AI?",
+          "options": [
+            "AI might add claims not in the original source",
+            "The post might be too short",
+            "AI can't write social media posts",
+            "The post won't get enough likes"
+          ],
+          "correct_index": 0,
+          "explanation": "AI may 'enhance' content by adding plausible-sounding statistics or claims that weren't in the source."
+        },
+        {
+          "question": "Why should you attribute the source in your repurposed post?",
+          "options": [
+            "It's honest and builds credibility with your audience",
+            "It makes the post longer",
+            "AI requires attribution to work",
+            "Sources make posts go viral"
+          ],
+          "correct_index": 0,
+          "explanation": "Attribution is both ethical and builds trust with your audience."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Well done! Your instruction ensures factual accuracy while creating engaging content.",
+        "partial": "Good effort. Make sure to explicitly state that AI should not invent statistics.",
+        "fail": "Try again. The key constraint is: only use facts from the source article."
+      },
+      "retry_hint": "ಉದಾಹರಣೆ ನೋಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+      "recap": "You practiced repurposing with integrity. Always constrain AI to facts in your source and attribute properly.",
+      "glossary_terms": [
+        {
+          "term": "repurposing",
+          "definition": "Adapting existing content for a different format, platform, or audience."
+        },
+        {
+          "term": "attribution",
+          "definition": "Crediting the original source of information."
+        }
+      ]
+    }
+  }
+}

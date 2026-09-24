@@ -1,0 +1,388 @@
+{
+  "id": "m_creator_script",
+  "version": "1.0.0",
+  "type": "mission",
+  "audience": "creator",
+  "prerequisites": [
+    "f1_ai_capabilities",
+    "f2_examples_iteration"
+  ],
+  "estimated_duration_minutes": 5,
+  "order": 1,
+  "review_date": "2026-09-17",
+  "translation_status": {
+    "en": {
+      "reviewed": true,
+      "reviewer": "author"
+    },
+    "hi": {
+      "reviewed": false
+    },
+    "te": {
+      "reviewed": false
+    },
+    "ta": {
+      "reviewed": false
+    },
+    "kn": {
+      "reviewed": false
+    }
+  },
+  "content": {
+    "en": {
+      "title": "Create a Short-Video Script",
+      "description": "Develop a 60-second video script using AI for a fictional creator channel.",
+      "outcome": "You can write AI instructions that produce engaging, structured short-video scripts.",
+      "explanation": "Short-form video needs tight structure: hook → value → call-to-action. AI can help draft scripts, but you need to specify the format, tone, and duration.",
+      "worked_example": {
+        "scenario": "TechTidy channel: 'How to organize your digital workspace'",
+        "bad_attempt": "Write a video script about organizing.",
+        "good_attempt": "Goal: Write a 60-second video script about organizing a digital workspace.\nContext: TechTidy channel, audience is young professionals. Style: fast-paced, practical.\nConstraints: Hook in first 5 seconds. 3 actionable tips. End with CTA. Under 150 words.\nOutput: Script with timestamp markers and visual cues.",
+        "why_better": "Specifies duration, style, structure, and production details."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to create a 60-second video script for the TechTidy channel. Topic: '5 ways to declutter your phone in 2 minutes.' Target audience: Gen Z and young professionals.",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Think about the hook — what grabs attention in the first 3 seconds?",
+          "How many tips fit in 60 seconds?",
+          "What visual cues would help the editor?"
+        ],
+        "sample_good_response": "Goal: Create a 60-second video script about decluttering your phone quickly.\nContext: TechTidy channel, Gen Z/young professional audience. Energetic, practical tone.\nConstraints: Hook in first 3 seconds (start with a surprising fact). 5 quick tips, ~10 sec each. End with subscribe CTA. Under 160 words. No jargon.\nOutput: Script with [TIMESTAMP], [VISUAL], [TEXT ON SCREEN] markers. Include suggested background music mood.",
+        "evaluation_criteria": [
+          "Includes clear goal with topic",
+          "Specifies audience and tone",
+          "Defines duration and structure constraints",
+          "Includes production format details"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "script"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important part of a short-form video script?",
+          "options": [
+            "A strong hook in the first few seconds",
+            "Using as many words as possible",
+            "Making it at least 5 minutes long",
+            "Including complex vocabulary"
+          ],
+          "correct_index": 0,
+          "explanation": "On platforms like Instagram and YouTube Shorts, viewers decide in 1-3 seconds whether to keep watching."
+        },
+        {
+          "question": "Why should you specify production details in your AI instruction?",
+          "options": [
+            "They help the AI generate more useful, production-ready output",
+            "They make the instruction longer",
+            "AI can't write scripts without them",
+            "They replace the need for editing"
+          ],
+          "correct_index": 0,
+          "explanation": "Timestamp markers, visual cues, and text overlays make the script immediately useful for production."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction would produce a production-ready script.",
+        "partial": "Good start! Add more structure details like timestamps and visual cues.",
+        "fail": "Try again. Think about: hook, structure, timing, and production format."
+      },
+      "retry_hint": "Review the worked example and try again.",
+      "recap": "You practiced creating scripts with AI. Key: specify hook, timing, audience, and production format for usable output.",
+      "glossary_terms": [
+        {
+          "term": "hook",
+          "definition": "The attention-grabbing opening seconds of a video that makes viewers want to keep watching."
+        },
+        {
+          "term": "CTA (call-to-action)",
+          "definition": "A prompt telling viewers what to do next (subscribe, like, comment)."
+        }
+      ]
+    },
+    "hi": {
+      "title": "शॉर्ट-वीडियो स्क्रिप्ट बनाएं",
+      "description": "AI का उपयोग करके 60 सेकंड की वीडियो स्क्रिप्ट बनाएं।",
+      "outcome": "You can write AI instructions that produce engaging, structured short-video scripts.",
+      "explanation": "Short-form video needs tight structure: hook → value → call-to-action. AI can help draft scripts, but you need to specify the format, tone, and duration.",
+      "worked_example": {
+        "scenario": "TechTidy channel: 'How to organize your digital workspace'",
+        "bad_attempt": "Write a video script about organizing.",
+        "good_attempt": "Goal: Write a 60-second video script about organizing a digital workspace.\nContext: TechTidy channel, audience is young professionals. Style: fast-paced, practical.\nConstraints: Hook in first 5 seconds. 3 actionable tips. End with CTA. Under 150 words.\nOutput: Script with timestamp markers and visual cues.",
+        "why_better": "Specifies duration, style, structure, and production details."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to create a 60-second video script for the TechTidy channel. Topic: '5 ways to declutter your phone in 2 minutes.' Target audience: Gen Z and young professionals.",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Think about the hook — what grabs attention in the first 3 seconds?",
+          "How many tips fit in 60 seconds?",
+          "What visual cues would help the editor?"
+        ],
+        "sample_good_response": "Goal: Create a 60-second video script about decluttering your phone quickly.\nContext: TechTidy channel, Gen Z/young professional audience. Energetic, practical tone.\nConstraints: Hook in first 3 seconds (start with a surprising fact). 5 quick tips, ~10 sec each. End with subscribe CTA. Under 160 words. No jargon.\nOutput: Script with [TIMESTAMP], [VISUAL], [TEXT ON SCREEN] markers. Include suggested background music mood.",
+        "evaluation_criteria": [
+          "Includes clear goal with topic",
+          "Specifies audience and tone",
+          "Defines duration and structure constraints",
+          "Includes production format details"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "script"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important part of a short-form video script?",
+          "options": [
+            "A strong hook in the first few seconds",
+            "Using as many words as possible",
+            "Making it at least 5 minutes long",
+            "Including complex vocabulary"
+          ],
+          "correct_index": 0,
+          "explanation": "On platforms like Instagram and YouTube Shorts, viewers decide in 1-3 seconds whether to keep watching."
+        },
+        {
+          "question": "Why should you specify production details in your AI instruction?",
+          "options": [
+            "They help the AI generate more useful, production-ready output",
+            "They make the instruction longer",
+            "AI can't write scripts without them",
+            "They replace the need for editing"
+          ],
+          "correct_index": 0,
+          "explanation": "Timestamp markers, visual cues, and text overlays make the script immediately useful for production."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction would produce a production-ready script.",
+        "partial": "Good start! Add more structure details like timestamps and visual cues.",
+        "fail": "Try again. Think about: hook, structure, timing, and production format."
+      },
+      "retry_hint": "ऊपर दिए गए उदाहरण को देखें और फिर से कोशिश करें।",
+      "recap": "You practiced creating scripts with AI. Key: specify hook, timing, audience, and production format for usable output.",
+      "glossary_terms": [
+        {
+          "term": "hook",
+          "definition": "The attention-grabbing opening seconds of a video that makes viewers want to keep watching."
+        },
+        {
+          "term": "CTA (call-to-action)",
+          "definition": "A prompt telling viewers what to do next (subscribe, like, comment)."
+        }
+      ]
+    },
+    "te": {
+      "title": "షార్ట్-వీడియో స్క్రిప్ట్ రూపొందించండి",
+      "description": "AI ఉపయోగించి 60 సెకన్ల వీడియో స్క్రిప్ట్.",
+      "outcome": "You can write AI instructions that produce engaging, structured short-video scripts.",
+      "explanation": "Short-form video needs tight structure: hook → value → call-to-action. AI can help draft scripts, but you need to specify the format, tone, and duration.",
+      "worked_example": {
+        "scenario": "TechTidy channel: 'How to organize your digital workspace'",
+        "bad_attempt": "Write a video script about organizing.",
+        "good_attempt": "Goal: Write a 60-second video script about organizing a digital workspace.\nContext: TechTidy channel, audience is young professionals. Style: fast-paced, practical.\nConstraints: Hook in first 5 seconds. 3 actionable tips. End with CTA. Under 150 words.\nOutput: Script with timestamp markers and visual cues.",
+        "why_better": "Specifies duration, style, structure, and production details."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to create a 60-second video script for the TechTidy channel. Topic: '5 ways to declutter your phone in 2 minutes.' Target audience: Gen Z and young professionals.",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Think about the hook — what grabs attention in the first 3 seconds?",
+          "How many tips fit in 60 seconds?",
+          "What visual cues would help the editor?"
+        ],
+        "sample_good_response": "Goal: Create a 60-second video script about decluttering your phone quickly.\nContext: TechTidy channel, Gen Z/young professional audience. Energetic, practical tone.\nConstraints: Hook in first 3 seconds (start with a surprising fact). 5 quick tips, ~10 sec each. End with subscribe CTA. Under 160 words. No jargon.\nOutput: Script with [TIMESTAMP], [VISUAL], [TEXT ON SCREEN] markers. Include suggested background music mood.",
+        "evaluation_criteria": [
+          "Includes clear goal with topic",
+          "Specifies audience and tone",
+          "Defines duration and structure constraints",
+          "Includes production format details"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "script"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important part of a short-form video script?",
+          "options": [
+            "A strong hook in the first few seconds",
+            "Using as many words as possible",
+            "Making it at least 5 minutes long",
+            "Including complex vocabulary"
+          ],
+          "correct_index": 0,
+          "explanation": "On platforms like Instagram and YouTube Shorts, viewers decide in 1-3 seconds whether to keep watching."
+        },
+        {
+          "question": "Why should you specify production details in your AI instruction?",
+          "options": [
+            "They help the AI generate more useful, production-ready output",
+            "They make the instruction longer",
+            "AI can't write scripts without them",
+            "They replace the need for editing"
+          ],
+          "correct_index": 0,
+          "explanation": "Timestamp markers, visual cues, and text overlays make the script immediately useful for production."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction would produce a production-ready script.",
+        "partial": "Good start! Add more structure details like timestamps and visual cues.",
+        "fail": "Try again. Think about: hook, structure, timing, and production format."
+      },
+      "retry_hint": "ఉదాహరణ చూసి మళ్ళీ ప్రయత్నించండి.",
+      "recap": "You practiced creating scripts with AI. Key: specify hook, timing, audience, and production format for usable output.",
+      "glossary_terms": [
+        {
+          "term": "hook",
+          "definition": "The attention-grabbing opening seconds of a video that makes viewers want to keep watching."
+        },
+        {
+          "term": "CTA (call-to-action)",
+          "definition": "A prompt telling viewers what to do next (subscribe, like, comment)."
+        }
+      ]
+    },
+    "ta": {
+      "title": "குறுவீடியோ ஸ்கிரிப்ட் உருவாக்குங்கள்",
+      "description": "AI பயன்படுத்தி 60 வினாடி வீடியோ ஸ்கிரிப்ட்.",
+      "outcome": "You can write AI instructions that produce engaging, structured short-video scripts.",
+      "explanation": "Short-form video needs tight structure: hook → value → call-to-action. AI can help draft scripts, but you need to specify the format, tone, and duration.",
+      "worked_example": {
+        "scenario": "TechTidy channel: 'How to organize your digital workspace'",
+        "bad_attempt": "Write a video script about organizing.",
+        "good_attempt": "Goal: Write a 60-second video script about organizing a digital workspace.\nContext: TechTidy channel, audience is young professionals. Style: fast-paced, practical.\nConstraints: Hook in first 5 seconds. 3 actionable tips. End with CTA. Under 150 words.\nOutput: Script with timestamp markers and visual cues.",
+        "why_better": "Specifies duration, style, structure, and production details."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to create a 60-second video script for the TechTidy channel. Topic: '5 ways to declutter your phone in 2 minutes.' Target audience: Gen Z and young professionals.",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Think about the hook — what grabs attention in the first 3 seconds?",
+          "How many tips fit in 60 seconds?",
+          "What visual cues would help the editor?"
+        ],
+        "sample_good_response": "Goal: Create a 60-second video script about decluttering your phone quickly.\nContext: TechTidy channel, Gen Z/young professional audience. Energetic, practical tone.\nConstraints: Hook in first 3 seconds (start with a surprising fact). 5 quick tips, ~10 sec each. End with subscribe CTA. Under 160 words. No jargon.\nOutput: Script with [TIMESTAMP], [VISUAL], [TEXT ON SCREEN] markers. Include suggested background music mood.",
+        "evaluation_criteria": [
+          "Includes clear goal with topic",
+          "Specifies audience and tone",
+          "Defines duration and structure constraints",
+          "Includes production format details"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "script"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important part of a short-form video script?",
+          "options": [
+            "A strong hook in the first few seconds",
+            "Using as many words as possible",
+            "Making it at least 5 minutes long",
+            "Including complex vocabulary"
+          ],
+          "correct_index": 0,
+          "explanation": "On platforms like Instagram and YouTube Shorts, viewers decide in 1-3 seconds whether to keep watching."
+        },
+        {
+          "question": "Why should you specify production details in your AI instruction?",
+          "options": [
+            "They help the AI generate more useful, production-ready output",
+            "They make the instruction longer",
+            "AI can't write scripts without them",
+            "They replace the need for editing"
+          ],
+          "correct_index": 0,
+          "explanation": "Timestamp markers, visual cues, and text overlays make the script immediately useful for production."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction would produce a production-ready script.",
+        "partial": "Good start! Add more structure details like timestamps and visual cues.",
+        "fail": "Try again. Think about: hook, structure, timing, and production format."
+      },
+      "retry_hint": "உதாரணத்தைப் பார்த்து மீண்டும் முயற்சிக்கவும்.",
+      "recap": "You practiced creating scripts with AI. Key: specify hook, timing, audience, and production format for usable output.",
+      "glossary_terms": [
+        {
+          "term": "hook",
+          "definition": "The attention-grabbing opening seconds of a video that makes viewers want to keep watching."
+        },
+        {
+          "term": "CTA (call-to-action)",
+          "definition": "A prompt telling viewers what to do next (subscribe, like, comment)."
+        }
+      ]
+    },
+    "kn": {
+      "title": "ಶಾರ್ಟ್-ವೀಡಿಯೋ ಸ್ಕ್ರಿಪ್ಟ್ ರಚಿಸಿ",
+      "description": "AI ಬಳಸಿ 60 ಸೆಕೆಂಡ್ ವೀಡಿಯೋ ಸ್ಕ್ರಿಪ್ಟ್.",
+      "outcome": "You can write AI instructions that produce engaging, structured short-video scripts.",
+      "explanation": "Short-form video needs tight structure: hook → value → call-to-action. AI can help draft scripts, but you need to specify the format, tone, and duration.",
+      "worked_example": {
+        "scenario": "TechTidy channel: 'How to organize your digital workspace'",
+        "bad_attempt": "Write a video script about organizing.",
+        "good_attempt": "Goal: Write a 60-second video script about organizing a digital workspace.\nContext: TechTidy channel, audience is young professionals. Style: fast-paced, practical.\nConstraints: Hook in first 5 seconds. 3 actionable tips. End with CTA. Under 150 words.\nOutput: Script with timestamp markers and visual cues.",
+        "why_better": "Specifies duration, style, structure, and production details."
+      },
+      "interactive_task": {
+        "instruction": "Write an AI instruction to create a 60-second video script for the TechTidy channel. Topic: '5 ways to declutter your phone in 2 minutes.' Target audience: Gen Z and young professionals.",
+        "starter_text": "Goal: \nContext: \nConstraints: \nOutput format: ",
+        "hints": [
+          "Think about the hook — what grabs attention in the first 3 seconds?",
+          "How many tips fit in 60 seconds?",
+          "What visual cues would help the editor?"
+        ],
+        "sample_good_response": "Goal: Create a 60-second video script about decluttering your phone quickly.\nContext: TechTidy channel, Gen Z/young professional audience. Energetic, practical tone.\nConstraints: Hook in first 3 seconds (start with a surprising fact). 5 quick tips, ~10 sec each. End with subscribe CTA. Under 160 words. No jargon.\nOutput: Script with [TIMESTAMP], [VISUAL], [TEXT ON SCREEN] markers. Include suggested background music mood.",
+        "evaluation_criteria": [
+          "Includes clear goal with topic",
+          "Specifies audience and tone",
+          "Defines duration and structure constraints",
+          "Includes production format details"
+        ],
+        "produces_artifact": true,
+        "artifact_type": "script"
+      },
+      "understanding_checks": [
+        {
+          "question": "What's the most important part of a short-form video script?",
+          "options": [
+            "A strong hook in the first few seconds",
+            "Using as many words as possible",
+            "Making it at least 5 minutes long",
+            "Including complex vocabulary"
+          ],
+          "correct_index": 0,
+          "explanation": "On platforms like Instagram and YouTube Shorts, viewers decide in 1-3 seconds whether to keep watching."
+        },
+        {
+          "question": "Why should you specify production details in your AI instruction?",
+          "options": [
+            "They help the AI generate more useful, production-ready output",
+            "They make the instruction longer",
+            "AI can't write scripts without them",
+            "They replace the need for editing"
+          ],
+          "correct_index": 0,
+          "explanation": "Timestamp markers, visual cues, and text overlays make the script immediately useful for production."
+        }
+      ],
+      "feedback_templates": {
+        "pass": "Excellent! Your instruction would produce a production-ready script.",
+        "partial": "Good start! Add more structure details like timestamps and visual cues.",
+        "fail": "Try again. Think about: hook, structure, timing, and production format."
+      },
+      "retry_hint": "ಉದಾಹರಣೆ ನೋಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+      "recap": "You practiced creating scripts with AI. Key: specify hook, timing, audience, and production format for usable output.",
+      "glossary_terms": [
+        {
+          "term": "hook",
+          "definition": "The attention-grabbing opening seconds of a video that makes viewers want to keep watching."
+        },
+        {
+          "term": "CTA (call-to-action)",
+          "definition": "A prompt telling viewers what to do next (subscribe, like, comment)."
+        }
+      ]
+    }
+  }
+}
